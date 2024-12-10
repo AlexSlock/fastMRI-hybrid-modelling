@@ -169,4 +169,4 @@ dependencies:
     - widgetsnbextension==3.6.6
     - wrapt==1.12.1
     - zipp==3.6.0
-prefix: /usr/local/micapollo01/MIC/DATA/STUDENTS/mvhave7/conda/envs/DL_MRI_reconstruction_baselines_2
+prefix: /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/envs/DL_MRI_reconstruction_baselines_2

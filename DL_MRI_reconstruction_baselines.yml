@@ -150,4 +150,4 @@ dependencies:
     - werkzeug==3.0.1
     - yarl==1.9.4
     - zipp==3.17.0
-prefix: /usr/local/micapollo01/MIC/DATA/STUDENTS/mvhave7/conda/envs/DL_MRI_reconstruction_baselines
+prefix: /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/envs/DL_MRI_reconstruction_baselines

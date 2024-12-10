@@ -142,4 +142,4 @@ dependencies:
     - wrapt==1.16.0
     - xmltodict==0.13.0
     - zipp==3.6.0
-prefix: /usr/local/micapollo01/MIC/DATA/STUDENTS/mvhave7/conda/envs/DL_MRI_reconstruction
+prefix: /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/envs/DL_MRI_reconstruction
