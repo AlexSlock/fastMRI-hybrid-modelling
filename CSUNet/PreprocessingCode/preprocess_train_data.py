@@ -10,12 +10,18 @@ import bart
 import scipy.io as sio
 import random
 
+# matlab file with CS sampling profiles
 mat_file = sio.loadmat('/usr/local/micapollo01/MIC/DATA/STUDENTS/mvhave7/Results/GitLab/master_thesis/fastMRI/sampling_profiles_CS.mat')
+# Folder for preprocessed data
 folder_path = '/usr/local/micapollo01/MIC/DATA/SHARED/NYU_FastMRI/Preprocessed/multicoil_train/'
+# Get all files in the folder
 files = Path(folder_path).glob('**/*')
 file_count = 1
 
 def fifty_fifty():
+    '''
+    Return True with a probability of 0.5, otherwise False
+    '''
     return random.random() < .5
 
 def apply_mask(slice_kspace, mask_func):
@@ -29,10 +35,21 @@ def apply_mask(slice_kspace, mask_func):
     '''
     slice_kspace_T = T.to_tensor(slice_kspace)
     masked_kspace_T, mask = T.apply_mask(slice_kspace_T, mask_func)
+    # Convert masked k-space from Torch tensor back to numpy array
     masked_kspace = T.tensor_to_complex_np(masked_kspace_T)
     return masked_kspace, mask
 
 def generate_array(shape, R, mat_file, tensor_out):
+    '''
+    Generate CS mask for given k_space shape and acceleration factor R
+    Args:
+        shape (tuple): Shape of the k-space data
+        R (int): Acceleration factor
+        mat_file: matlab file containing the CS masks
+        tensor_out (bool): If True, the output will be a torch tensor
+    Returns:
+        array (numpy.array or torch.tensor): CS mask 
+    '''
     if R == 4:
         array = mat_file['m320_CS4_mask'].squeeze()
     elif R == 8:
@@ -53,6 +70,7 @@ def generate_array(shape, R, mat_file, tensor_out):
         trim_end = len(array) + padding_needed // 2
         # Trim the array symmetrically
         array = array[trim_start:trim_end]
+
     # Make array compatible with fastmri mask function class
     for i in range(len(shape)-1):
         array = np.expand_dims(array, 0)
@@ -102,37 +120,46 @@ def CS(kspace, S, lamda=0.005, num_iter=50):
 
 for file in files:
     print(str(file_count)+". Starting to process file "+str(file)+'...')
-    undersampling_bool = fifty_fifty()
+    undersampling_bool = fifty_fifty()  
     hf = h5py.File(file, 'a') # Open in append mode
-    kspace = hf['kspace'][()]
+    kspace = hf['kspace'][()] 
     print("Shape of the raw kspace: ", str(np.shape(kspace)))
+    
+    # Randomly decide if R = 4 or 8 for equispaced mask => ACS region for estimating coil sensitivities! 
     if undersampling_bool:
         mask_func = EquispacedMaskFunc(center_fractions=[0.08], accelerations=[4])
     else:
         mask_func = EquispacedMaskFunc(center_fractions=[0.04], accelerations=[8])
     masked_kspace_ACS, mask_ACS = apply_mask(kspace, mask_func)
     print("Shape of the generated ACS mask: ", str(mask_ACS.shape))
+
+    # same random if R = 4 or 8 for CS mask
     if undersampling_bool:
         mask = generate_array(kspace.shape, 4, mat_file, tensor_out=False)
     else:
         mask = generate_array(kspace.shape, 8, mat_file, tensor_out=False)
-    masked_kspace = kspace * mask + 0.0
+    # (following = OK, see Transforms.apply_mask)
+    masked_kspace = kspace * mask + 0.0   # +0.0 removes the sign of the zeros
     print("Shape of the generated CS mask: ", str(mask.shape))
+
+    # Perform CS reconstruction
     cs_data = np.zeros((kspace.shape[0], kspace.shape[2], kspace.shape[3]), dtype=np.complex64)
     for slice in range(kspace.shape[0]):
-        S = estimate_sensitivity_maps(masked_kspace_ACS[slice,:,:,:])
+        S = estimate_sensitivity_maps(masked_kspace_ACS[slice,:,:,:]) # estimate Si with ACS region
         cs_data[slice,:,:] = CS(masked_kspace[slice,:,:,:], S)
     print("Shape of the numpy-converted CS data: ", str(cs_data.shape))
-    # Check if 'cs_data' key exists
-    if 'cs_data' in hf:
+
+    # Store cs reconstruction in file
+    if 'cs_data' in hf:   # Check if 'cs_data' key already exists in the h5 file
         del hf['cs_data'] # Delete the existing dataset
-    # Add a key to the h5 file with cs_data inside it
-    hf.create_dataset('cs_data', data=cs_data)
-    hf.close()
+    hf.create_dataset('cs_data', data=cs_data)  # Add a key to the h5 file with cs_data inside it
+    hf.close()  # Close the file
+
+    # Free up memory and go to next file
     time.sleep(1)
-    del kspace, masked_kspace, mask, cs_data
+    del kspace, masked_kspace, mask, cs_data    # Delete the variables to free up memory
     time.sleep(1)
-    gc.collect()
+    gc.collect()    # Collect garbage to free up memory
     file_count += 1
     print('Done.')
 

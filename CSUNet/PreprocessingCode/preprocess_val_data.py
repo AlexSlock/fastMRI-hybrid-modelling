@@ -10,7 +10,9 @@ import bart
 import scipy.io as sio
 import random
 
+## same as preprocess_train_data.py, but for validation data
 mat_file = sio.loadmat('/usr/local/micapollo01/MIC/DATA/STUDENTS/mvhave7/Results/GitLab/master_thesis/fastMRI/sampling_profiles_CS.mat')
+# select validation data folder
 folder_path = '/usr/local/micapollo01/MIC/DATA/SHARED/NYU_FastMRI/Preprocessed/multicoil_val/'
 files = Path(folder_path).glob('**/*')
 file_count = 1
@@ -29,6 +31,8 @@ def apply_mask(slice_kspace, mask_func):
     '''
     slice_kspace_T = T.to_tensor(slice_kspace)
     masked_kspace_T, mask = T.apply_mask(slice_kspace_T, mask_func, seed=42) # Use seed for validation data
+    # why now use a seed in validation and not in training? 
+    # needed for fair comparison between != training models
     masked_kspace = T.tensor_to_complex_np(masked_kspace_T)
     return masked_kspace, mask
 
@@ -106,23 +110,30 @@ for file in files:
     hf = h5py.File(file, 'a') # Open in append mode
     kspace = hf['kspace'][()]
     print("Shape of the raw kspace: ", str(np.shape(kspace)))
+
+    # Apply ACS (grappa) mask to kspace => needed for estimating S_i 
     if undersampling_bool:
         mask_func = EquispacedMaskFunc(center_fractions=[0.08], accelerations=[4]) 
     else:
         mask_func = EquispacedMaskFunc(center_fractions=[0.04], accelerations=[8])
     masked_kspace_ACS, mask_ACS = apply_mask(kspace, mask_func)
     print("Shape of the generated ACS mask: ", str(mask_ACS.shape))
+
+    # Generate CS mask and apply it to kspace
     if undersampling_bool:
         mask = generate_array(kspace.shape, 4, mat_file, tensor_out=False)
     else:
         mask = generate_array(kspace.shape, 8, mat_file, tensor_out=False)
     masked_kspace = kspace * mask + 0.0
     print("Shape of the generated CS mask: ", str(mask.shape))
+
+    # Estimate sensitivity maps (from ACS) and perform CS reconstruction
     cs_data = np.zeros((kspace.shape[0], kspace.shape[2], kspace.shape[3]), dtype=np.complex64)
     for slice in range(kspace.shape[0]):
         S = estimate_sensitivity_maps(masked_kspace_ACS[slice,:,:,:])
         cs_data[slice,:,:] = CS(masked_kspace[slice,:,:,:], S)
     print("Shape of the numpy-converted CS data: ", str(cs_data.shape))
+
     # Check if 'cs_data' key exists
     if 'cs_data' in hf:
         del hf['cs_data'] # Delete the existing dataset

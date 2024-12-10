@@ -134,6 +134,7 @@ def build_args():
         lr=0.001,  # RMSProp learning rate
         lr_step_size=40,  # epoch at which to decrease learning rate
         lr_gamma=0.1,  # extent to which to decrease learning rate
+        # CHANGE compared to Unet.py
         weight_decay=0.0005,  # weight decay regularization strength
     )
 

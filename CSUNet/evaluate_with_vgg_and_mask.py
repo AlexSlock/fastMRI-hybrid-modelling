@@ -17,25 +17,43 @@ from torchvision.transforms import Compose, ToTensor, Normalize, CenterCrop, Lam
 
 
 def determine_and_apply_mask(target, recons, tgt_file):
+    """processes two reconstruction files and applies a mask to 
+    the target and reconstructed images based on the intersection of 
+    non-zero values of 2 != reconstructions (sense and CS).
+    Args:
+        target (np.ndarray): ground truth image
+        recons (np.ndarray): reconstructed image
+        tgt_file (pathlib.Path): path to the target file
+    """
+    # define the base paths for sense + CS reconstructions
     reconstruction_sense_path_string = '/usr/local/micapollo01/MIC/DATA/STUDENTS/mvhave7/Results/Reconstructions/Sense/reconstructions/'
     reconstruction_CS_path_string = '/usr/local/micapollo01/MIC/DATA/STUDENTS/mvhave7/Results/Reconstructions/CS/reconstructions/'
+    # Construct full pahts by appending target file name
     reconstruction_sense_path = pathlib.Path(reconstruction_sense_path_string) / tgt_file.name
     reconstruction_CS_path = pathlib.Path(reconstruction_CS_path_string) / tgt_file.name
+    # Read reconstruction files
     reconstruction_sense = h5py.File(reconstruction_sense_path, 'r')
     reconstruction_CS = h5py.File(reconstruction_CS_path, 'r')
     reconstruction_sense = reconstruction_sense['reconstruction']
     reconstruction_CS = reconstruction_CS['reconstruction']
+    # Convert to numpy arrays
     reconstruction_sense = np.array(reconstruction_sense)
     reconstruction_CS = np.array(reconstruction_CS)
+    # Crop the reconstructions to the same size as the target
     reconstruction_sense = transforms.center_crop(reconstruction_sense, (target.shape[-1], target.shape[-1]))
     reconstruction_CS = transforms.center_crop(reconstruction_CS, (target.shape[-1], target.shape[-1]))
+    # Create bitmasks where non-zero values in the reconstructions are marked as 1, and zero values are marked as 0.
     sense_bitmask = np.ones_like(reconstruction_sense)
     sense_bitmask = np.where(reconstruction_sense != 0, sense_bitmask, 0).astype(int)
     CS_bitmask = np.ones_like(reconstruction_CS)
     CS_bitmask = np.where(reconstruction_CS != 0, CS_bitmask, 0).astype(int)
+    # Create an intersection mask where the non-zero values in the sense and CS reconstructions overlap
     intersection_mask = CS_bitmask & sense_bitmask
+    # Apply the intersection mask to the target and reconstructed images
     gt = np.where(intersection_mask == 1, target, 0)
     pred = np.where(intersection_mask == 1, recons, 0)
+        # If the value in intersection_mask is 1, the corresponding value from target is retained.
+        # If the value in intersection_mask is 0, the corresponding value in gt is set to 0.
     return gt, pred
 
 

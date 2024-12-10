@@ -7,7 +7,7 @@ from modified_unet import Unet
 
 from fastmri.pl_modules import MriModule
 
-
+# "modified" => changed the forward method to include a check for infinite loss during training
 class UnetModule(MriModule):
     """
     Unet training module.
@@ -77,9 +77,12 @@ class UnetModule(MriModule):
     def training_step(self, batch, batch_idx):
         output = self(batch.image)
         loss = F.l1_loss(output, batch.target)
-
+        
+        ############################
+        # ADDED
         if torch.isinf(loss):
             print("Loss is infinite")
+        ############################
 
         self.log("loss", loss.detach())
 

@@ -8,7 +8,9 @@ import gc
 import bart
 import scipy.io as sio
 
+
 mat_file = sio.loadmat('/usr/local/micapollo01/MIC/DATA/STUDENTS/mvhave7/Results/GitLab/master_thesis/fastMRI/sampling_profiles_CS.mat')
+# Select test data folder
 folder_path = '/usr/local/micapollo01/MIC/DATA/SHARED/NYU_FastMRI/Preprocessed/multicoil_test/'
 folder_path_full = '/usr/local/micapollo01/MIC/DATA/SHARED/NYU_FastMRI/Preprocessed/multicoil_test_full/'
 files = Path(folder_path).glob('**/*')
@@ -106,7 +108,11 @@ def closer_to_4_or_8(float):
         return int(8)
 
 for file in files:
+    # For test files: official undersampled versions of data + masked are given as well 
+    # (done by retrospective 2D Cartesian undersampling in PE direction)
+
     print(str(file_count)+". Starting to process file "+str(file)+'...')
+    # Use given masks to determine R + look at the shape of the kspace data
     hf = h5py.File(file, 'r') # Open in read mode!
     nPE_mask = hf['mask'][()]
     sampled_columns = np.sum(nPE_mask)
@@ -114,6 +120,9 @@ for file in files:
     R = float(R)
     masked_kspace_ACS = hf['kspace'][()]
     print("Shape of the raw kspace: ", str(np.shape(masked_kspace_ACS)))
+
+    # calculate CS reconstruction with deriven R and ACS region
+    # (open multicoil_test_full file: where original k_space is stored)
     hf = h5py.File(folder_path_full+file.name, 'r') # Open in read mode!
     kspace = hf['kspace'][()]
     mask = generate_array(kspace.shape, closer_to_4_or_8(R), mat_file, tensor_out=False)
@@ -123,6 +132,8 @@ for file in files:
         S = estimate_sensitivity_maps(masked_kspace_ACS[slice,:,:,:])
         cs_data[slice,:,:] = CS(masked_kspace[slice,:,:,:], S)
     print("Shape of the numpy-converted CS data: ", str(cs_data.shape))
+
+    # Save the CS data to the file
     hf = h5py.File(file, 'a') # Open in append mode!
     # Check if 'cs_data' key exists
     if 'cs_data' in hf:
@@ -130,6 +141,8 @@ for file in files:
     # Add a key to the h5 file with cs_data inside it
     hf.create_dataset('cs_data', data=cs_data)
     hf.close()
+
+    # Clean up
     time.sleep(1)
     del nPE_mask, masked_kspace_ACS, kspace, mask, masked_kspace, cs_data
     time.sleep(1)

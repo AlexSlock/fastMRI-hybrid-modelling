@@ -2,7 +2,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-
+# modified cause Prelu activation instead of leaky-ReLu in ConvBlock and TransposeConvBlock
 class Unet(nn.Module):
     """
     PyTorch implementation of a U-Net model.
@@ -98,6 +98,7 @@ class Unet(nn.Module):
         return output
 
 
+# CHANGED: cause Prelu activation instead of leaky-ReLu
 class ConvBlock(nn.Module):
     """
     A Convolutional Block that consists of two convolution layers each followed by
@@ -139,6 +140,7 @@ class ConvBlock(nn.Module):
         return self.layers(image)
 
 
+# CHANGED: cause Prelu activation instead of leaky-ReLu
 class TransposeConvBlock(nn.Module):
     """
     A Transpose Convolutional Block that consists of one convolution transpose

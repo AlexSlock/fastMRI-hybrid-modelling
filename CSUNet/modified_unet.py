@@ -2,7 +2,8 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-
+# the Unet architecuture
+# CHANGED: cause Prelu activation instead of leaky-ReLu
 class Unet(nn.Module):
     """
     PyTorch implementation of a U-Net model.
