@@ -11,9 +11,9 @@ import scipy.io as sio
 import random
 
 ## same as preprocess_train_data.py, but for validation data
-mat_file = sio.loadmat('/usr/local/micapollo01/MIC/DATA/STUDENTS/mvhave7/Results/GitLab/master_thesis/fastMRI/sampling_profiles_CS.mat')
+mat_file = sio.loadmat('/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/fastMRI-hybrid-modelling/fastMRI/sampling_profiles_CS.mat')
 # select validation data folder
-folder_path = '/usr/local/micapollo01/MIC/DATA/SHARED/NYU_FastMRI/Preprocessed/multicoil_val/'
+folder_path = '/DATASERVER/MICS/SHARED/NYU_FastMRI/Preprocessed/multicoil_val/'
 files = Path(folder_path).glob('**/*')
 file_count = 1
 

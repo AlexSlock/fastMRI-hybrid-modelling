@@ -11,9 +11,9 @@ import scipy.io as sio
 import random
 
 # matlab file with CS sampling profiles
-mat_file = sio.loadmat('/usr/local/micapollo01/MIC/DATA/STUDENTS/mvhave7/Results/GitLab/master_thesis/fastMRI/sampling_profiles_CS.mat')
+mat_file = sio.loadmat('/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/fastMRI-hybrid-modelling/fastMRI/sampling_profiles_CS.mat')
 # Folder for preprocessed data
-folder_path = '/usr/local/micapollo01/MIC/DATA/SHARED/NYU_FastMRI/Preprocessed/multicoil_train/'
+folder_path = '/DATASERVER/MICS/SHARED/NYU_FastMRI/Preprocessed/multicoil_train/'
 # Get all files in the folder
 files = Path(folder_path).glob('**/*')
 file_count = 1

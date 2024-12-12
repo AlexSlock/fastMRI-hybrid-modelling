@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - numpy
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=2_gnu
   - asttokens=2.1.0=pyhd8ed1ab_0
@@ -37,6 +38,7 @@ dependencies:
   - parso=0.8.3=pyhd8ed1ab_0
   - pexpect=4.8.0=pyh1a96a4e_2
   - pickleshare=0.7.5=py_1003
+  - pip=21.3.1=pyhd8ed1ab_0
   - prompt-toolkit=3.0.32=pyha770c72_0
   - psutil=5.9.4=py38h0a891b7_0
   - ptyprocess=0.7.0=pyhd3deb0d_0
@@ -96,7 +98,6 @@ dependencies:
     - mypy==0.910
     - mypy-extensions==0.4.4
     - networkx==3.1
-    - numpy==1.19.5
     - oauthlib==3.2.2
     - packaging==23.2
     - pandas==1.3.4
@@ -104,7 +105,6 @@ dependencies:
     - pathspec==0.12.1
     - phantominator==0.6.4
     - pillow==9.5.0
-    - pip==23.3.2
     - pipdeptree==2.14.0
     - platformdirs==4.1.0
     - pluggy==0.13.1
@@ -115,7 +115,6 @@ dependencies:
     - pycodestyle==2.7.0
     - pydeprecate==0.3.1
     - pyflakes==2.3.1
-    - pygrappa==0.24.0
     - pyparsing==3.1.1
     - pytest==6.2.4
     - pytorch-lightning==1.4.7
@@ -150,4 +149,4 @@ dependencies:
     - werkzeug==3.0.1
     - yarl==1.9.4
     - zipp==3.17.0
-prefix: /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/envs/DL_MRI_reconstruction_baselines
+    - pygrappa==0.24.0

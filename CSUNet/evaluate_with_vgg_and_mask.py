@@ -26,8 +26,8 @@ def determine_and_apply_mask(target, recons, tgt_file):
         tgt_file (pathlib.Path): path to the target file
     """
     # define the base paths for sense + CS reconstructions
-    reconstruction_sense_path_string = '/usr/local/micapollo01/MIC/DATA/STUDENTS/mvhave7/Results/Reconstructions/Sense/reconstructions/'
-    reconstruction_CS_path_string = '/usr/local/micapollo01/MIC/DATA/STUDENTS/mvhave7/Results/Reconstructions/CS/reconstructions/'
+    reconstruction_sense_path_string = '/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/Sense/reconstructions'
+    reconstruction_CS_path_string = '/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/CS/reconstructions/'
     # Construct full pahts by appending target file name
     reconstruction_sense_path = pathlib.Path(reconstruction_sense_path_string) / tgt_file.name
     reconstruction_CS_path = pathlib.Path(reconstruction_CS_path_string) / tgt_file.name
@@ -225,7 +225,7 @@ def evaluate(args, recons_key):
 
             if args.acceleration:
                 filename = tgt_file.name
-                mask_path = '/usr/local/micapollo01/MIC/DATA/SHARED/NYU_FastMRI/Preprocessed/multicoil_test/'
+                mask_path = '/DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test/'
                 mask = h5py.File(os.path.join(mask_path,filename),'r')
                 nPE_mask = mask['mask'][()]
                 sampled_columns = np.sum(nPE_mask)

@@ -9,10 +9,10 @@ import bart
 import scipy.io as sio
 
 
-mat_file = sio.loadmat('/usr/local/micapollo01/MIC/DATA/STUDENTS/mvhave7/Results/GitLab/master_thesis/fastMRI/sampling_profiles_CS.mat')
+mat_file = sio.loadmat('/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/fastMRI-hybrid-modelling/fastMRI/sampling_profiles_CS.mat')
 # Select test data folder
-folder_path = '/usr/local/micapollo01/MIC/DATA/SHARED/NYU_FastMRI/Preprocessed/multicoil_test/'
-folder_path_full = '/usr/local/micapollo01/MIC/DATA/SHARED/NYU_FastMRI/Preprocessed/multicoil_test_full/'
+folder_path = '/DATASERVER/MICS/SHARED/NYU_FastMRI/Preprocessed/multicoil_test/'
+folder_path_full = '/DATASERVER/MICS/SHARED/NYU_FastMRI/Preprocessed/multicoil_test_full/'
 files = Path(folder_path).glob('**/*')
 file_count = 1
 

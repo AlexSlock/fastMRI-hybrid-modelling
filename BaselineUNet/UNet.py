@@ -8,6 +8,7 @@ from fastmri.data.subsample import create_mask_for_mask_type
 from fastmri.data.transforms import UnetDataTransform
 from fastmri.pl_modules import FastMriDataModule, UnetModule
 
+# args= --mode test --challenge multicoil --mask_type equispaced --center_fractions 0.08 0.04 --accelerations 4 8
 
 def cli_main(args):
     pl.seed_everything(args.seed)
@@ -41,7 +42,7 @@ def cli_main(args):
     # ------------
     # model
     # ------------
-    trainer = pl.Trainer.from_argparse_args(args)
+    trainer = pl.Trainer.from_argparse_args(args)   # responsible for training or testing the model (dep. on mode)
     if args.mode == "train":
         model = UnetModule(
             in_chans=args.in_chans,
@@ -79,8 +80,8 @@ def build_args():
     # basic args
     path_config = pathlib.Path("fastmri_dirs.yaml")
     num_gpus = 1
-    backend = "ddp"
-    batch_size = 1 if backend == "ddp" else num_gpus
+    backend = "ddp" # distributed data parallel
+    batch_size = 1 if backend == "ddp" else num_gpus 
 
     # set defaults based on optional directory config
     data_path = fetch_dir("brain_path", path_config)
@@ -155,7 +156,8 @@ def build_args():
     if not checkpoint_dir.exists():
         checkpoint_dir.mkdir(parents=True)
 
-    args.callbacks = [
+    # Configures a model checkpoint callback to save the best model based on validation loss.
+    args.callbacks = [                  
         pl.callbacks.ModelCheckpoint(
             dirpath=default_root_dir,
             save_top_k=True,

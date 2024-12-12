@@ -1,2 +1,2 @@
-brain_path: /usr/local/micapollo01/MIC/DATA/SHARED/NYU_FastMRI/Preprocessed/
-log_path: /usr/local/micapollo01/MIC/DATA/STUDENTS/mvhave7/Results/GitLab/master_thesis/CSUNet/Checkpoints_combined_R_regularized/
+brain_path: /DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/
+log_path: /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/fastMRI-hybrid-modelling/CSUNet/Checkpoints_combined_R_regularized/
