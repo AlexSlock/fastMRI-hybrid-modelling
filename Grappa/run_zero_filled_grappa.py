@@ -9,8 +9,17 @@ import fastmri
 from fastmri.data import transforms
 from fastmri.data.mri_data import et_query
 
+# python run_zero_filled_grappa.py --data_path /DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test/ --output_path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/Grappa/ --challenge “multicoil”
 
 def save_zero_filled(data_dir, out_dir, which_challenge):
+    '''
+    Takes GRAPPA reconstructions in preprocessed h5 files from data_dir
+    - does IFFT to get zero filled solution
+    - crops to size from encodedSpace?!
+    - takes absolute value
+    - applies Root-Sum-of-Squares if multicoil data
+    and saves as seperate h5 files with only classical GRAPPA reconstruction in out_dir
+    '''
     reconstructions = {}
 
     for fname in tqdm(list(data_dir.glob("*.h5"))):

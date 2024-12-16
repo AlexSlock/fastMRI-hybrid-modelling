@@ -15,10 +15,15 @@ import torch
 from torchvision.models import vgg19
 from torchvision.transforms import Compose, ToTensor, Normalize, CenterCrop, Lambda
 
+# Run with conda DL_MRI_reconstruction_baselines
+# python evaluate_with_vgg_and_mask.py 
+#  --target-path /path/to/ground_truth_data
+#  --predictions-path /path/to/reconstructions
+#  --challenge multicoil
 
 def determine_and_apply_mask(target, recons, tgt_file):
-    reconstruction_sense_path_string = '/usr/local/micapollo01/MIC/DATA/STUDENTS/mvhave7/Results/Reconstructions/Sense/reconstructions/'
-    reconstruction_CS_path_string = '/usr/local/micapollo01/MIC/DATA/STUDENTS/mvhave7/Results/Reconstructions/CS/reconstructions/'
+    reconstruction_sense_path_string = '/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/Sense/reconstructions/'
+    reconstruction_CS_path_string = '/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/CS/reconstructions/'
     reconstruction_sense_path = pathlib.Path(reconstruction_sense_path_string) / tgt_file.name
     reconstruction_CS_path = pathlib.Path(reconstruction_CS_path_string) / tgt_file.name
     reconstruction_sense = h5py.File(reconstruction_sense_path, 'r')
@@ -213,6 +218,7 @@ def evaluate(args, recons_key):
                 sampled_columns = np.sum(nPE_mask)
                 R = len(nPE_mask)/sampled_columns
                 R = float(R)
+                # ignore file if R is not within +-0.1 of the target acceleration factor (too small margin?!)
                 if R > float(args.acceleration)+0.1 or R < float(args.acceleration)-0.1:
                     continue
 

@@ -22,7 +22,7 @@ def cli_main(args):
     )
     # use random masks for train transform, fixed masks for val transform
     train_transform = UnetDataTransform(args.challenge, mask_func=mask, use_seed=False)
-    val_transform = UnetDataTransform(args.challenge, mask_func=mask)
+    val_transform = UnetDataTransform(args.challenge, mask_func=mask)   # use_seed=True by default
     test_transform = UnetDataTransform(args.challenge)
     # ptl data module - this handles data loaders
     data_module = FastMriDataModule(

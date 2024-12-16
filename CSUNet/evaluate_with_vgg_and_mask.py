@@ -15,19 +15,30 @@ import torch
 from torchvision.models import vgg19
 from torchvision.transforms import Compose, ToTensor, Normalize, CenterCrop, Lambda
 
+# Run with conda DL_MRI_reconstruction_baselines
+
+# python evaluate_with_vgg_and_mask.py 
+#  --target-path /DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test_full/
+#  --predictions-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/CSUNet/reconstructions/
+#  --challenge multicoil
+#  --acceleration 4
+
+# python evaluate_with_vgg_and_mask.py --target-path /DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test_full/ --predictions-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/CSUNet/reconstructions/ --challenge multicoil --acceleration 4
 
 def determine_and_apply_mask(target, recons, tgt_file):
-    """processes two reconstruction files and applies a mask to 
+    """
+    processes two reconstruction files and applies a mask to 
     the target and reconstructed images based on the intersection of 
     non-zero values of 2 != reconstructions (sense and CS).
+    => goal: only evaluate where they have meaningful values 
     Args:
         target (np.ndarray): ground truth image
         recons (np.ndarray): reconstructed image
         tgt_file (pathlib.Path): path to the target file
     """
     # define the base paths for sense + CS reconstructions
-    reconstruction_sense_path_string = '/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/Sense/reconstructions'
-    reconstruction_CS_path_string = '/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/CS/reconstructions/'
+    reconstruction_sense_path_string = '/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/Sense/'
+    reconstruction_CS_path_string = '/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/CS/'
     # Construct full pahts by appending target file name
     reconstruction_sense_path = pathlib.Path(reconstruction_sense_path_string) / tgt_file.name
     reconstruction_CS_path = pathlib.Path(reconstruction_CS_path_string) / tgt_file.name
@@ -231,10 +242,11 @@ def evaluate(args, recons_key):
                 sampled_columns = np.sum(nPE_mask)
                 R = len(nPE_mask)/sampled_columns
                 R = float(R)
+                # ignore file if R is not within +-0.1 of the target acceleration factor (too small margin?!)
                 if R > float(args.acceleration)+0.1 or R < float(args.acceleration)-0.1:
                     continue
 
-            target = target[recons_key][()]
+            target = target[recons_key][()] # "reconstruction_rss" does not exist?!
             recons = recons["reconstruction"][()]
             target = transforms.center_crop(
                 target, (target.shape[-1], target.shape[-1])

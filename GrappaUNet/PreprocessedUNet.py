@@ -8,6 +8,7 @@ from preprocessed_transforms import UnetDataTransform
 from modified_unet_module import UnetModule
 from preprocessed_data_module import FastMriDataModule
 
+# python PreprocessedUNet.py --mode test --challenge multicoil --mask_type equispaced --resume_from_checkpoint Checkpoints_combined_R_regularized/epoch=48-step=3458321.ckpt
 
 def cli_main(args):
     pl.seed_everything(args.seed)

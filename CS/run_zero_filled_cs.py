@@ -10,7 +10,13 @@ from fastmri.data import transforms
 from fastmri.data.mri_data import et_query
 
 
-def save_zero_filled(data_dir, out_dir, which_challenge):
+def save_zero_filled(data_dir, out_dir):
+    '''
+    Takes CS reconstructions in preprocessed h5 files from data_dir
+    - crops to size from encodedSpace?!
+    - takes absolute value
+    and saves as seperate h5 files with only classical CS reconstruction in out_dir
+    '''
     reconstructions = {}
 
     for fname in tqdm(list(data_dir.glob("*.h5"))):
@@ -35,9 +41,18 @@ def save_zero_filled(data_dir, out_dir, which_challenge):
             # absolute value
             image = fastmri.complex_abs(image)
 
-            reconstructions[fname.name] = image
+            reconstructions[fname.name] = image # Dictionary mapping input filenames to corresponding reconstructions
 
-    fastmri.save_reconstructions(reconstructions, out_dir)
+    fastmri.save_reconstructions(reconstructions, out_dir) # comes from fastmri/utils.py
+    # save_reconstructions(reconstructions:Dict[str, numpy.ndarray], out_dir:pathlib.Path)
+    # => Save reconstruction images as h5 files.
+    # This function writes to h5 files that are appropriate for submission to the
+    # leaderboard.
+    # Args:
+    #     reconstructions: A dictionary mapping input filenames to corresponding
+    #         reconstructions.
+    #     out_dir: Path to the output directory where the reconstructions should
+    #         be saved.
 
 
 def create_arg_parser():
@@ -55,16 +70,19 @@ def create_arg_parser():
         required=True,
         help="Path to save the reconstructions to",
     )
-    parser.add_argument(
-        "--challenge",
-        type=str,
-        required=True,
-        help="Which challenge",
-    )
+    # NOT USED
+    # parser.add_argument(
+    #     "--challenge",
+    #     type=str,
+    #     required=True,
+    #     help="Which challenge",
+    # )
 
     return parser
 
 
 if __name__ == "__main__":
     args = create_arg_parser().parse_args()
-    save_zero_filled(args.data_path, args.output_path, args.challenge)
+    # save_zero_filled(args.data_path, args.output_path, args.challenge)
+    save_zero_filled(args.data_path, args.output_path)
+    print("Finished Zero Filled reconstruction")
