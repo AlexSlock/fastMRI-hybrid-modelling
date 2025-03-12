@@ -1,2 +1,2 @@
 brain_path: /DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/
-log_path: /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/fastMRI-hybrid-modelling/BaselineUNet/Checkpoints_combined_R_regularized/
+log_path: /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/Baseline/

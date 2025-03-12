@@ -14,7 +14,7 @@ from skimage.metrics import peak_signal_noise_ratio, structural_similarity
 from fastmri.data import transforms
 from concurrent.futures import ThreadPoolExecutor
 
-
+# DOES NOT WORK
 # python optimized_evaluation.py --target-path /DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test_full/ --predictions-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/CSUNet/reconstructions/ --gpu-id 1 --acceleration 4.0
 
 def set_default_gpu():

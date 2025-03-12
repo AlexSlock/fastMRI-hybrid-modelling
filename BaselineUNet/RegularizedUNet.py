@@ -9,6 +9,7 @@ from fastmri.data.transforms import UnetDataTransform
 from fastmri.pl_modules import FastMriDataModule
 from unet_module import UnetModule
 
+# python RegularizedUNet.py --mode test --challenge multicoil --mask_type equispaced --resume_from_checkpoint Checkpoints_combined_R_regularized/epoch=47-step=3387743.ckpt
 
 def cli_main(args):
     pl.seed_everything(args.seed)
@@ -79,7 +80,7 @@ def build_args():
 
     # basic args
     path_config = pathlib.Path("fastmri_dirs.yaml")
-    num_gpus = 1
+    num_gpus = 1     # set to number of GPU you want to use!
     backend = "ddp"
     batch_size = 1 if backend == "ddp" else num_gpus
 
