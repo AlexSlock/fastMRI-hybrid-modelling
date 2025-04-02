@@ -25,7 +25,7 @@ def save_zero_filled(data_dir, out_dir):
             image = transforms.to_tensor(hf["cs_data"][()])
 
             # extract target image width, height from ismrmrd header
-            enc = ["encoding", "encodedSpace", "matrixSize"]
+            enc = ["encoding", "encodedSpace", "matrixSize"]        ## MISTAKE HERE??: should crop to "reconSpace", not encodedSpace
             crop_size = (
                 int(et_query(et_root, enc + ["x"])),
                 int(et_query(et_root, enc + ["y"])),
