@@ -11,23 +11,21 @@ import scipy.io as sio
 import random
 import os
 
-# JUST USE "MICGPU X" command!!
-# Set BART to use a specific GPU (change to your desired GPU ID)
-#BART_GPU_ID = 0  
-#os.environ["CUDA_VISIBLE_DEVICES"] = str(BART_GPU_ID)
+# Set number of CPU threads to 20
+os.environ["OMP_NUM_THREADS"] = "20"
 
 # matlab file with CS sampling profiles
 mat_file = sio.loadmat('/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/fastMRI-hybrid-modelling/fastMRI/sampling_profiles_CS.mat')
 
 # Directory containing HDF5 files
-INPUT_DIR = "/DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_train/"
+INPUT_DIR = "/DATASERVER/MIC/SHARED/NYU_FastMRI/Knee/multicoil_train"
 
 # Get all HDF5 files in the input directory
 files = list(Path(INPUT_DIR).glob("**/*.h5"))
 file_count = 1
 
 # Output directory for CS data
-OUTPUT_DIR = "/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/CS_Output/"
+OUTPUT_DIR = "/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/CS_Output/knee_train"
 
 # Ensure output directory exists
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -189,6 +187,9 @@ def CS(kspace, S, lamda=0.005, num_iter=50):
 for file in files:
     print(str(file_count)+". Starting to process file "+str(file)+'...')
 
+    # Timer for the entire file
+    start_time_file = time.time()   
+
     # Open HDF5 file in read mode
     with h5py.File(file, 'r') as hf:
         kspace = hf['kspace'][()]
@@ -221,7 +222,9 @@ for file in files:
     # Perform CS reconstruction
     cs_data = np.zeros((kspace.shape[0], target_size[0], target_size[1]), dtype=np.complex64)
     for slice in range(kspace.shape[0]):
-        start_time = time.time()
+        # timer for each slice
+        start_time_slice = time.time()
+
         # Zero-fill/crop before ESPIRiT sensitivity estimation
         padded_kspace_ACS = zero_pad_kspace(masked_kspace_ACS[slice, :, :, :], target_size)
         padded_kspace = zero_pad_kspace(masked_kspace[slice, :, :, :], target_size)
@@ -232,8 +235,9 @@ for file in files:
 
         # Perform CS reconstruction with zero-filled k-space
         cs_data[slice, :, :] = CS(padded_kspace, S_padded)
-        end_time = time.time()
-        print(f"Total processing time: {end_time - start_time} seconds")
+        end_time_slice = time.time()
+        elapsed_time_slice = end_time_slice - start_time_slice
+        print(f"Time for slice: {elapsed_time_slice:.4f} seconds")
     print("Shape of the numpy-converted CS data: ", str(cs_data.shape))
 
     # Save file to given output DIR 
@@ -249,5 +253,11 @@ for file in files:
     gc.collect()    # Collect garbage to free up memory
     file_count += 1
     print(f"  Saved CS data to {output_file}")
+
+    # Timer for the entire file: calculate and print total elapsed time after all slices
+    end_time_file = time.time()
+    elapsed_time_file = end_time_file - start_time_file
+    print(f"Total time for processing the entire file: {elapsed_time_file:.4f} seconds")
+
     break
 
