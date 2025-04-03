@@ -9,14 +9,28 @@ import gc
 import bart
 import scipy.io as sio
 import random
+import os
+
+# JUST USE "MICGPU X" command!!
+# Set BART to use a specific GPU (change to your desired GPU ID)
+#BART_GPU_ID = 0  
+#os.environ["CUDA_VISIBLE_DEVICES"] = str(BART_GPU_ID)
 
 # matlab file with CS sampling profiles
 mat_file = sio.loadmat('/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/fastMRI-hybrid-modelling/fastMRI/sampling_profiles_CS.mat')
-# Folder for preprocessed data
-folder_path = '/DATASERVER/MICS/SHARED/NYU_FastMRI/Preprocessed/multicoil_train/'
-# Get all files in the folder
-files = Path(folder_path).glob('**/*')
+
+# Directory containing HDF5 files
+INPUT_DIR = "/DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_train/"
+
+# Get all HDF5 files in the input directory
+files = list(Path(INPUT_DIR).glob("**/*.h5"))
 file_count = 1
+
+# Output directory for CS data
+OUTPUT_DIR = "/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/CS_Output/"
+
+# Ensure output directory exists
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def fifty_fifty():
     '''
@@ -95,6 +109,60 @@ def estimate_sensitivity_maps(kspace):
     S = np.moveaxis(S.squeeze(), 2, 0)
     return S
 
+def zero_pad_kspace(kspace, target_size):
+    """
+    Zero-pad k-space to achieve sinc interpolation in image domain
+    
+    Args:
+        kspace (numpy.array): K-space data (can be 2D or 3D with num_coils)
+        target_size (tuple): Target size (rows, cols)
+    
+    Returns:
+        kspace_padded (numpy.array): Zero-padded k-space
+    """
+    is_3d = len(kspace.shape) == 3  # Check if num_coils dimension exists
+    if not is_3d:
+        kspace = kspace[np.newaxis, ...]  # Add dummy coil dimension
+
+    rows, cols = kspace.shape[-2], kspace.shape[-1]
+    target_rows, target_cols = target_size
+
+    # Convert k-space to fastMRI expected format (real, imag) -> shape (num_coils, rows, cols, 2)
+    kspace_tensor = T.to_tensor(kspace)
+
+     # Handle cropping if the size is too large
+    if rows > target_rows and cols > target_cols:
+        kspace_tensor = T.complex_center_crop(kspace_tensor, target_size)
+        rows = target_rows
+        cols = target_cols
+
+     # if only 1 dimension is too large, crop that dimension   
+    if rows > target_rows:
+        kspace_tensor = T.complex_center_crop(kspace_tensor, (target_rows, cols))
+        rows = target_rows
+    
+    if cols > target_cols:
+        kspace_tensor = T.complex_center_crop(kspace_tensor, (rows, target_cols))
+        cols = target_cols
+
+    # Handle zero-padding if the size is too small
+    if rows < target_rows or cols < target_cols:
+        pad_rows = target_rows - rows
+        pad_cols = target_cols - cols
+        
+        pad_top = pad_rows // 2
+        pad_bottom = pad_rows - pad_top
+        pad_left = pad_cols // 2
+        pad_right = pad_cols - pad_left
+        
+        # Apply zero padding to 3D array
+        kspace_tensor = torch.nn.functional.pad(
+            kspace_tensor, (0, 0, pad_left, pad_right, pad_top, pad_bottom)
+        )
+
+    kspace_padded = T.tensor_to_complex_np(kspace_tensor)
+    return kspace_padded if is_3d else kspace_padded[0]  # Remove dummy coil dimension if needed
+
 def CS(kspace, S, lamda=0.005, num_iter=50):
     ''' 
     Performs CS reconstruction
@@ -120,12 +188,18 @@ def CS(kspace, S, lamda=0.005, num_iter=50):
 
 for file in files:
     print(str(file_count)+". Starting to process file "+str(file)+'...')
-    undersampling_bool = fifty_fifty()  
-    hf = h5py.File(file, 'a') # Open in append mode
-    kspace = hf['kspace'][()] 
+
+    # Open HDF5 file in read mode
+    with h5py.File(file, 'r') as hf:
+        kspace = hf['kspace'][()]
+
     print("Shape of the raw kspace: ", str(np.shape(kspace)))
-    
+
+    # Define target resolution for zero-padding/cropping
+    target_size = (640, 640)  # Modify if needed
+
     # Randomly decide if R = 4 or 8 for equispaced mask => ACS region for estimating coil sensitivities! 
+    undersampling_bool = fifty_fifty()  
     if undersampling_bool:
         mask_func = EquispacedMaskFunc(center_fractions=[0.08], accelerations=[4])
     else:
@@ -142,24 +216,38 @@ for file in files:
     masked_kspace = kspace * mask + 0.0   # +0.0 removes the sign of the zeros
     print("Shape of the generated CS mask: ", str(mask.shape))
 
+
+    ##################### CHANGED: SO WORKS WITH zero-padding/cropping BEFORE BART ############
     # Perform CS reconstruction
-    cs_data = np.zeros((kspace.shape[0], kspace.shape[2], kspace.shape[3]), dtype=np.complex64)
+    cs_data = np.zeros((kspace.shape[0], target_size[0], target_size[1]), dtype=np.complex64)
     for slice in range(kspace.shape[0]):
-        S = estimate_sensitivity_maps(masked_kspace_ACS[slice,:,:,:]) # estimate Si with ACS region
-        cs_data[slice,:,:] = CS(masked_kspace[slice,:,:,:], S)
+        start_time = time.time()
+        # Zero-fill/crop before ESPIRiT sensitivity estimation
+        padded_kspace_ACS = zero_pad_kspace(masked_kspace_ACS[slice, :, :, :], target_size)
+        padded_kspace = zero_pad_kspace(masked_kspace[slice, :, :, :], target_size)
+        print("Shape of the padded kspace: ", str(np.shape(padded_kspace)))
+
+         # Estimate sensitivity maps
+        S_padded = estimate_sensitivity_maps(padded_kspace_ACS) # estimate Si with ACS region
+
+        # Perform CS reconstruction with zero-filled k-space
+        cs_data[slice, :, :] = CS(padded_kspace, S_padded)
+        end_time = time.time()
+        print(f"Total processing time: {end_time - start_time} seconds")
     print("Shape of the numpy-converted CS data: ", str(cs_data.shape))
 
-    # Store cs reconstruction in file
-    if 'cs_data' in hf:   # Check if 'cs_data' key already exists in the h5 file
-        del hf['cs_data'] # Delete the existing dataset
-    hf.create_dataset('cs_data', data=cs_data)  # Add a key to the h5 file with cs_data inside it
-    hf.close()  # Close the file
+    # Save file to given output DIR 
+    ## stem attribute gives the base name of the file without the extension. 
+    # For example: If your input file is named sample_data.h5, file.stem will return sample_data
+    output_file = os.path.join(OUTPUT_DIR, file.stem + "_cs.npy")
+    np.save(output_file, cs_data)
 
     # Free up memory and go to next file
-    time.sleep(1)
+    time.sleep(1) 
     del kspace, masked_kspace, mask, cs_data    # Delete the variables to free up memory
     time.sleep(1)
     gc.collect()    # Collect garbage to free up memory
     file_count += 1
-    print('Done.')
+    print(f"  Saved CS data to {output_file}")
+    break
 
