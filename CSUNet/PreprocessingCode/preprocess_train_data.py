@@ -10,6 +10,10 @@ import bart
 import scipy.io as sio
 import random
 import os
+import logging
+
+logging.basicConfig(filename='processing.log', level=logging.INFO)
+logging.info('Started processing')
 
 # Set number of CPU threads to 20
 os.environ["OMP_NUM_THREADS"] = "20"
@@ -185,7 +189,8 @@ def CS(kspace, S, lamda=0.005, num_iter=50):
     return reconstruction
 
 for file in files:
-    print(str(file_count)+". Starting to process file "+str(file)+'...')
+    # print(str(file_count)+". Starting to process file "+str(file)+'...')
+    logging.info(f"{file_count}. Starting to process file {file}...")
 
     # Timer for the entire file
     start_time_file = time.time()   
@@ -194,7 +199,7 @@ for file in files:
     with h5py.File(file, 'r') as hf:
         kspace = hf['kspace'][()]
 
-    print("Shape of the raw kspace: ", str(np.shape(kspace)))
+    #print("Shape of the raw kspace: ", str(np.shape(kspace)))
 
     # Define target resolution for zero-padding/cropping
     target_size = (640, 640)  # Modify if needed
@@ -206,7 +211,7 @@ for file in files:
     else:
         mask_func = EquispacedMaskFunc(center_fractions=[0.04], accelerations=[8])
     masked_kspace_ACS, mask_ACS = apply_mask(kspace, mask_func)
-    print("Shape of the generated ACS mask: ", str(mask_ACS.shape))
+    #print("Shape of the generated ACS mask: ", str(mask_ACS.shape))
 
     # same random if R = 4 or 8 for CS mask
     if undersampling_bool:
@@ -215,7 +220,7 @@ for file in files:
         mask = generate_array(kspace.shape, 8, mat_file, tensor_out=False)
     # (following = OK, see Transforms.apply_mask)
     masked_kspace = kspace * mask + 0.0   # +0.0 removes the sign of the zeros
-    print("Shape of the generated CS mask: ", str(mask.shape))
+    #print("Shape of the generated CS mask: ", str(mask.shape))
 
 
     ##################### CHANGED: SO WORKS WITH zero-padding/cropping BEFORE BART ############
@@ -228,7 +233,7 @@ for file in files:
         # Zero-fill/crop before ESPIRiT sensitivity estimation
         padded_kspace_ACS = zero_pad_kspace(masked_kspace_ACS[slice, :, :, :], target_size)
         padded_kspace = zero_pad_kspace(masked_kspace[slice, :, :, :], target_size)
-        print("Shape of the padded kspace: ", str(np.shape(padded_kspace)))
+        #print("Shape of the padded kspace: ", str(np.shape(padded_kspace)))
 
          # Estimate sensitivity maps
         S_padded = estimate_sensitivity_maps(padded_kspace_ACS) # estimate Si with ACS region
@@ -237,8 +242,8 @@ for file in files:
         cs_data[slice, :, :] = CS(padded_kspace, S_padded)
         end_time_slice = time.time()
         elapsed_time_slice = end_time_slice - start_time_slice
-        print(f"Time for slice: {elapsed_time_slice:.4f} seconds")
-    print("Shape of the numpy-converted CS data: ", str(cs_data.shape))
+        #print(f"Time for slice: {elapsed_time_slice:.4f} seconds")
+    #print("Shape of the numpy-converted CS data: ", str(cs_data.shape))
 
     # Save file to given output DIR 
     ## stem attribute gives the base name of the file without the extension. 
@@ -252,12 +257,13 @@ for file in files:
     time.sleep(1)
     gc.collect()    # Collect garbage to free up memory
     file_count += 1
-    print(f"  Saved CS data to {output_file}")
+    #print(f"  Saved CS data to {output_file}")
+    logging.info(f"  Saved CS data to {output_file}")
+
 
     # Timer for the entire file: calculate and print total elapsed time after all slices
     end_time_file = time.time()
     elapsed_time_file = end_time_file - start_time_file
-    print(f"Total time for processing the entire file: {elapsed_time_file:.4f} seconds")
-
-    break
+    #print(f"Total time for processing the entire file: {elapsed_time_file:.4f} seconds")
+    logging.info(f"Total time for processing the entire file: {elapsed_time_file:.4f} seconds")
 
