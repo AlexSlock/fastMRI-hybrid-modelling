@@ -233,7 +233,7 @@ class SliceDataset(torch.utils.data.Dataset):
                 to use.
             transform: Optional; A callable object that pre-processes the raw
                 data into appropriate form. The transform function should take
-                'cs_data', 'target', 'attributes', 'filename', and 'slice' as
+                cs_data, target, fname.name and dataslice as
                 inputs. 'target' may be null for test data.
             use_dataset_cache: Whether to cache dataset metadata. This is very
                 useful for large datasets like the brain data.
