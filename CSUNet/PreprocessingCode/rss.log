@@ -1,0 +1,977 @@
+nohup: ignoring input
+{'data_dir': '/DATASERVER/MIC/SHARED/NYU_FastMRI/Knee/multicoil_train/', 'save_dir': '/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Full_RSS_target/', 'target_size': [640, 640], 'workers': 30}
+Parallel RSS Gen:   0%|          | 0/973 [00:00<?, ?it/s]Parallel RSS Gen:   0%|          | 1/973 [00:28<7:40:52, 28.45s/it]Parallel RSS Gen:   0%|          | 2/973 [00:29<3:16:46, 12.16s/it]Parallel RSS Gen:   0%|          | 3/973 [00:29<1:47:59,  6.68s/it]Parallel RSS Gen:   0%|          | 4/973 [00:29<1:08:33,  4.25s/it]Parallel RSS Gen:   1%|          | 5/973 [00:30<48:43,  3.02s/it]  Parallel RSS Gen:   1%|          | 6/973 [00:31<34:49,  2.16s/it]Parallel RSS Gen:   1%|          | 7/973 [00:31<24:16,  1.51s/it]Parallel RSS Gen:   1%|          | 9/973 [00:31<13:15,  1.21it/s]Parallel RSS Gen:   1%|          | 10/973 [00:31<10:47,  1.49it/s]Parallel RSS Gen:   1%|          | 11/973 [00:31<08:29,  1.89it/s]Parallel RSS Gen:   1%|          | 12/973 [00:32<06:43,  2.38it/s]Parallel RSS Gen:   2%|▏         | 16/973 [00:32<04:40,  3.41it/s]Parallel RSS Gen:   2%|▏         | 17/973 [00:33<04:35,  3.47it/s]Parallel RSS Gen:   2%|▏         | 18/973 [00:33<04:27,  3.57it/s]Parallel RSS Gen:   2%|▏         | 19/973 [00:34<05:32,  2.87it/s]Parallel RSS Gen:   2%|▏         | 20/973 [00:35<09:31,  1.67it/s]Parallel RSS Gen:   2%|▏         | 22/973 [00:35<06:24,  2.48it/s]Parallel RSS Gen:   2%|▏         | 24/973 [00:36<05:48,  2.72it/s]Parallel RSS Gen:   3%|▎         | 25/973 [00:36<06:23,  2.47it/s]Parallel RSS Gen:   3%|▎         | 26/973 [00:37<05:52,  2.69it/s]Parallel RSS Gen:   3%|▎         | 27/973 [00:37<07:40,  2.05it/s]Parallel RSS Gen:   3%|▎         | 28/973 [00:38<08:29,  1.86it/s]Parallel RSS Gen:   3%|▎         | 29/973 [00:39<08:32,  1.84it/s]Parallel RSS Gen:   3%|▎         | 30/973 [00:40<13:34,  1.16it/s]Parallel RSS Gen:   3%|▎         | 31/973 [01:01<1:40:30,  6.40s/it]Parallel RSS Gen:   3%|▎         | 32/973 [01:02<1:16:50,  4.90s/it]Parallel RSS Gen:   3%|▎         | 33/973 [01:02<56:16,  3.59s/it]  Parallel RSS Gen:   3%|▎         | 34/973 [01:03<41:07,  2.63s/it]Parallel RSS Gen:   4%|▎         | 35/973 [01:03<30:26,  1.95s/it]Parallel RSS Gen:   4%|▎         | 36/973 [01:03<23:39,  1.52s/it]Parallel RSS Gen:   4%|▍         | 37/973 [01:04<17:28,  1.12s/it]Parallel RSS Gen:   4%|▍         | 38/973 [01:05<16:53,  1.08s/it]Parallel RSS Gen:   4%|▍         | 40/973 [01:05<09:59,  1.56it/s]Parallel RSS Gen:   4%|▍         | 41/973 [01:06<10:52,  1.43it/s]Parallel RSS Gen:   4%|▍         | 42/973 [01:06<08:39,  1.79it/s]Parallel RSS Gen:   4%|▍         | 43/973 [01:07<09:27,  1.64it/s]Parallel RSS Gen:   5%|▍         | 45/973 [01:07<07:30,  2.06it/s]Parallel RSS Gen:   5%|▍         | 46/973 [01:07<06:09,  2.51it/s]Parallel RSS Gen:   5%|▍         | 48/973 [01:08<05:13,  2.95it/s]Parallel RSS Gen:   5%|▌         | 49/973 [01:09<06:34,  2.34it/s]Parallel RSS Gen:   5%|▌         | 51/973 [01:09<05:13,  2.94it/s]Parallel RSS Gen:   5%|▌         | 52/973 [01:09<05:23,  2.85it/s]Parallel RSS Gen:   5%|▌         | 53/973 [01:10<06:37,  2.31it/s]Parallel RSS Gen:   6%|▌         | 54/973 [01:11<07:52,  1.94it/s]Parallel RSS Gen:   6%|▌         | 55/973 [01:11<06:27,  2.37it/s]Parallel RSS Gen:   6%|▌         | 57/973 [01:11<05:05,  3.00it/s]Parallel RSS Gen:   6%|▌         | 58/973 [01:13<07:49,  1.95it/s]Parallel RSS Gen:   6%|▌         | 59/973 [01:13<09:07,  1.67it/s]Parallel RSS Gen:   6%|▌         | 60/973 [01:14<09:58,  1.53it/s]Parallel RSS Gen:   6%|▋         | 61/973 [01:28<1:03:29,  4.18s/it]Parallel RSS Gen:   6%|▋         | 62/973 [01:28<46:27,  3.06s/it]  Parallel RSS Gen:   6%|▋         | 63/973 [01:30<42:08,  2.78s/it]Parallel RSS Gen:   7%|▋         | 64/973 [01:33<40:59,  2.71s/it]Parallel RSS Gen:   7%|▋         | 65/973 [01:34<34:21,  2.27s/it]Parallel RSS Gen:   7%|▋         | 66/973 [01:35<31:42,  2.10s/it]Parallel RSS Gen:   7%|▋         | 67/973 [01:37<28:51,  1.91s/it]Parallel RSS Gen:   7%|▋         | 68/973 [01:37<20:55,  1.39s/it]Parallel RSS Gen:   7%|▋         | 69/973 [01:37<15:44,  1.04s/it]Parallel RSS Gen:   7%|▋         | 70/973 [01:38<15:15,  1.01s/it]Parallel RSS Gen:   7%|▋         | 71/973 [01:39<13:11,  1.14it/s]Parallel RSS Gen:   7%|▋         | 72/973 [01:39<10:09,  1.48it/s]Parallel RSS Gen:   8%|▊         | 73/973 [01:39<07:55,  1.89it/s]Parallel RSS Gen:   8%|▊         | 75/973 [01:40<06:51,  2.18it/s]Parallel RSS Gen:   8%|▊         | 76/973 [01:40<05:56,  2.51it/s]Parallel RSS Gen:   8%|▊         | 77/973 [01:40<05:09,  2.89it/s]Parallel RSS Gen:   8%|▊         | 79/973 [01:42<08:11,  1.82it/s]Parallel RSS Gen:   8%|▊         | 80/973 [01:43<10:16,  1.45it/s]Parallel RSS Gen:   8%|▊         | 81/973 [01:44<10:44,  1.38it/s]Parallel RSS Gen:   8%|▊         | 82/973 [01:44<08:39,  1.72it/s]Parallel RSS Gen:   9%|▊         | 83/973 [01:45<08:33,  1.73it/s]Parallel RSS Gen:   9%|▊         | 85/973 [01:46<09:24,  1.57it/s]Parallel RSS Gen:   9%|▉         | 86/973 [01:47<10:24,  1.42it/s]Parallel RSS Gen:   9%|▉         | 87/973 [01:47<08:24,  1.75it/s]Parallel RSS Gen:   9%|▉         | 88/973 [01:48<07:32,  1.96it/s]Parallel RSS Gen:   9%|▉         | 89/973 [01:48<05:55,  2.48it/s]Parallel RSS Gen:   9%|▉         | 90/973 [01:48<06:27,  2.28it/s]Parallel RSS Gen:   9%|▉         | 91/973 [01:58<46:26,  3.16s/it]Parallel RSS Gen:   9%|▉         | 92/973 [02:00<40:10,  2.74s/it]Parallel RSS Gen:  10%|▉         | 94/973 [02:02<30:02,  2.05s/it]Parallel RSS Gen:  10%|▉         | 95/973 [02:03<24:07,  1.65s/it]Parallel RSS Gen:  10%|▉         | 96/973 [02:05<25:51,  1.77s/it]Parallel RSS Gen:  10%|▉         | 97/973 [02:06<23:04,  1.58s/it]Parallel RSS Gen:  10%|█         | 98/973 [02:09<29:52,  2.05s/it]Parallel RSS Gen:  10%|█         | 99/973 [02:10<24:26,  1.68s/it]Parallel RSS Gen:  10%|█         | 100/973 [02:11<20:47,  1.43s/it]Parallel RSS Gen:  10%|█         | 101/973 [02:11<15:58,  1.10s/it]Parallel RSS Gen:  11%|█         | 103/973 [02:12<11:08,  1.30it/s]Parallel RSS Gen:  11%|█         | 104/973 [02:12<10:19,  1.40it/s]Parallel RSS Gen:  11%|█         | 105/973 [02:14<14:18,  1.01it/s]Parallel RSS Gen:  11%|█         | 107/973 [02:14<08:32,  1.69it/s]Parallel RSS Gen:  11%|█         | 108/973 [02:15<07:34,  1.90it/s]Parallel RSS Gen:  11%|█         | 109/973 [02:16<12:29,  1.15it/s]Parallel RSS Gen:  11%|█▏        | 110/973 [02:18<13:38,  1.05it/s]Parallel RSS Gen:  11%|█▏        | 111/973 [02:19<13:58,  1.03it/s]Parallel RSS Gen:  12%|█▏        | 113/973 [02:20<10:48,  1.33it/s]Parallel RSS Gen:  12%|█▏        | 114/973 [02:20<10:55,  1.31it/s]Parallel RSS Gen:  12%|█▏        | 116/973 [02:21<07:26,  1.92it/s]Parallel RSS Gen:  12%|█▏        | 117/973 [02:21<07:52,  1.81it/s]Parallel RSS Gen:  12%|█▏        | 118/973 [02:23<12:34,  1.13it/s]Parallel RSS Gen:  12%|█▏        | 120/973 [02:26<16:10,  1.14s/it]Parallel RSS Gen:  12%|█▏        | 121/973 [02:28<19:12,  1.35s/it]Parallel RSS Gen:  13%|█▎        | 122/973 [02:34<33:50,  2.39s/it]Parallel RSS Gen:  13%|█▎        | 123/973 [02:35<27:41,  1.95s/it]Parallel RSS Gen:  13%|█▎        | 125/973 [02:37<22:04,  1.56s/it]Parallel RSS Gen:  13%|█▎        | 126/973 [02:38<19:35,  1.39s/it]Parallel RSS Gen:  13%|█▎        | 127/973 [02:38<17:21,  1.23s/it]Parallel RSS Gen:  13%|█▎        | 128/973 [02:39<13:41,  1.03it/s]Parallel RSS Gen:  13%|█▎        | 129/973 [02:39<11:28,  1.23it/s]Parallel RSS Gen:  13%|█▎        | 130/973 [02:41<14:24,  1.03s/it]Parallel RSS Gen:  13%|█▎        | 131/973 [02:42<16:45,  1.19s/it]Parallel RSS Gen:  14%|█▎        | 132/973 [02:43<14:51,  1.06s/it]Parallel RSS Gen:  14%|█▎        | 133/973 [02:43<11:36,  1.21it/s]Parallel RSS Gen:  14%|█▍        | 134/973 [02:44<13:05,  1.07it/s]Parallel RSS Gen:  14%|█▍        | 135/973 [02:45<11:55,  1.17it/s]Parallel RSS Gen:  14%|█▍        | 136/973 [02:46<10:37,  1.31it/s]Parallel RSS Gen:  14%|█▍        | 137/973 [02:47<12:33,  1.11it/s]Parallel RSS Gen:  14%|█▍        | 138/973 [02:49<16:16,  1.17s/it]Parallel RSS Gen:  14%|█▍        | 139/973 [02:49<14:48,  1.06s/it]Parallel RSS Gen:  14%|█▍        | 141/973 [02:50<09:46,  1.42it/s]Parallel RSS Gen:  15%|█▍        | 142/973 [02:51<09:34,  1.45it/s]Parallel RSS Gen:  15%|█▍        | 143/973 [02:51<08:28,  1.63it/s]Parallel RSS Gen:  15%|█▍        | 144/973 [02:51<08:01,  1.72it/s]Parallel RSS Gen:  15%|█▍        | 145/973 [02:53<10:28,  1.32it/s]Parallel RSS Gen:  15%|█▌        | 146/973 [02:53<08:43,  1.58it/s]Parallel RSS Gen:  15%|█▌        | 147/973 [02:54<10:33,  1.30it/s]Parallel RSS Gen:  15%|█▌        | 148/973 [02:56<13:23,  1.03it/s]Parallel RSS Gen:  15%|█▌        | 149/973 [02:56<10:41,  1.28it/s]Parallel RSS Gen:  15%|█▌        | 150/973 [02:59<19:43,  1.44s/it]Parallel RSS Gen:  16%|█▌        | 152/973 [03:03<24:47,  1.81s/it]Parallel RSS Gen:  16%|█▌        | 153/973 [03:05<22:28,  1.64s/it]Parallel RSS Gen:  16%|█▌        | 155/973 [03:05<14:00,  1.03s/it]Parallel RSS Gen:  16%|█▌        | 156/973 [03:07<17:18,  1.27s/it]Parallel RSS Gen:  16%|█▌        | 157/973 [03:10<22:17,  1.64s/it]Parallel RSS Gen:  16%|█▌        | 158/973 [03:11<21:08,  1.56s/it]Parallel RSS Gen:  16%|█▋        | 159/973 [03:13<22:55,  1.69s/it]Parallel RSS Gen:  16%|█▋        | 160/973 [03:15<22:35,  1.67s/it]Parallel RSS Gen:  17%|█▋        | 162/973 [03:15<13:43,  1.02s/it]Parallel RSS Gen:  17%|█▋        | 163/973 [03:15<11:04,  1.22it/s]Parallel RSS Gen:  17%|█▋        | 164/973 [03:16<09:44,  1.38it/s]Parallel RSS Gen:  17%|█▋        | 165/973 [03:19<18:55,  1.41s/it]Parallel RSS Gen:  17%|█▋        | 166/973 [03:20<18:36,  1.38s/it]Parallel RSS Gen:  17%|█▋        | 167/973 [03:21<15:26,  1.15s/it]Parallel RSS Gen:  17%|█▋        | 169/973 [03:21<09:36,  1.40it/s]Parallel RSS Gen:  18%|█▊        | 171/973 [03:22<07:50,  1.71it/s]Parallel RSS Gen:  18%|█▊        | 172/973 [03:22<07:03,  1.89it/s]Parallel RSS Gen:  18%|█▊        | 173/973 [03:23<06:27,  2.07it/s]Parallel RSS Gen:  18%|█▊        | 175/973 [03:23<04:10,  3.18it/s]Parallel RSS Gen:  18%|█▊        | 176/973 [03:25<10:33,  1.26it/s]Parallel RSS Gen:  18%|█▊        | 177/973 [03:26<11:40,  1.14it/s]Parallel RSS Gen:  18%|█▊        | 178/973 [03:27<11:00,  1.20it/s]Parallel RSS Gen:  18%|█▊        | 179/973 [03:28<12:25,  1.07it/s]Parallel RSS Gen:  18%|█▊        | 180/973 [03:30<15:15,  1.15s/it]Parallel RSS Gen:  19%|█▊        | 181/973 [03:30<11:55,  1.11it/s]Parallel RSS Gen:  19%|█▊        | 182/973 [03:35<26:42,  2.03s/it]Parallel RSS Gen:  19%|█▉        | 183/973 [03:36<21:47,  1.66s/it]Parallel RSS Gen:  19%|█▉        | 184/973 [03:37<19:57,  1.52s/it]Parallel RSS Gen:  19%|█▉        | 185/973 [03:39<22:11,  1.69s/it]Parallel RSS Gen:  19%|█▉        | 186/973 [03:40<19:28,  1.49s/it]Parallel RSS Gen:  19%|█▉        | 187/973 [03:41<15:57,  1.22s/it]Parallel RSS Gen:  19%|█▉        | 188/973 [03:42<18:01,  1.38s/it]Parallel RSS Gen:  19%|█▉        | 189/973 [03:43<13:21,  1.02s/it]Parallel RSS Gen:  20%|█▉        | 190/973 [03:43<11:24,  1.14it/s]Parallel RSS Gen:  20%|█▉        | 191/973 [03:44<12:42,  1.03it/s]Parallel RSS Gen:  20%|█▉        | 193/973 [03:45<08:54,  1.46it/s]Parallel RSS Gen:  20%|██        | 195/973 [03:46<08:18,  1.56it/s]Parallel RSS Gen:  20%|██        | 196/973 [03:49<13:42,  1.06s/it]Parallel RSS Gen:  20%|██        | 197/973 [03:50<14:06,  1.09s/it]Parallel RSS Gen:  20%|██        | 198/973 [03:50<11:31,  1.12it/s]Parallel RSS Gen:  20%|██        | 199/973 [03:51<10:58,  1.17it/s]Parallel RSS Gen:  21%|██        | 200/973 [03:52<12:49,  1.00it/s]Parallel RSS Gen:  21%|██        | 201/973 [03:53<11:31,  1.12it/s]Parallel RSS Gen:  21%|██        | 203/973 [03:53<06:41,  1.92it/s]Parallel RSS Gen:  21%|██        | 204/973 [03:57<16:23,  1.28s/it]Parallel RSS Gen:  21%|██        | 205/973 [03:58<14:47,  1.16s/it]Parallel RSS Gen:  21%|██▏       | 207/973 [03:58<09:03,  1.41it/s]Parallel RSS Gen:  21%|██▏       | 208/973 [03:58<08:26,  1.51it/s]Parallel RSS Gen:  21%|██▏       | 209/973 [03:59<07:28,  1.70it/s]Parallel RSS Gen:  22%|██▏       | 210/973 [04:00<08:57,  1.42it/s]Parallel RSS Gen:  22%|██▏       | 211/973 [04:00<08:04,  1.57it/s]Parallel RSS Gen:  22%|██▏       | 212/973 [04:02<13:05,  1.03s/it]Parallel RSS Gen:  22%|██▏       | 213/973 [04:09<33:31,  2.65s/it]Parallel RSS Gen:  22%|██▏       | 214/973 [04:10<27:17,  2.16s/it]Parallel RSS Gen:  22%|██▏       | 215/973 [04:11<22:58,  1.82s/it]Parallel RSS Gen:  22%|██▏       | 216/973 [04:12<22:14,  1.76s/it]Parallel RSS Gen:  22%|██▏       | 217/973 [04:13<19:19,  1.53s/it]Parallel RSS Gen:  23%|██▎       | 219/973 [04:14<12:00,  1.05it/s]Parallel RSS Gen:  23%|██▎       | 220/973 [04:15<10:45,  1.17it/s]Parallel RSS Gen:  23%|██▎       | 221/973 [04:16<11:17,  1.11it/s]Parallel RSS Gen:  23%|██▎       | 222/973 [04:16<09:23,  1.33it/s]Parallel RSS Gen:  23%|██▎       | 223/973 [04:18<13:54,  1.11s/it]Parallel RSS Gen:  23%|██▎       | 224/973 [04:20<15:50,  1.27s/it]Parallel RSS Gen:  23%|██▎       | 225/973 [04:20<12:45,  1.02s/it]Parallel RSS Gen:  23%|██▎       | 226/973 [04:20<10:14,  1.22it/s]Parallel RSS Gen:  23%|██▎       | 227/973 [04:21<09:55,  1.25it/s]Parallel RSS Gen:  23%|██▎       | 228/973 [04:23<12:00,  1.03it/s]Parallel RSS Gen:  24%|██▎       | 230/973 [04:23<07:45,  1.60it/s]Parallel RSS Gen:  24%|██▎       | 231/973 [04:24<07:59,  1.55it/s]Parallel RSS Gen:  24%|██▍       | 232/973 [04:24<08:06,  1.52it/s]Parallel RSS Gen:  24%|██▍       | 233/973 [04:25<07:31,  1.64it/s]Parallel RSS Gen:  24%|██▍       | 234/973 [04:25<05:58,  2.06it/s]Parallel RSS Gen:  24%|██▍       | 235/973 [04:26<07:11,  1.71it/s]Parallel RSS Gen:  24%|██▍       | 236/973 [04:27<08:59,  1.37it/s]Parallel RSS Gen:  24%|██▍       | 237/973 [04:28<10:49,  1.13it/s]Parallel RSS Gen:  24%|██▍       | 238/973 [04:31<17:36,  1.44s/it]Parallel RSS Gen:  25%|██▍       | 239/973 [04:35<25:28,  2.08s/it]Parallel RSS Gen:  25%|██▍       | 240/973 [04:36<21:24,  1.75s/it]Parallel RSS Gen:  25%|██▍       | 241/973 [04:36<15:31,  1.27s/it]Parallel RSS Gen:  25%|██▍       | 242/973 [04:38<18:03,  1.48s/it]Parallel RSS Gen:  25%|██▍       | 243/973 [04:39<16:19,  1.34s/it]Parallel RSS Gen:  25%|██▌       | 244/973 [04:39<14:21,  1.18s/it]Parallel RSS Gen:  25%|██▌       | 245/973 [04:43<22:08,  1.82s/it]Parallel RSS Gen:  25%|██▌       | 246/973 [04:44<19:45,  1.63s/it]Parallel RSS Gen:  25%|██▌       | 247/973 [04:45<16:46,  1.39s/it]Parallel RSS Gen:  26%|██▌       | 249/973 [04:46<11:38,  1.04it/s]Parallel RSS Gen:  26%|██▌       | 250/973 [04:46<10:47,  1.12it/s]Parallel RSS Gen:  26%|██▌       | 251/973 [04:47<09:04,  1.33it/s]Parallel RSS Gen:  26%|██▌       | 252/973 [04:47<08:31,  1.41it/s]Parallel RSS Gen:  26%|██▌       | 254/973 [04:48<05:18,  2.26it/s]Parallel RSS Gen:  26%|██▌       | 255/973 [04:48<04:22,  2.74it/s]Parallel RSS Gen:  26%|██▋       | 256/973 [04:48<05:18,  2.25it/s]Parallel RSS Gen:  26%|██▋       | 257/973 [04:51<12:12,  1.02s/it]Parallel RSS Gen:  27%|██▋       | 258/973 [04:52<10:33,  1.13it/s]Parallel RSS Gen:  27%|██▋       | 259/973 [04:53<13:24,  1.13s/it]Parallel RSS Gen:  27%|██▋       | 260/973 [04:55<16:42,  1.41s/it]Parallel RSS Gen:  27%|██▋       | 262/973 [04:57<12:49,  1.08s/it]Parallel RSS Gen:  27%|██▋       | 263/973 [04:57<11:23,  1.04it/s]Parallel RSS Gen:  27%|██▋       | 264/973 [04:58<11:00,  1.07it/s]Parallel RSS Gen:  27%|██▋       | 265/973 [05:00<13:39,  1.16s/it]Parallel RSS Gen:  27%|██▋       | 266/973 [05:01<14:45,  1.25s/it]Parallel RSS Gen:  27%|██▋       | 267/973 [05:02<12:19,  1.05s/it]Parallel RSS Gen:  28%|██▊       | 268/973 [05:03<12:19,  1.05s/it]Parallel RSS Gen:  28%|██▊       | 269/973 [05:06<20:15,  1.73s/it]Parallel RSS Gen:  28%|██▊       | 270/973 [05:07<15:42,  1.34s/it]Parallel RSS Gen:  28%|██▊       | 271/973 [05:07<13:01,  1.11s/it]Parallel RSS Gen:  28%|██▊       | 272/973 [05:08<10:10,  1.15it/s]Parallel RSS Gen:  28%|██▊       | 273/973 [05:10<14:32,  1.25s/it]Parallel RSS Gen:  28%|██▊       | 274/973 [05:12<16:21,  1.40s/it]Parallel RSS Gen:  28%|██▊       | 275/973 [05:15<24:47,  2.13s/it]Parallel RSS Gen:  28%|██▊       | 276/973 [05:17<22:07,  1.90s/it]Parallel RSS Gen:  28%|██▊       | 277/973 [05:18<18:56,  1.63s/it]Parallel RSS Gen:  29%|██▊       | 279/973 [05:18<11:15,  1.03it/s]Parallel RSS Gen:  29%|██▉       | 280/973 [05:19<09:20,  1.24it/s]Parallel RSS Gen:  29%|██▉       | 281/973 [05:19<07:43,  1.49it/s]Parallel RSS Gen:  29%|██▉       | 283/973 [05:20<08:34,  1.34it/s]Parallel RSS Gen:  29%|██▉       | 284/973 [05:21<07:03,  1.63it/s]Parallel RSS Gen:  29%|██▉       | 285/973 [05:21<07:26,  1.54it/s]Parallel RSS Gen:  29%|██▉       | 286/973 [05:25<15:07,  1.32s/it]Parallel RSS Gen:  29%|██▉       | 287/973 [05:26<13:52,  1.21s/it]Parallel RSS Gen:  30%|██▉       | 288/973 [05:27<15:17,  1.34s/it]Parallel RSS Gen:  30%|██▉       | 290/973 [05:31<17:31,  1.54s/it]Parallel RSS Gen:  30%|██▉       | 291/973 [05:31<13:41,  1.20s/it]Parallel RSS Gen:  30%|███       | 292/973 [05:31<11:30,  1.01s/it]Parallel RSS Gen:  30%|███       | 293/973 [05:32<09:15,  1.22it/s]Parallel RSS Gen:  30%|███       | 294/973 [05:32<08:40,  1.31it/s]Parallel RSS Gen:  30%|███       | 295/973 [05:35<14:27,  1.28s/it]Parallel RSS Gen:  30%|███       | 296/973 [05:35<11:11,  1.01it/s]Parallel RSS Gen:  31%|███       | 297/973 [05:36<11:22,  1.01s/it]Parallel RSS Gen:  31%|███       | 298/973 [05:36<08:47,  1.28it/s]Parallel RSS Gen:  31%|███       | 299/973 [05:37<07:59,  1.41it/s]Parallel RSS Gen:  31%|███       | 300/973 [05:39<12:56,  1.15s/it]Parallel RSS Gen:  31%|███       | 302/973 [05:40<08:08,  1.37it/s]Parallel RSS Gen:  31%|███       | 303/973 [05:41<10:28,  1.07it/s]Parallel RSS Gen:  31%|███       | 304/973 [05:45<18:00,  1.61s/it]Parallel RSS Gen:  31%|███▏      | 305/973 [05:46<17:27,  1.57s/it]Parallel RSS Gen:  31%|███▏      | 306/973 [05:47<16:29,  1.48s/it]Parallel RSS Gen:  32%|███▏      | 307/973 [05:48<14:49,  1.34s/it]Parallel RSS Gen:  32%|███▏      | 308/973 [05:49<12:24,  1.12s/it]Parallel RSS Gen:  32%|███▏      | 309/973 [05:50<13:10,  1.19s/it]Parallel RSS Gen:  32%|███▏      | 310/973 [05:51<11:56,  1.08s/it]Parallel RSS Gen:  32%|███▏      | 311/973 [05:52<12:00,  1.09s/it]Parallel RSS Gen:  32%|███▏      | 312/973 [05:53<10:21,  1.06it/s]Parallel RSS Gen:  32%|███▏      | 313/973 [05:54<10:19,  1.06it/s]Parallel RSS Gen:  32%|███▏      | 314/973 [05:54<08:19,  1.32it/s]Parallel RSS Gen:  32%|███▏      | 315/973 [05:55<07:14,  1.51it/s]Parallel RSS Gen:  33%|███▎      | 317/973 [05:56<06:16,  1.74it/s]Parallel RSS Gen:  33%|███▎      | 318/973 [05:56<05:49,  1.88it/s]Parallel RSS Gen:  33%|███▎      | 319/973 [05:59<12:53,  1.18s/it]Parallel RSS Gen:  33%|███▎      | 320/973 [06:00<13:48,  1.27s/it]Parallel RSS Gen:  33%|███▎      | 321/973 [06:02<13:33,  1.25s/it]Parallel RSS Gen:  33%|███▎      | 322/973 [06:02<11:32,  1.06s/it]Parallel RSS Gen:  33%|███▎      | 323/973 [06:03<08:57,  1.21it/s]Parallel RSS Gen:  33%|███▎      | 324/973 [06:03<07:46,  1.39it/s]Parallel RSS Gen:  33%|███▎      | 325/973 [06:05<12:24,  1.15s/it]Parallel RSS Gen:  34%|███▎      | 326/973 [06:07<15:08,  1.40s/it]Parallel RSS Gen:  34%|███▎      | 327/973 [06:07<11:36,  1.08s/it]Parallel RSS Gen:  34%|███▎      | 328/973 [06:08<09:23,  1.14it/s]Parallel RSS Gen:  34%|███▍      | 329/973 [06:09<09:22,  1.15it/s]Parallel RSS Gen:  34%|███▍      | 330/973 [06:11<13:22,  1.25s/it]Parallel RSS Gen:  34%|███▍      | 331/973 [06:12<12:53,  1.20s/it]Parallel RSS Gen:  34%|███▍      | 332/973 [06:14<14:14,  1.33s/it]Parallel RSS Gen:  34%|███▍      | 333/973 [06:15<14:35,  1.37s/it]Parallel RSS Gen:  34%|███▍      | 334/973 [06:15<10:53,  1.02s/it]Parallel RSS Gen:  34%|███▍      | 335/973 [06:18<17:35,  1.65s/it]Parallel RSS Gen:  35%|███▍      | 336/973 [06:19<15:23,  1.45s/it]Parallel RSS Gen:  35%|███▍      | 337/973 [06:21<16:01,  1.51s/it]Parallel RSS Gen:  35%|███▍      | 339/973 [06:22<09:50,  1.07it/s]Parallel RSS Gen:  35%|███▍      | 340/973 [06:22<08:49,  1.20it/s]Parallel RSS Gen:  35%|███▌      | 341/973 [06:23<09:29,  1.11it/s]Parallel RSS Gen:  35%|███▌      | 342/973 [06:25<13:15,  1.26s/it]Parallel RSS Gen:  35%|███▌      | 344/973 [06:26<08:21,  1.25it/s]Parallel RSS Gen:  35%|███▌      | 345/973 [06:27<09:37,  1.09it/s]Parallel RSS Gen:  36%|███▌      | 346/973 [06:28<09:41,  1.08it/s]Parallel RSS Gen:  36%|███▌      | 347/973 [06:30<11:24,  1.09s/it]Parallel RSS Gen:  36%|███▌      | 348/973 [06:31<11:04,  1.06s/it]Parallel RSS Gen:  36%|███▌      | 349/973 [06:31<09:03,  1.15it/s]Parallel RSS Gen:  36%|███▌      | 351/973 [06:31<05:17,  1.96it/s]Parallel RSS Gen:  36%|███▌      | 352/973 [06:34<10:33,  1.02s/it]Parallel RSS Gen:  36%|███▋      | 354/973 [06:36<11:18,  1.10s/it]Parallel RSS Gen:  36%|███▋      | 355/973 [06:36<09:32,  1.08it/s]Parallel RSS Gen:  37%|███▋      | 356/973 [06:38<10:18,  1.00s/it]Parallel RSS Gen:  37%|███▋      | 357/973 [06:38<08:51,  1.16it/s]Parallel RSS Gen:  37%|███▋      | 358/973 [06:39<09:14,  1.11it/s]Parallel RSS Gen:  37%|███▋      | 359/973 [06:40<09:25,  1.09it/s]Parallel RSS Gen:  37%|███▋      | 360/973 [06:40<07:40,  1.33it/s]Parallel RSS Gen:  37%|███▋      | 361/973 [06:42<09:37,  1.06it/s]Parallel RSS Gen:  37%|███▋      | 362/973 [06:42<07:28,  1.36it/s]Parallel RSS Gen:  37%|███▋      | 363/973 [06:46<17:17,  1.70s/it]Parallel RSS Gen:  37%|███▋      | 364/973 [06:47<15:42,  1.55s/it]Parallel RSS Gen:  38%|███▊      | 365/973 [06:49<17:22,  1.71s/it]Parallel RSS Gen:  38%|███▊      | 366/973 [06:52<19:18,  1.91s/it]Parallel RSS Gen:  38%|███▊      | 367/973 [06:52<14:35,  1.44s/it]Parallel RSS Gen:  38%|███▊      | 368/973 [06:53<11:47,  1.17s/it]Parallel RSS Gen:  38%|███▊      | 369/973 [06:53<08:39,  1.16it/s]Parallel RSS Gen:  38%|███▊      | 370/973 [06:54<09:06,  1.10it/s]Parallel RSS Gen:  38%|███▊      | 371/973 [06:56<11:46,  1.17s/it]Parallel RSS Gen:  38%|███▊      | 372/973 [06:56<09:53,  1.01it/s]Parallel RSS Gen:  38%|███▊      | 373/973 [06:57<10:49,  1.08s/it]Parallel RSS Gen:  38%|███▊      | 374/973 [06:58<08:28,  1.18it/s]Parallel RSS Gen:  39%|███▊      | 375/973 [06:58<07:30,  1.33it/s]Parallel RSS Gen:  39%|███▊      | 376/973 [07:00<09:16,  1.07it/s]Parallel RSS Gen:  39%|███▊      | 377/973 [07:00<08:30,  1.17it/s]Parallel RSS Gen:  39%|███▉      | 379/973 [07:01<07:08,  1.39it/s]Parallel RSS Gen:  39%|███▉      | 380/973 [07:02<06:04,  1.63it/s]Parallel RSS Gen:  39%|███▉      | 381/973 [07:07<16:49,  1.70s/it]Parallel RSS Gen:  39%|███▉      | 382/973 [07:07<14:35,  1.48s/it]Parallel RSS Gen:  39%|███▉      | 383/973 [07:08<10:48,  1.10s/it]Parallel RSS Gen:  39%|███▉      | 384/973 [07:08<09:42,  1.01it/s]Parallel RSS Gen:  40%|███▉      | 385/973 [07:11<14:35,  1.49s/it]Parallel RSS Gen:  40%|███▉      | 386/973 [07:12<12:29,  1.28s/it]Parallel RSS Gen:  40%|███▉      | 388/973 [07:12<07:20,  1.33it/s]Parallel RSS Gen:  40%|███▉      | 389/973 [07:12<06:27,  1.51it/s]Parallel RSS Gen:  40%|████      | 390/973 [07:13<07:02,  1.38it/s]Parallel RSS Gen:  40%|████      | 391/973 [07:14<05:57,  1.63it/s]Parallel RSS Gen:  40%|████      | 392/973 [07:14<05:32,  1.75it/s]Parallel RSS Gen:  40%|████      | 393/973 [07:15<05:17,  1.83it/s]Parallel RSS Gen:  40%|████      | 394/973 [07:16<09:13,  1.05it/s]Parallel RSS Gen:  41%|████      | 395/973 [07:20<16:50,  1.75s/it]Parallel RSS Gen:  41%|████      | 396/973 [07:21<15:35,  1.62s/it]Parallel RSS Gen:  41%|████      | 397/973 [07:22<11:33,  1.20s/it]Parallel RSS Gen:  41%|████      | 398/973 [07:25<16:07,  1.68s/it]Parallel RSS Gen:  41%|████      | 399/973 [07:25<13:08,  1.37s/it]Parallel RSS Gen:  41%|████      | 400/973 [07:26<11:38,  1.22s/it]Parallel RSS Gen:  41%|████      | 401/973 [07:32<24:19,  2.55s/it]Parallel RSS Gen:  41%|████▏     | 402/973 [07:33<19:54,  2.09s/it]Parallel RSS Gen:  41%|████▏     | 403/973 [07:33<14:59,  1.58s/it]Parallel RSS Gen:  42%|████▏     | 404/973 [07:33<11:16,  1.19s/it]Parallel RSS Gen:  42%|████▏     | 405/973 [07:33<08:17,  1.14it/s]Parallel RSS Gen:  42%|████▏     | 406/973 [07:34<06:23,  1.48it/s]Parallel RSS Gen:  42%|████▏     | 408/973 [07:34<04:15,  2.21it/s]Parallel RSS Gen:  42%|████▏     | 409/973 [07:35<05:10,  1.82it/s]Parallel RSS Gen:  42%|████▏     | 410/973 [07:37<08:15,  1.14it/s]Parallel RSS Gen:  42%|████▏     | 411/973 [07:38<08:00,  1.17it/s]Parallel RSS Gen:  42%|████▏     | 412/973 [07:38<06:37,  1.41it/s]Parallel RSS Gen:  42%|████▏     | 413/973 [07:40<10:42,  1.15s/it]Parallel RSS Gen:  43%|████▎     | 414/973 [07:42<11:55,  1.28s/it]Parallel RSS Gen:  43%|████▎     | 415/973 [07:42<08:45,  1.06it/s]Parallel RSS Gen:  43%|████▎     | 416/973 [07:44<11:50,  1.28s/it]Parallel RSS Gen:  43%|████▎     | 417/973 [07:44<09:19,  1.01s/it]Parallel RSS Gen:  43%|████▎     | 418/973 [07:45<08:29,  1.09it/s]Parallel RSS Gen:  43%|████▎     | 419/973 [07:46<07:28,  1.23it/s]Parallel RSS Gen:  43%|████▎     | 420/973 [07:46<07:34,  1.22it/s]Parallel RSS Gen:  43%|████▎     | 421/973 [07:47<05:41,  1.62it/s]Parallel RSS Gen:  43%|████▎     | 422/973 [07:48<08:18,  1.10it/s]Parallel RSS Gen:  43%|████▎     | 423/973 [07:48<06:07,  1.50it/s]Parallel RSS Gen:  44%|████▎     | 424/973 [07:50<10:04,  1.10s/it]Parallel RSS Gen:  44%|████▎     | 425/973 [07:51<07:52,  1.16it/s]Parallel RSS Gen:  44%|████▍     | 426/973 [07:52<09:38,  1.06s/it]Parallel RSS Gen:  44%|████▍     | 427/973 [07:53<09:37,  1.06s/it]Parallel RSS Gen:  44%|████▍     | 428/973 [07:54<07:33,  1.20it/s]Parallel RSS Gen:  44%|████▍     | 429/973 [07:58<17:58,  1.98s/it]Parallel RSS Gen:  44%|████▍     | 430/973 [07:59<15:35,  1.72s/it]Parallel RSS Gen:  44%|████▍     | 431/973 [08:00<13:45,  1.52s/it]Parallel RSS Gen:  44%|████▍     | 432/973 [08:03<15:30,  1.72s/it]Parallel RSS Gen:  45%|████▍     | 433/973 [08:03<11:18,  1.26s/it]Parallel RSS Gen:  45%|████▍     | 434/973 [08:04<10:00,  1.11s/it]Parallel RSS Gen:  45%|████▍     | 435/973 [08:04<09:37,  1.07s/it]Parallel RSS Gen:  45%|████▍     | 436/973 [08:05<08:41,  1.03it/s]Parallel RSS Gen:  45%|████▍     | 437/973 [08:06<07:12,  1.24it/s]Parallel RSS Gen:  45%|████▌     | 438/973 [08:06<06:10,  1.45it/s]Parallel RSS Gen:  45%|████▌     | 439/973 [08:07<06:57,  1.28it/s]Parallel RSS Gen:  45%|████▌     | 440/973 [08:08<06:22,  1.40it/s]Parallel RSS Gen:  45%|████▌     | 441/973 [08:08<05:00,  1.77it/s]Parallel RSS Gen:  45%|████▌     | 442/973 [08:12<13:57,  1.58s/it]Parallel RSS Gen:  46%|████▌     | 443/973 [08:13<12:21,  1.40s/it]Parallel RSS Gen:  46%|████▌     | 444/973 [08:13<10:22,  1.18s/it]Parallel RSS Gen:  46%|████▌     | 445/973 [08:15<12:19,  1.40s/it]Parallel RSS Gen:  46%|████▌     | 446/973 [08:16<11:16,  1.28s/it]Parallel RSS Gen:  46%|████▌     | 447/973 [08:17<09:25,  1.08s/it]Parallel RSS Gen:  46%|████▌     | 448/973 [08:19<10:51,  1.24s/it]Parallel RSS Gen:  46%|████▌     | 449/973 [08:19<07:58,  1.10it/s]Parallel RSS Gen:  46%|████▌     | 450/973 [08:19<06:38,  1.31it/s]Parallel RSS Gen:  46%|████▋     | 451/973 [08:21<08:15,  1.05it/s]Parallel RSS Gen:  46%|████▋     | 452/973 [08:21<07:58,  1.09it/s]Parallel RSS Gen:  47%|████▋     | 453/973 [08:22<08:19,  1.04it/s]Parallel RSS Gen:  47%|████▋     | 454/973 [08:23<06:57,  1.24it/s]Parallel RSS Gen:  47%|████▋     | 455/973 [08:25<10:53,  1.26s/it]Parallel RSS Gen:  47%|████▋     | 456/973 [08:26<09:44,  1.13s/it]Parallel RSS Gen:  47%|████▋     | 457/973 [08:26<07:49,  1.10it/s]Parallel RSS Gen:  47%|████▋     | 458/973 [08:27<06:59,  1.23it/s]Parallel RSS Gen:  47%|████▋     | 459/973 [08:34<22:12,  2.59s/it]Parallel RSS Gen:  47%|████▋     | 460/973 [08:34<17:13,  2.02s/it]Parallel RSS Gen:  47%|████▋     | 461/973 [08:35<12:53,  1.51s/it]Parallel RSS Gen:  47%|████▋     | 462/973 [08:36<12:15,  1.44s/it]Parallel RSS Gen:  48%|████▊     | 463/973 [08:37<10:34,  1.24s/it]Parallel RSS Gen:  48%|████▊     | 465/973 [08:38<07:33,  1.12it/s]Parallel RSS Gen:  48%|████▊     | 466/973 [08:38<06:12,  1.36it/s]Parallel RSS Gen:  48%|████▊     | 467/973 [08:39<06:07,  1.38it/s]Parallel RSS Gen:  48%|████▊     | 468/973 [08:40<06:45,  1.25it/s]Parallel RSS Gen:  48%|████▊     | 470/973 [08:40<04:08,  2.03it/s]Parallel RSS Gen:  48%|████▊     | 471/973 [08:41<05:19,  1.57it/s]Parallel RSS Gen:  49%|████▊     | 473/973 [08:44<08:04,  1.03it/s]Parallel RSS Gen:  49%|████▊     | 474/973 [08:46<09:25,  1.13s/it]Parallel RSS Gen:  49%|████▉     | 475/973 [08:49<13:10,  1.59s/it]Parallel RSS Gen:  49%|████▉     | 476/973 [08:49<10:14,  1.24s/it]Parallel RSS Gen:  49%|████▉     | 477/973 [08:49<08:52,  1.07s/it]Parallel RSS Gen:  49%|████▉     | 478/973 [08:50<07:38,  1.08it/s]Parallel RSS Gen:  49%|████▉     | 479/973 [08:51<07:00,  1.17it/s]Parallel RSS Gen:  49%|████▉     | 480/973 [08:51<05:35,  1.47it/s]Parallel RSS Gen:  49%|████▉     | 481/973 [08:52<06:36,  1.24it/s]Parallel RSS Gen:  50%|████▉     | 482/973 [08:53<06:15,  1.31it/s]Parallel RSS Gen:  50%|████▉     | 483/973 [08:53<05:03,  1.61it/s]Parallel RSS Gen:  50%|████▉     | 484/973 [08:55<07:37,  1.07it/s]Parallel RSS Gen:  50%|████▉     | 485/973 [08:57<10:26,  1.28s/it]Parallel RSS Gen:  50%|████▉     | 486/973 [08:58<09:34,  1.18s/it]Parallel RSS Gen:  50%|█████     | 487/973 [08:59<09:38,  1.19s/it]Parallel RSS Gen:  50%|█████     | 488/973 [09:00<09:53,  1.22s/it]Parallel RSS Gen:  50%|█████     | 489/973 [09:01<09:46,  1.21s/it]Parallel RSS Gen:  50%|█████     | 490/973 [09:03<10:10,  1.26s/it]Parallel RSS Gen:  50%|█████     | 491/973 [09:03<08:23,  1.04s/it]Parallel RSS Gen:  51%|█████     | 492/973 [09:04<07:11,  1.11it/s]Parallel RSS Gen:  51%|█████     | 493/973 [09:06<09:40,  1.21s/it]Parallel RSS Gen:  51%|█████     | 494/973 [09:06<07:58,  1.00it/s]Parallel RSS Gen:  51%|█████     | 495/973 [09:07<06:46,  1.18it/s]Parallel RSS Gen:  51%|█████     | 496/973 [09:09<09:18,  1.17s/it]Parallel RSS Gen:  51%|█████     | 497/973 [09:09<06:54,  1.15it/s]Parallel RSS Gen:  51%|█████     | 498/973 [09:09<05:32,  1.43it/s]Parallel RSS Gen:  51%|█████▏    | 499/973 [09:10<05:16,  1.50it/s]Parallel RSS Gen:  51%|█████▏    | 501/973 [09:10<03:31,  2.23it/s]Parallel RSS Gen:  52%|█████▏    | 502/973 [09:14<10:45,  1.37s/it]Parallel RSS Gen:  52%|█████▏    | 503/973 [09:15<09:32,  1.22s/it]Parallel RSS Gen:  52%|█████▏    | 504/973 [09:17<10:59,  1.41s/it]Parallel RSS Gen:  52%|█████▏    | 505/973 [09:19<11:15,  1.44s/it]Parallel RSS Gen:  52%|█████▏    | 506/973 [09:22<14:49,  1.91s/it]Parallel RSS Gen:  52%|█████▏    | 507/973 [09:22<11:24,  1.47s/it]Parallel RSS Gen:  52%|█████▏    | 508/973 [09:23<09:05,  1.17s/it]Parallel RSS Gen:  52%|█████▏    | 510/973 [09:25<09:36,  1.25s/it]Parallel RSS Gen:  53%|█████▎    | 512/973 [09:26<06:29,  1.18it/s]Parallel RSS Gen:  53%|█████▎    | 513/973 [09:26<05:35,  1.37it/s]Parallel RSS Gen:  53%|█████▎    | 514/973 [09:27<05:52,  1.30it/s]Parallel RSS Gen:  53%|█████▎    | 515/973 [09:29<07:52,  1.03s/it]Parallel RSS Gen:  53%|█████▎    | 516/973 [09:29<06:46,  1.12it/s]Parallel RSS Gen:  53%|█████▎    | 517/973 [09:30<07:18,  1.04it/s]Parallel RSS Gen:  53%|█████▎    | 518/973 [09:32<08:53,  1.17s/it]Parallel RSS Gen:  53%|█████▎    | 519/973 [09:34<10:23,  1.37s/it]Parallel RSS Gen:  53%|█████▎    | 520/973 [09:34<07:47,  1.03s/it]Parallel RSS Gen:  54%|█████▎    | 521/973 [09:35<07:14,  1.04it/s]Parallel RSS Gen:  54%|█████▍    | 523/973 [09:37<06:53,  1.09it/s]Parallel RSS Gen:  54%|█████▍    | 524/973 [09:37<06:30,  1.15it/s]Parallel RSS Gen:  54%|█████▍    | 525/973 [09:38<05:47,  1.29it/s]Parallel RSS Gen:  54%|█████▍    | 526/973 [09:38<04:30,  1.65it/s]Parallel RSS Gen:  54%|█████▍    | 527/973 [09:41<08:57,  1.21s/it]Parallel RSS Gen:  54%|█████▍    | 528/973 [09:42<08:03,  1.09s/it]Parallel RSS Gen:  54%|█████▍    | 529/973 [09:42<07:22,  1.00it/s]Parallel RSS Gen:  54%|█████▍    | 530/973 [09:43<05:54,  1.25it/s]Parallel RSS Gen:  55%|█████▍    | 531/973 [09:45<08:27,  1.15s/it]Parallel RSS Gen:  55%|█████▍    | 532/973 [09:45<06:47,  1.08it/s]Parallel RSS Gen:  55%|█████▍    | 533/973 [09:46<06:51,  1.07it/s]Parallel RSS Gen:  55%|█████▍    | 534/973 [09:47<07:17,  1.00it/s]Parallel RSS Gen:  55%|█████▍    | 535/973 [09:51<12:30,  1.71s/it]Parallel RSS Gen:  55%|█████▌    | 536/973 [09:52<12:54,  1.77s/it]Parallel RSS Gen:  55%|█████▌    | 538/973 [09:54<10:17,  1.42s/it]Parallel RSS Gen:  55%|█████▌    | 539/973 [09:55<08:06,  1.12s/it]Parallel RSS Gen:  56%|█████▌    | 541/973 [09:55<04:57,  1.45it/s]Parallel RSS Gen:  56%|█████▌    | 542/973 [09:57<06:51,  1.05it/s]Parallel RSS Gen:  56%|█████▌    | 544/973 [09:59<07:08,  1.00it/s]Parallel RSS Gen:  56%|█████▌    | 545/973 [09:59<05:49,  1.23it/s]Parallel RSS Gen:  56%|█████▌    | 546/973 [10:00<05:49,  1.22it/s]Parallel RSS Gen:  56%|█████▌    | 547/973 [10:02<07:40,  1.08s/it]Parallel RSS Gen:  56%|█████▋    | 548/973 [10:02<07:10,  1.01s/it]Parallel RSS Gen:  56%|█████▋    | 549/973 [10:04<08:10,  1.16s/it]Parallel RSS Gen:  57%|█████▋    | 550/973 [10:04<06:25,  1.10it/s]Parallel RSS Gen:  57%|█████▋    | 551/973 [10:05<05:01,  1.40it/s]Parallel RSS Gen:  57%|█████▋    | 552/973 [10:05<03:59,  1.76it/s]Parallel RSS Gen:  57%|█████▋    | 553/973 [10:05<04:09,  1.69it/s]Parallel RSS Gen:  57%|█████▋    | 554/973 [10:06<03:29,  2.00it/s]Parallel RSS Gen:  57%|█████▋    | 555/973 [10:09<08:41,  1.25s/it]Parallel RSS Gen:  57%|█████▋    | 556/973 [10:09<07:36,  1.10s/it]Parallel RSS Gen:  57%|█████▋    | 557/973 [10:10<05:50,  1.19it/s]Parallel RSS Gen:  57%|█████▋    | 558/973 [10:11<07:13,  1.04s/it]Parallel RSS Gen:  57%|█████▋    | 559/973 [10:12<07:13,  1.05s/it]Parallel RSS Gen:  58%|█████▊    | 560/973 [10:13<05:48,  1.18it/s]Parallel RSS Gen:  58%|█████▊    | 561/973 [10:14<06:38,  1.03it/s]Parallel RSS Gen:  58%|█████▊    | 562/973 [10:16<08:17,  1.21s/it]Parallel RSS Gen:  58%|█████▊    | 563/973 [10:16<07:00,  1.03s/it]Parallel RSS Gen:  58%|█████▊    | 564/973 [10:18<08:29,  1.25s/it]Parallel RSS Gen:  58%|█████▊    | 565/973 [10:21<13:04,  1.92s/it]Parallel RSS Gen:  58%|█████▊    | 566/973 [10:22<10:17,  1.52s/it]Parallel RSS Gen:  58%|█████▊    | 567/973 [10:24<10:19,  1.53s/it]Parallel RSS Gen:  58%|█████▊    | 568/973 [10:25<10:25,  1.54s/it]Parallel RSS Gen:  58%|█████▊    | 569/973 [10:27<10:48,  1.60s/it]Parallel RSS Gen:  59%|█████▊    | 570/973 [10:28<08:49,  1.31s/it]Parallel RSS Gen:  59%|█████▊    | 571/973 [10:28<07:08,  1.07s/it]Parallel RSS Gen:  59%|█████▉    | 572/973 [10:29<05:53,  1.13it/s]Parallel RSS Gen:  59%|█████▉    | 573/973 [10:31<09:06,  1.37s/it]Parallel RSS Gen:  59%|█████▉    | 574/973 [10:32<08:04,  1.21s/it]Parallel RSS Gen:  59%|█████▉    | 576/973 [10:32<04:48,  1.38it/s]Parallel RSS Gen:  59%|█████▉    | 577/973 [10:32<04:03,  1.62it/s]Parallel RSS Gen:  59%|█████▉    | 578/973 [10:33<03:34,  1.84it/s]Parallel RSS Gen:  60%|█████▉    | 579/973 [10:35<05:49,  1.13it/s]Parallel RSS Gen:  60%|█████▉    | 581/973 [10:35<04:28,  1.46it/s]Parallel RSS Gen:  60%|█████▉    | 582/973 [10:37<05:13,  1.25it/s]Parallel RSS Gen:  60%|█████▉    | 583/973 [10:37<04:27,  1.46it/s]Parallel RSS Gen:  60%|██████    | 584/973 [10:39<05:56,  1.09it/s]Parallel RSS Gen:  60%|██████    | 585/973 [10:40<07:45,  1.20s/it]Parallel RSS Gen:  60%|██████    | 586/973 [10:41<06:27,  1.00s/it]Parallel RSS Gen:  60%|██████    | 587/973 [10:43<07:43,  1.20s/it]Parallel RSS Gen:  60%|██████    | 588/973 [10:43<06:24,  1.00it/s]Parallel RSS Gen:  61%|██████    | 589/973 [10:43<04:59,  1.28it/s]Parallel RSS Gen:  61%|██████    | 590/973 [10:45<05:53,  1.08it/s]Parallel RSS Gen:  61%|██████    | 591/973 [10:46<05:52,  1.08it/s]Parallel RSS Gen:  61%|██████    | 592/973 [10:48<07:48,  1.23s/it]Parallel RSS Gen:  61%|██████    | 593/973 [10:49<09:06,  1.44s/it]Parallel RSS Gen:  61%|██████    | 594/973 [10:50<08:04,  1.28s/it]Parallel RSS Gen:  61%|██████    | 595/973 [10:52<09:17,  1.48s/it]Parallel RSS Gen:  61%|██████▏   | 596/973 [10:54<10:01,  1.60s/it]Parallel RSS Gen:  61%|██████▏   | 597/973 [10:56<09:46,  1.56s/it]Parallel RSS Gen:  61%|██████▏   | 598/973 [10:58<10:28,  1.67s/it]Parallel RSS Gen:  62%|██████▏   | 599/973 [10:59<09:58,  1.60s/it]Parallel RSS Gen:  62%|██████▏   | 600/973 [11:00<08:44,  1.40s/it]Parallel RSS Gen:  62%|██████▏   | 601/973 [11:00<06:41,  1.08s/it]Parallel RSS Gen:  62%|██████▏   | 602/973 [11:01<05:51,  1.06it/s]Parallel RSS Gen:  62%|██████▏   | 603/973 [11:01<04:48,  1.28it/s]Parallel RSS Gen:  62%|██████▏   | 604/973 [11:04<07:23,  1.20s/it]Parallel RSS Gen:  62%|██████▏   | 605/973 [11:04<06:30,  1.06s/it]Parallel RSS Gen:  62%|██████▏   | 606/973 [11:05<05:12,  1.18it/s]Parallel RSS Gen:  62%|██████▏   | 607/973 [11:05<04:50,  1.26it/s]Parallel RSS Gen:  62%|██████▏   | 608/973 [11:07<05:42,  1.07it/s]Parallel RSS Gen:  63%|██████▎   | 609/973 [11:08<05:48,  1.04it/s]Parallel RSS Gen:  63%|██████▎   | 610/973 [11:10<07:43,  1.28s/it]Parallel RSS Gen:  63%|██████▎   | 611/973 [11:10<06:11,  1.03s/it]Parallel RSS Gen:  63%|██████▎   | 612/973 [11:13<08:54,  1.48s/it]Parallel RSS Gen:  63%|██████▎   | 613/973 [11:13<07:19,  1.22s/it]Parallel RSS Gen:  63%|██████▎   | 614/973 [11:13<05:23,  1.11it/s]Parallel RSS Gen:  63%|██████▎   | 616/973 [11:14<03:31,  1.68it/s]Parallel RSS Gen:  63%|██████▎   | 617/973 [11:15<04:09,  1.43it/s]Parallel RSS Gen:  64%|██████▎   | 618/973 [11:15<03:58,  1.49it/s]Parallel RSS Gen:  64%|██████▎   | 619/973 [11:16<03:33,  1.66it/s]Parallel RSS Gen:  64%|██████▎   | 620/973 [11:16<03:06,  1.89it/s]Parallel RSS Gen:  64%|██████▍   | 621/973 [11:18<05:10,  1.13it/s]Parallel RSS Gen:  64%|██████▍   | 623/973 [11:24<11:15,  1.93s/it]Parallel RSS Gen:  64%|██████▍   | 624/973 [11:25<08:52,  1.53s/it]Parallel RSS Gen:  64%|██████▍   | 625/973 [11:25<07:27,  1.29s/it]Parallel RSS Gen:  64%|██████▍   | 626/973 [11:27<08:24,  1.45s/it]Parallel RSS Gen:  64%|██████▍   | 627/973 [11:28<06:50,  1.19s/it]Parallel RSS Gen:  65%|██████▍   | 628/973 [11:29<07:01,  1.22s/it]Parallel RSS Gen:  65%|██████▍   | 629/973 [11:31<08:11,  1.43s/it]Parallel RSS Gen:  65%|██████▍   | 631/973 [11:33<06:32,  1.15s/it]Parallel RSS Gen:  65%|██████▍   | 632/973 [11:34<06:21,  1.12s/it]Parallel RSS Gen:  65%|██████▌   | 633/973 [11:34<05:55,  1.05s/it]Parallel RSS Gen:  65%|██████▌   | 634/973 [11:35<04:53,  1.16it/s]Parallel RSS Gen:  65%|██████▌   | 635/973 [11:37<07:35,  1.35s/it]Parallel RSS Gen:  65%|██████▌   | 636/973 [11:38<06:25,  1.14s/it]Parallel RSS Gen:  65%|██████▌   | 637/973 [11:39<06:47,  1.21s/it]Parallel RSS Gen:  66%|██████▌   | 638/973 [11:41<06:50,  1.23s/it]Parallel RSS Gen:  66%|██████▌   | 639/973 [11:41<05:19,  1.05it/s]Parallel RSS Gen:  66%|██████▌   | 640/973 [11:42<05:15,  1.05it/s]Parallel RSS Gen:  66%|██████▌   | 641/973 [11:43<05:30,  1.01it/s]Parallel RSS Gen:  66%|██████▌   | 642/973 [11:44<05:39,  1.03s/it]Parallel RSS Gen:  66%|██████▌   | 643/973 [11:45<06:11,  1.13s/it]Parallel RSS Gen:  66%|██████▌   | 644/973 [11:46<05:55,  1.08s/it]Parallel RSS Gen:  66%|██████▋   | 645/973 [11:47<04:46,  1.15it/s]Parallel RSS Gen:  66%|██████▋   | 646/973 [11:47<03:56,  1.38it/s]Parallel RSS Gen:  66%|██████▋   | 647/973 [11:48<04:35,  1.18it/s]Parallel RSS Gen:  67%|██████▋   | 649/973 [11:48<02:40,  2.02it/s]Parallel RSS Gen:  67%|██████▋   | 650/973 [11:50<04:19,  1.24it/s]Parallel RSS Gen:  67%|██████▋   | 651/973 [11:52<05:02,  1.07it/s]Parallel RSS Gen:  67%|██████▋   | 652/973 [11:55<08:48,  1.65s/it]Parallel RSS Gen:  67%|██████▋   | 653/973 [11:56<07:05,  1.33s/it]Parallel RSS Gen:  67%|██████▋   | 654/973 [11:57<06:35,  1.24s/it]Parallel RSS Gen:  67%|██████▋   | 655/973 [11:58<06:05,  1.15s/it]Parallel RSS Gen:  68%|██████▊   | 657/973 [11:58<03:35,  1.46it/s]Parallel RSS Gen:  68%|██████▊   | 658/973 [11:58<02:56,  1.78it/s]Parallel RSS Gen:  68%|██████▊   | 659/973 [11:58<02:24,  2.18it/s]Parallel RSS Gen:  68%|██████▊   | 660/973 [11:59<03:36,  1.44it/s]Parallel RSS Gen:  68%|██████▊   | 661/973 [12:03<07:37,  1.47s/it]Parallel RSS Gen:  68%|██████▊   | 662/973 [12:04<06:55,  1.33s/it]Parallel RSS Gen:  68%|██████▊   | 663/973 [12:07<09:56,  1.92s/it]Parallel RSS Gen:  68%|██████▊   | 664/973 [12:08<07:26,  1.45s/it]Parallel RSS Gen:  68%|██████▊   | 665/973 [12:08<06:11,  1.21s/it]Parallel RSS Gen:  68%|██████▊   | 666/973 [12:13<11:20,  2.22s/it]Parallel RSS Gen:  69%|██████▊   | 667/973 [12:14<10:07,  1.99s/it]Parallel RSS Gen:  69%|██████▊   | 668/973 [12:15<07:39,  1.51s/it]Parallel RSS Gen:  69%|██████▉   | 669/973 [12:15<05:46,  1.14s/it]Parallel RSS Gen:  69%|██████▉   | 670/973 [12:15<04:29,  1.12it/s]Parallel RSS Gen:  69%|██████▉   | 671/973 [12:16<03:55,  1.28it/s]Parallel RSS Gen:  69%|██████▉   | 673/973 [12:16<02:54,  1.72it/s]Parallel RSS Gen:  69%|██████▉   | 675/973 [12:18<03:22,  1.47it/s]Parallel RSS Gen:  69%|██████▉   | 676/973 [12:18<02:51,  1.73it/s]Parallel RSS Gen:  70%|██████▉   | 677/973 [12:19<03:20,  1.48it/s]Parallel RSS Gen:  70%|██████▉   | 678/973 [12:20<03:52,  1.27it/s]Parallel RSS Gen:  70%|██████▉   | 679/973 [12:22<04:58,  1.02s/it]Parallel RSS Gen:  70%|██████▉   | 680/973 [12:23<04:25,  1.10it/s]Parallel RSS Gen:  70%|██████▉   | 681/973 [12:24<05:00,  1.03s/it]Parallel RSS Gen:  70%|███████   | 682/973 [12:25<04:35,  1.05it/s]Parallel RSS Gen:  70%|███████   | 684/973 [12:25<03:02,  1.58it/s]Parallel RSS Gen:  70%|███████   | 685/973 [12:25<02:25,  1.98it/s]Parallel RSS Gen:  71%|███████   | 686/973 [12:26<02:30,  1.91it/s]Parallel RSS Gen:  71%|███████   | 687/973 [12:28<04:35,  1.04it/s]Parallel RSS Gen:  71%|███████   | 688/973 [12:30<05:54,  1.24s/it]Parallel RSS Gen:  71%|███████   | 689/973 [12:31<05:07,  1.08s/it]Parallel RSS Gen:  71%|███████   | 690/973 [12:35<08:53,  1.88s/it]Parallel RSS Gen:  71%|███████   | 691/973 [12:38<10:34,  2.25s/it]Parallel RSS Gen:  71%|███████   | 692/973 [12:38<08:18,  1.77s/it]Parallel RSS Gen:  71%|███████▏  | 694/973 [12:39<05:07,  1.10s/it]Parallel RSS Gen:  71%|███████▏  | 695/973 [12:40<05:13,  1.13s/it]Parallel RSS Gen:  72%|███████▏  | 696/973 [12:41<05:04,  1.10s/it]Parallel RSS Gen:  72%|███████▏  | 697/973 [12:42<04:24,  1.04it/s]Parallel RSS Gen:  72%|███████▏  | 698/973 [12:43<04:14,  1.08it/s]Parallel RSS Gen:  72%|███████▏  | 699/973 [12:43<04:05,  1.12it/s]Parallel RSS Gen:  72%|███████▏  | 700/973 [12:45<04:46,  1.05s/it]Parallel RSS Gen:  72%|███████▏  | 701/973 [12:46<04:15,  1.06it/s]Parallel RSS Gen:  72%|███████▏  | 703/973 [12:48<04:21,  1.03it/s]Parallel RSS Gen:  72%|███████▏  | 704/973 [12:48<03:56,  1.14it/s]Parallel RSS Gen:  72%|███████▏  | 705/973 [12:49<04:04,  1.10it/s]Parallel RSS Gen:  73%|███████▎  | 707/973 [12:50<02:41,  1.64it/s]Parallel RSS Gen:  73%|███████▎  | 708/973 [12:53<05:55,  1.34s/it]Parallel RSS Gen:  73%|███████▎  | 709/973 [12:54<05:23,  1.22s/it]Parallel RSS Gen:  73%|███████▎  | 710/973 [12:55<04:35,  1.05s/it]Parallel RSS Gen:  73%|███████▎  | 711/973 [12:55<03:54,  1.12it/s]Parallel RSS Gen:  73%|███████▎  | 712/973 [12:55<02:59,  1.46it/s]Parallel RSS Gen:  73%|███████▎  | 713/973 [12:56<02:43,  1.59it/s]Parallel RSS Gen:  73%|███████▎  | 714/973 [13:00<07:40,  1.78s/it]Parallel RSS Gen:  74%|███████▎  | 716/973 [13:01<04:58,  1.16s/it]Parallel RSS Gen:  74%|███████▎  | 717/973 [13:02<04:28,  1.05s/it]Parallel RSS Gen:  74%|███████▍  | 718/973 [13:03<04:48,  1.13s/it]Parallel RSS Gen:  74%|███████▍  | 719/973 [13:04<03:48,  1.11it/s]Parallel RSS Gen:  74%|███████▍  | 720/973 [13:05<04:28,  1.06s/it]Parallel RSS Gen:  74%|███████▍  | 721/973 [13:06<04:03,  1.04it/s]Parallel RSS Gen:  74%|███████▍  | 722/973 [13:06<03:30,  1.19it/s]Parallel RSS Gen:  74%|███████▍  | 724/973 [13:09<04:01,  1.03it/s]Parallel RSS Gen:  75%|███████▍  | 725/973 [13:10<04:41,  1.13s/it]Parallel RSS Gen:  75%|███████▍  | 726/973 [13:12<04:56,  1.20s/it]Parallel RSS Gen:  75%|███████▍  | 727/973 [13:13<05:32,  1.35s/it]Parallel RSS Gen:  75%|███████▍  | 728/973 [13:14<05:07,  1.26s/it]Parallel RSS Gen:  75%|███████▍  | 729/973 [13:15<04:12,  1.04s/it]Parallel RSS Gen:  75%|███████▌  | 730/973 [13:15<03:19,  1.22it/s]Parallel RSS Gen:  75%|███████▌  | 731/973 [13:20<08:14,  2.04s/it]Parallel RSS Gen:  75%|███████▌  | 732/973 [13:22<08:12,  2.04s/it]Parallel RSS Gen:  75%|███████▌  | 733/973 [13:23<06:31,  1.63s/it]Parallel RSS Gen:  75%|███████▌  | 734/973 [13:23<04:55,  1.24s/it]Parallel RSS Gen:  76%|███████▌  | 735/973 [13:24<04:00,  1.01s/it]Parallel RSS Gen:  76%|███████▌  | 736/973 [13:26<05:50,  1.48s/it]Parallel RSS Gen:  76%|███████▌  | 737/973 [13:27<04:42,  1.20s/it]Parallel RSS Gen:  76%|███████▌  | 738/973 [13:28<04:10,  1.07s/it]Parallel RSS Gen:  76%|███████▌  | 741/973 [13:28<02:03,  1.89it/s]Parallel RSS Gen:  76%|███████▋  | 742/973 [13:30<02:58,  1.29it/s]Parallel RSS Gen:  76%|███████▋  | 743/973 [13:30<02:29,  1.54it/s]Parallel RSS Gen:  77%|███████▋  | 745/973 [13:30<01:53,  2.00it/s]Parallel RSS Gen:  77%|███████▋  | 746/973 [13:31<01:54,  1.98it/s]Parallel RSS Gen:  77%|███████▋  | 747/973 [13:32<02:17,  1.64it/s]Parallel RSS Gen:  77%|███████▋  | 748/973 [13:33<02:23,  1.57it/s]Parallel RSS Gen:  77%|███████▋  | 749/973 [13:37<05:53,  1.58s/it]Parallel RSS Gen:  77%|███████▋  | 750/973 [13:39<06:19,  1.70s/it]Parallel RSS Gen:  77%|███████▋  | 751/973 [13:41<06:36,  1.78s/it]Parallel RSS Gen:  77%|███████▋  | 753/973 [13:41<03:57,  1.08s/it]Parallel RSS Gen:  77%|███████▋  | 754/973 [13:42<03:24,  1.07it/s]Parallel RSS Gen:  78%|███████▊  | 756/973 [13:42<02:23,  1.52it/s]Parallel RSS Gen:  78%|███████▊  | 757/973 [13:44<03:07,  1.15it/s]Parallel RSS Gen:  78%|███████▊  | 758/973 [13:45<03:51,  1.08s/it]Parallel RSS Gen:  78%|███████▊  | 759/973 [13:49<05:53,  1.65s/it]Parallel RSS Gen:  78%|███████▊  | 760/973 [13:49<04:49,  1.36s/it]Parallel RSS Gen:  78%|███████▊  | 761/973 [13:50<04:07,  1.17s/it]Parallel RSS Gen:  78%|███████▊  | 762/973 [13:51<03:41,  1.05s/it]Parallel RSS Gen:  78%|███████▊  | 763/973 [13:51<02:53,  1.21it/s]Parallel RSS Gen:  79%|███████▊  | 764/973 [13:53<03:53,  1.12s/it]Parallel RSS Gen:  79%|███████▊  | 765/973 [13:53<03:07,  1.11it/s]Parallel RSS Gen:  79%|███████▊  | 766/973 [13:54<03:02,  1.13it/s]Parallel RSS Gen:  79%|███████▉  | 767/973 [13:59<07:34,  2.21s/it]Parallel RSS Gen:  79%|███████▉  | 768/973 [14:00<05:30,  1.61s/it]Parallel RSS Gen:  79%|███████▉  | 769/973 [14:00<04:05,  1.20s/it]Parallel RSS Gen:  79%|███████▉  | 770/973 [14:01<03:29,  1.03s/it]Parallel RSS Gen:  79%|███████▉  | 771/973 [14:01<03:23,  1.01s/it]Parallel RSS Gen:  79%|███████▉  | 773/973 [14:02<02:28,  1.35it/s]Parallel RSS Gen:  80%|███████▉  | 774/973 [14:03<02:46,  1.19it/s]Parallel RSS Gen:  80%|███████▉  | 776/973 [14:05<02:55,  1.12it/s]Parallel RSS Gen:  80%|███████▉  | 777/973 [14:06<02:32,  1.29it/s]Parallel RSS Gen:  80%|███████▉  | 778/973 [14:08<03:49,  1.18s/it]Parallel RSS Gen:  80%|████████  | 779/973 [14:09<03:28,  1.08s/it]Parallel RSS Gen:  80%|████████  | 780/973 [14:10<03:19,  1.03s/it]Parallel RSS Gen:  80%|████████  | 782/973 [14:13<04:16,  1.35s/it]Parallel RSS Gen:  80%|████████  | 783/973 [14:14<03:35,  1.13s/it]Parallel RSS Gen:  81%|████████  | 784/973 [14:15<03:32,  1.12s/it]Parallel RSS Gen:  81%|████████  | 785/973 [14:17<03:58,  1.27s/it]Parallel RSS Gen:  81%|████████  | 786/973 [14:17<03:36,  1.16s/it]Parallel RSS Gen:  81%|████████  | 787/973 [14:18<02:52,  1.08it/s]Parallel RSS Gen:  81%|████████  | 788/973 [14:18<02:24,  1.28it/s]Parallel RSS Gen:  81%|████████  | 789/973 [14:19<02:01,  1.51it/s]Parallel RSS Gen:  81%|████████  | 790/973 [14:19<02:01,  1.50it/s]Parallel RSS Gen:  81%|████████▏ | 791/973 [14:22<03:38,  1.20s/it]Parallel RSS Gen:  81%|████████▏ | 792/973 [14:23<03:50,  1.27s/it]Parallel RSS Gen:  82%|████████▏ | 793/973 [14:23<02:49,  1.06it/s]Parallel RSS Gen:  82%|████████▏ | 794/973 [14:24<02:22,  1.26it/s]Parallel RSS Gen:  82%|████████▏ | 795/973 [14:26<03:16,  1.10s/it]Parallel RSS Gen:  82%|████████▏ | 796/973 [14:26<02:49,  1.04it/s]Parallel RSS Gen:  82%|████████▏ | 797/973 [14:26<02:09,  1.36it/s]Parallel RSS Gen:  82%|████████▏ | 798/973 [14:28<02:56,  1.01s/it]Parallel RSS Gen:  82%|████████▏ | 799/973 [14:32<05:04,  1.75s/it]Parallel RSS Gen:  82%|████████▏ | 800/973 [14:32<04:08,  1.43s/it]Parallel RSS Gen:  82%|████████▏ | 801/973 [14:33<03:30,  1.22s/it]Parallel RSS Gen:  82%|████████▏ | 802/973 [14:34<03:27,  1.21s/it]Parallel RSS Gen:  83%|████████▎ | 803/973 [14:34<02:31,  1.12it/s]Parallel RSS Gen:  83%|████████▎ | 804/973 [14:35<02:08,  1.32it/s]Parallel RSS Gen:  83%|████████▎ | 805/973 [14:35<01:38,  1.70it/s]Parallel RSS Gen:  83%|████████▎ | 807/973 [14:38<03:02,  1.10s/it]Parallel RSS Gen:  83%|████████▎ | 808/973 [14:39<02:28,  1.11it/s]Parallel RSS Gen:  83%|████████▎ | 809/973 [14:40<02:38,  1.03it/s]Parallel RSS Gen:  83%|████████▎ | 810/973 [14:42<03:40,  1.35s/it]Parallel RSS Gen:  83%|████████▎ | 811/973 [14:44<03:39,  1.36s/it]Parallel RSS Gen:  83%|████████▎ | 812/973 [14:44<02:41,  1.00s/it]Parallel RSS Gen:  84%|████████▎ | 813/973 [14:44<02:02,  1.30it/s]Parallel RSS Gen:  84%|████████▎ | 814/973 [14:45<02:17,  1.16it/s]Parallel RSS Gen:  84%|████████▍ | 815/973 [14:46<02:02,  1.29it/s]Parallel RSS Gen:  84%|████████▍ | 816/973 [14:48<03:09,  1.21s/it]Parallel RSS Gen:  84%|████████▍ | 817/973 [14:49<02:56,  1.13s/it]Parallel RSS Gen:  84%|████████▍ | 818/973 [14:49<02:13,  1.16it/s]Parallel RSS Gen:  84%|████████▍ | 819/973 [14:49<01:41,  1.52it/s]Parallel RSS Gen:  84%|████████▍ | 820/973 [14:50<02:00,  1.27it/s]Parallel RSS Gen:  84%|████████▍ | 821/973 [14:52<02:27,  1.03it/s]Parallel RSS Gen:  84%|████████▍ | 822/973 [14:52<01:53,  1.33it/s]Parallel RSS Gen:  85%|████████▍ | 823/973 [14:52<01:37,  1.54it/s]Parallel RSS Gen:  85%|████████▍ | 824/973 [14:55<03:29,  1.40s/it]Parallel RSS Gen:  85%|████████▍ | 825/973 [14:56<03:08,  1.28s/it]Parallel RSS Gen:  85%|████████▍ | 826/973 [14:59<03:47,  1.55s/it]Parallel RSS Gen:  85%|████████▍ | 827/973 [15:01<04:23,  1.81s/it]Parallel RSS Gen:  85%|████████▌ | 828/973 [15:02<03:57,  1.64s/it]Parallel RSS Gen:  85%|████████▌ | 829/973 [15:03<03:05,  1.29s/it]Parallel RSS Gen:  85%|████████▌ | 830/973 [15:03<02:35,  1.09s/it]Parallel RSS Gen:  85%|████████▌ | 831/973 [15:05<02:41,  1.14s/it]Parallel RSS Gen:  86%|████████▌ | 832/973 [15:05<02:09,  1.09it/s]Parallel RSS Gen:  86%|████████▌ | 833/973 [15:06<02:12,  1.06it/s]Parallel RSS Gen:  86%|████████▌ | 834/973 [15:07<02:25,  1.05s/it]Parallel RSS Gen:  86%|████████▌ | 835/973 [15:07<01:48,  1.27it/s]Parallel RSS Gen:  86%|████████▌ | 836/973 [15:08<01:32,  1.48it/s]Parallel RSS Gen:  86%|████████▌ | 837/973 [15:10<02:15,  1.01it/s]Parallel RSS Gen:  86%|████████▋ | 840/973 [15:11<01:31,  1.45it/s]Parallel RSS Gen:  86%|████████▋ | 841/973 [15:13<02:17,  1.04s/it]Parallel RSS Gen:  87%|████████▋ | 842/973 [15:14<02:17,  1.05s/it]Parallel RSS Gen:  87%|████████▋ | 843/973 [15:15<01:54,  1.14it/s]Parallel RSS Gen:  87%|████████▋ | 844/973 [15:16<01:48,  1.19it/s]Parallel RSS Gen:  87%|████████▋ | 845/973 [15:18<02:35,  1.22s/it]Parallel RSS Gen:  87%|████████▋ | 846/973 [15:19<02:52,  1.36s/it]Parallel RSS Gen:  87%|████████▋ | 847/973 [15:20<02:08,  1.02s/it]Parallel RSS Gen:  87%|████████▋ | 848/973 [15:22<03:04,  1.47s/it]Parallel RSS Gen:  87%|████████▋ | 849/973 [15:23<02:25,  1.17s/it]Parallel RSS Gen:  87%|████████▋ | 850/973 [15:23<02:03,  1.01s/it]Parallel RSS Gen:  87%|████████▋ | 851/973 [15:25<02:34,  1.26s/it]Parallel RSS Gen:  88%|████████▊ | 852/973 [15:26<02:21,  1.17s/it]Parallel RSS Gen:  88%|████████▊ | 853/973 [15:27<02:09,  1.08s/it]Parallel RSS Gen:  88%|████████▊ | 854/973 [15:27<01:40,  1.19it/s]Parallel RSS Gen:  88%|████████▊ | 856/973 [15:29<01:29,  1.31it/s]Parallel RSS Gen:  88%|████████▊ | 857/973 [15:31<02:26,  1.26s/it]Parallel RSS Gen:  88%|████████▊ | 858/973 [15:32<02:16,  1.18s/it]Parallel RSS Gen:  88%|████████▊ | 859/973 [15:35<02:57,  1.55s/it]Parallel RSS Gen:  88%|████████▊ | 860/973 [15:36<02:29,  1.32s/it]Parallel RSS Gen:  88%|████████▊ | 861/973 [15:36<02:03,  1.11s/it]Parallel RSS Gen:  89%|████████▊ | 862/973 [15:38<02:21,  1.28s/it]Parallel RSS Gen:  89%|████████▊ | 863/973 [15:38<01:42,  1.07it/s]Parallel RSS Gen:  89%|████████▉ | 864/973 [15:38<01:23,  1.31it/s]Parallel RSS Gen:  89%|████████▉ | 865/973 [15:39<01:14,  1.44it/s]Parallel RSS Gen:  89%|████████▉ | 866/973 [15:39<00:58,  1.83it/s]Parallel RSS Gen:  89%|████████▉ | 867/973 [15:40<00:57,  1.86it/s]Parallel RSS Gen:  89%|████████▉ | 868/973 [15:41<01:21,  1.29it/s]Parallel RSS Gen:  89%|████████▉ | 869/973 [15:42<01:28,  1.17it/s]Parallel RSS Gen:  89%|████████▉ | 870/973 [15:44<02:05,  1.22s/it]Parallel RSS Gen:  90%|████████▉ | 871/973 [15:46<02:32,  1.49s/it]Parallel RSS Gen:  90%|████████▉ | 873/973 [15:49<02:21,  1.42s/it]Parallel RSS Gen:  90%|████████▉ | 874/973 [15:51<02:45,  1.67s/it]Parallel RSS Gen:  90%|████████▉ | 875/973 [15:52<02:17,  1.40s/it]Parallel RSS Gen:  90%|█████████ | 876/973 [15:52<01:53,  1.17s/it]Parallel RSS Gen:  90%|█████████ | 877/973 [15:53<01:43,  1.08s/it]Parallel RSS Gen:  90%|█████████ | 878/973 [15:53<01:18,  1.21it/s]Parallel RSS Gen:  90%|█████████ | 879/973 [15:54<01:17,  1.21it/s]Parallel RSS Gen:  90%|█████████ | 880/973 [15:56<01:33,  1.00s/it]Parallel RSS Gen:  91%|█████████ | 881/973 [15:56<01:12,  1.28it/s]Parallel RSS Gen:  91%|█████████ | 882/973 [15:56<00:57,  1.58it/s]Parallel RSS Gen:  91%|█████████ | 883/973 [15:57<00:59,  1.52it/s]Parallel RSS Gen:  91%|█████████ | 884/973 [15:57<00:51,  1.73it/s]Parallel RSS Gen:  91%|█████████ | 885/973 [15:58<00:55,  1.59it/s]Parallel RSS Gen:  91%|█████████ | 886/973 [16:00<01:37,  1.12s/it]Parallel RSS Gen:  91%|█████████ | 887/973 [16:01<01:27,  1.02s/it]Parallel RSS Gen:  91%|█████████▏| 888/973 [16:04<02:00,  1.42s/it]Parallel RSS Gen:  91%|█████████▏| 890/973 [16:05<01:28,  1.06s/it]Parallel RSS Gen:  92%|█████████▏| 891/973 [16:06<01:25,  1.04s/it]Parallel RSS Gen:  92%|█████████▏| 894/973 [16:09<01:26,  1.10s/it]Parallel RSS Gen:  92%|█████████▏| 895/973 [16:11<01:39,  1.27s/it]Parallel RSS Gen:  92%|█████████▏| 896/973 [16:12<01:30,  1.17s/it]Parallel RSS Gen:  92%|█████████▏| 897/973 [16:13<01:21,  1.07s/it]Parallel RSS Gen:  92%|█████████▏| 898/973 [16:14<01:29,  1.19s/it]Parallel RSS Gen:  92%|█████████▏| 899/973 [16:15<01:23,  1.13s/it]Parallel RSS Gen:  92%|█████████▏| 900/973 [16:19<02:17,  1.88s/it]Parallel RSS Gen:  93%|█████████▎| 901/973 [16:20<01:59,  1.66s/it]Parallel RSS Gen:  93%|█████████▎| 902/973 [16:20<01:27,  1.23s/it]Parallel RSS Gen:  93%|█████████▎| 903/973 [16:22<01:28,  1.27s/it]Parallel RSS Gen:  93%|█████████▎| 905/973 [16:22<00:54,  1.24it/s]Parallel RSS Gen:  93%|█████████▎| 906/973 [16:23<00:50,  1.33it/s]Parallel RSS Gen:  93%|█████████▎| 907/973 [16:24<00:48,  1.35it/s]Parallel RSS Gen:  93%|█████████▎| 908/973 [16:24<00:47,  1.36it/s]Parallel RSS Gen:  93%|█████████▎| 909/973 [16:25<00:41,  1.56it/s]Parallel RSS Gen:  94%|█████████▎| 910/973 [16:26<00:58,  1.09it/s]Parallel RSS Gen:  94%|█████████▎| 911/973 [16:26<00:42,  1.45it/s]Parallel RSS Gen:  94%|█████████▎| 912/973 [16:27<00:32,  1.91it/s]Parallel RSS Gen:  94%|█████████▍| 913/973 [16:27<00:34,  1.76it/s]Parallel RSS Gen:  94%|█████████▍| 914/973 [16:28<00:33,  1.75it/s]Parallel RSS Gen:  94%|█████████▍| 915/973 [16:30<01:00,  1.05s/it]Parallel RSS Gen:  94%|█████████▍| 916/973 [16:31<01:07,  1.18s/it]Parallel RSS Gen:  94%|█████████▍| 917/973 [16:35<01:43,  1.85s/it]Parallel RSS Gen:  94%|█████████▍| 918/973 [16:36<01:26,  1.58s/it]Parallel RSS Gen:  94%|█████████▍| 919/973 [16:37<01:10,  1.30s/it]Parallel RSS Gen:  95%|█████████▍| 920/973 [16:37<01:03,  1.19s/it]Parallel RSS Gen:  95%|█████████▍| 921/973 [16:38<00:58,  1.12s/it]Parallel RSS Gen:  95%|█████████▍| 922/973 [16:39<00:43,  1.17it/s]Parallel RSS Gen:  95%|█████████▍| 923/973 [16:41<01:00,  1.22s/it]Parallel RSS Gen:  95%|█████████▍| 924/973 [16:42<00:58,  1.20s/it]Parallel RSS Gen:  95%|█████████▌| 925/973 [16:42<00:45,  1.07it/s]Parallel RSS Gen:  95%|█████████▌| 927/973 [16:44<00:43,  1.06it/s]Parallel RSS Gen:  95%|█████████▌| 928/973 [16:47<01:02,  1.40s/it]Parallel RSS Gen:  95%|█████████▌| 929/973 [16:48<01:02,  1.41s/it]Parallel RSS Gen:  96%|█████████▌| 930/973 [16:49<00:46,  1.08s/it]Parallel RSS Gen:  96%|█████████▌| 932/973 [16:49<00:27,  1.50it/s]Parallel RSS Gen:  96%|█████████▌| 933/973 [16:51<00:36,  1.09it/s]Parallel RSS Gen:  96%|█████████▌| 934/973 [16:51<00:34,  1.14it/s]Parallel RSS Gen:  96%|█████████▌| 935/973 [16:52<00:29,  1.30it/s]Parallel RSS Gen:  96%|█████████▌| 936/973 [16:53<00:37,  1.02s/it]Parallel RSS Gen:  96%|█████████▋| 938/973 [16:54<00:25,  1.37it/s]Parallel RSS Gen:  97%|█████████▋| 939/973 [16:55<00:29,  1.15it/s]Parallel RSS Gen:  97%|█████████▋| 941/973 [16:56<00:17,  1.80it/s]Parallel RSS Gen:  97%|█████████▋| 942/973 [16:56<00:18,  1.67it/s]Parallel RSS Gen:  97%|█████████▋| 943/973 [16:57<00:18,  1.58it/s]Parallel RSS Gen:  97%|█████████▋| 944/973 [16:59<00:25,  1.15it/s]Parallel RSS Gen:  97%|█████████▋| 945/973 [17:00<00:26,  1.07it/s]Parallel RSS Gen:  97%|█████████▋| 946/973 [17:02<00:36,  1.36s/it]Parallel RSS Gen:  97%|█████████▋| 947/973 [17:03<00:29,  1.12s/it]Parallel RSS Gen:  97%|█████████▋| 948/973 [17:05<00:38,  1.53s/it]Parallel RSS Gen:  98%|█████████▊| 949/973 [17:06<00:29,  1.22s/it]Parallel RSS Gen:  98%|█████████▊| 950/973 [17:07<00:25,  1.09s/it]Parallel RSS Gen:  98%|█████████▊| 951/973 [17:08<00:24,  1.13s/it]Parallel RSS Gen:  98%|█████████▊| 952/973 [17:08<00:19,  1.08it/s]Parallel RSS Gen:  98%|█████████▊| 953/973 [17:10<00:22,  1.12s/it]Parallel RSS Gen:  98%|█████████▊| 954/973 [17:11<00:18,  1.01it/s]Parallel RSS Gen:  98%|█████████▊| 955/973 [17:13<00:28,  1.57s/it]Parallel RSS Gen:  98%|█████████▊| 956/973 [17:14<00:19,  1.14s/it]Parallel RSS Gen:  98%|█████████▊| 957/973 [17:15<00:17,  1.12s/it]Parallel RSS Gen:  98%|█████████▊| 958/973 [17:15<00:12,  1.19it/s]Parallel RSS Gen:  99%|█████████▊| 959/973 [17:16<00:12,  1.16it/s]Parallel RSS Gen:  99%|█████████▊| 960/973 [17:16<00:08,  1.51it/s]Parallel RSS Gen:  99%|█████████▉| 961/973 [17:16<00:06,  1.95it/s]Parallel RSS Gen:  99%|█████████▉| 962/973 [17:16<00:04,  2.56it/s]Parallel RSS Gen:  99%|█████████▉| 963/973 [17:17<00:05,  1.98it/s]Parallel RSS Gen:  99%|█████████▉| 964/973 [17:17<00:03,  2.28it/s]Parallel RSS Gen:  99%|█████████▉| 965/973 [17:17<00:02,  2.87it/s]Parallel RSS Gen:  99%|█████████▉| 966/973 [17:18<00:02,  2.61it/s]Parallel RSS Gen:  99%|█████████▉| 967/973 [17:18<00:02,  2.38it/s]Parallel RSS Gen: 100%|█████████▉| 969/973 [17:21<00:03,  1.32it/s]Parallel RSS Gen: 100%|█████████▉| 970/973 [17:21<00:02,  1.46it/s]Parallel RSS Gen: 100%|█████████▉| 971/973 [17:22<00:01,  1.61it/s]Parallel RSS Gen: 100%|█████████▉| 972/973 [17:23<00:00,  1.05it/s]Parallel RSS Gen: 100%|██████████| 973/973 [17:24<00:00,  1.38it/s]Parallel RSS Gen: 100%|██████████| 973/973 [17:24<00:00,  1.07s/it]Time taken to process file1000043: 39.45 seconds
+Time taken to process file1000154: 31.47 seconds
+Time taken to process file1000210: 28.12 seconds
+Time taken to process file1000246: 35.94 seconds
+Time taken to process file1000339: 37.26 seconds
+Time taken to process file1000434: 38.83 seconds
+Time taken to process file1000547: 31.90 seconds
+Time taken to process file1000615: 33.46 seconds
+Time taken to process file1000723: 31.68 seconds
+Time taken to process file1000819: 38.80 seconds
+Time taken to process file1000931: 34.81 seconds
+Time taken to process file1001004: 34.58 seconds
+Time taken to process file1001102: 37.07 seconds
+Time taken to process file1001193: 30.01 seconds
+Time taken to process file1001276: 34.06 seconds
+Time taken to process file1001350: 31.96 seconds
+Time taken to process file1001426: 32.77 seconds
+Time taken to process file1001523: 29.63 seconds
+Time taken to process file1001615: 33.51 seconds
+Time taken to process file1001695: 33.25 seconds
+Time taken to process file1001773: 29.20 seconds
+Time taken to process file1001856: 36.85 seconds
+Time taken to process file1001941: 31.20 seconds
+Time taken to process file1002006: 35.65 seconds
+Time taken to process file1002087: 37.24 seconds
+Time taken to process file1002154: 35.52 seconds
+Time taken to process file1002245: 30.71 seconds
+Time taken to process file1002333: 39.86 seconds
+Time taken to process file1002422: 32.27 seconds
+Time taken to process file1002495: 32.09 seconds
+Time taken to process file1000065: 32.11 seconds
+Time taken to process file1000100: 37.72 seconds
+Time taken to process file1000207: 38.56 seconds
+Time taken to process file1000293: 31.09 seconds
+Time taken to process file1000351: 33.98 seconds
+Time taken to process file1000443: 30.04 seconds
+Time taken to process file1000517: 30.30 seconds
+Time taken to process file1000588: 30.62 seconds
+Time taken to process file1000689: 27.30 seconds
+Time taken to process file1000770: 36.23 seconds
+Time taken to process file1000874: 33.22 seconds
+Time taken to process file1000968: 30.10 seconds
+Time taken to process file1001027: 29.75 seconds
+Time taken to process file1001114: 37.18 seconds
+Time taken to process file1001210: 38.80 seconds
+Time taken to process file1001304: 33.67 seconds
+Time taken to process file1001387: 27.04 seconds
+Time taken to process file1001455: 37.56 seconds
+Time taken to process file1001564: 30.53 seconds
+Time taken to process file1001632: 29.02 seconds
+Time taken to process file1001708: 32.92 seconds
+Time taken to process file1001791: 32.28 seconds
+Time taken to process file1001879: 35.18 seconds
+Time taken to process file1001960: 29.01 seconds
+Time taken to process file1002030: 33.06 seconds
+Time taken to process file1002090: 33.15 seconds
+Time taken to process file1002163: 32.34 seconds
+Time taken to process file1002243: 37.41 seconds
+Time taken to process file1002342: 36.34 seconds
+Time taken to process file1002425: 30.32 seconds
+Time taken to process file1002492: 35.91 seconds
+Time taken to process file1000012: 30.19 seconds
+Time taken to process file1000088: 34.00 seconds
+Time taken to process file1000176: 33.51 seconds
+Time taken to process file1000242: 32.23 seconds
+Time taken to process file1000317: 28.37 seconds
+Time taken to process file1000384: 29.39 seconds
+Time taken to process file1000481: 33.80 seconds
+Time taken to process file1000559: 32.74 seconds
+Time taken to process file1000632: 31.33 seconds
+Time taken to process file1000743: 30.58 seconds
+Time taken to process file1000829: 29.33 seconds
+Time taken to process file1000929: 36.26 seconds
+Time taken to process file1001005: 35.13 seconds
+Time taken to process file1001106: 37.60 seconds
+Time taken to process file1001203: 29.70 seconds
+Time taken to process file1001277: 34.50 seconds
+Time taken to process file1001358: 31.21 seconds
+Time taken to process file1001434: 33.07 seconds
+Time taken to process file1001526: 29.90 seconds
+Time taken to process file1001616: 37.26 seconds
+Time taken to process file1001701: 35.72 seconds
+Time taken to process file1001783: 29.81 seconds
+Time taken to process file1001864: 29.71 seconds
+Time taken to process file1001942: 35.68 seconds
+Time taken to process file1002014: 29.40 seconds
+Time taken to process file1002078: 20.86 seconds
+Time taken to process file1002115: 28.49 seconds
+Time taken to process file1002193: 41.74 seconds
+Time taken to process file1002286: 35.15 seconds
+Time taken to process file1002369: 27.37 seconds
+Time taken to process file1002440: 32.29 seconds
+Time taken to process file1002510: 26.90 seconds
+Time taken to process file1000010: 34.33 seconds
+Time taken to process file1000125: 39.87 seconds
+Time taken to process file1000222: 30.74 seconds
+Time taken to process file1000275: 29.91 seconds
+Time taken to process file1000336: 35.27 seconds
+Time taken to process file1000424: 32.63 seconds
+Time taken to process file1000510: 28.28 seconds
+Time taken to process file1000585: 34.72 seconds
+Time taken to process file1000695: 31.70 seconds
+Time taken to process file1000785: 34.04 seconds
+Time taken to process file1000875: 28.19 seconds
+Time taken to process file1000967: 32.11 seconds
+Time taken to process file1001036: 26.68 seconds
+Time taken to process file1001109: 33.90 seconds
+Time taken to process file1001190: 28.68 seconds
+Time taken to process file1001266: 33.33 seconds
+Time taken to process file1001334: 30.16 seconds
+Time taken to process file1001421: 26.41 seconds
+Time taken to process file1001495: 24.48 seconds
+Time taken to process file1001568: 27.24 seconds
+Time taken to process file1001629: 33.62 seconds
+Time taken to process file1001710: 31.95 seconds
+Time taken to process file1001795: 29.87 seconds
+Time taken to process file1001870: 28.44 seconds
+Time taken to process file1001949: 36.03 seconds
+Time taken to process file1002024: 40.13 seconds
+Time taken to process file1002099: 31.66 seconds
+Time taken to process file1002170: 31.16 seconds
+Time taken to process file1002247: 32.75 seconds
+Time taken to process file1002338: 35.52 seconds
+Time taken to process file1002409: 38.20 seconds
+Time taken to process file1002505: 33.81 seconds
+Time taken to process file1000021: 31.04 seconds
+Time taken to process file1000089: 34.41 seconds
+Time taken to process file1000180: 32.42 seconds
+Time taken to process file1000244: 33.65 seconds
+Time taken to process file1000324: 28.20 seconds
+Time taken to process file1000400: 25.62 seconds
+Time taken to process file1000475: 31.27 seconds
+Time taken to process file1000550: 33.99 seconds
+Time taken to process file1000619: 27.80 seconds
+Time taken to process file1000728: 30.00 seconds
+Time taken to process file1000821: 31.96 seconds
+Time taken to process file1000922: 33.94 seconds
+Time taken to process file1000995: 28.51 seconds
+Time taken to process file1001079: 29.61 seconds
+Time taken to process file1001145: 36.38 seconds
+Time taken to process file1001239: 30.99 seconds
+Time taken to process file1001310: 29.50 seconds
+Time taken to process file1001382: 33.43 seconds
+Time taken to process file1001465: 23.89 seconds
+Time taken to process file1001544: 26.62 seconds
+Time taken to process file1001617: 30.82 seconds
+Time taken to process file1001694: 32.41 seconds
+Time taken to process file1001767: 39.71 seconds
+Time taken to process file1001866: 26.48 seconds
+Time taken to process file1001931: 33.80 seconds
+Time taken to process file1002012: 30.92 seconds
+Time taken to process file1002064: 32.59 seconds
+Time taken to process file1002128: 28.68 seconds
+Time taken to process file1002225: 30.50 seconds
+Time taken to process file1002284: 32.75 seconds
+Time taken to process file1002363: 33.44 seconds
+Time taken to process file1002441: 33.78 seconds
+Time taken to process file1002517: 29.59 seconds
+Time taken to process file1000053: 28.76 seconds
+Time taken to process file1000084: 34.61 seconds
+Time taken to process file1000172: 32.88 seconds
+Time taken to process file1000237: 26.85 seconds
+Time taken to process file1000307: 34.41 seconds
+Time taken to process file1000383: 36.34 seconds
+Time taken to process file1000485: 29.41 seconds
+Time taken to process file1000560: 32.09 seconds
+Time taken to process file1000638: 32.20 seconds
+Time taken to process file1000753: 32.02 seconds
+Time taken to process file1000850: 36.70 seconds
+Time taken to process file1000963: 29.86 seconds
+Time taken to process file1001014: 34.94 seconds
+Time taken to process file1001116: 36.37 seconds
+Time taken to process file1001209: 29.30 seconds
+Time taken to process file1001287: 29.92 seconds
+Time taken to process file1001348: 27.32 seconds
+Time taken to process file1001420: 30.54 seconds
+Time taken to process file1001498: 35.50 seconds
+Time taken to process file1001609: 31.06 seconds
+Time taken to process file1001685: 34.35 seconds
+Time taken to process file1001758: 33.62 seconds
+Time taken to process file1001860: 31.96 seconds
+Time taken to process file1001927: 33.77 seconds
+Time taken to process file1002001: 33.70 seconds
+Time taken to process file1002073: 33.61 seconds
+Time taken to process file1002134: 30.73 seconds
+Time taken to process file1002228: 35.04 seconds
+Time taken to process file1002304: 32.24 seconds
+Time taken to process file1002381: 29.69 seconds
+Time taken to process file1002456: 32.89 seconds
+Time taken to process file1002521: 23.60 seconds
+Time taken to process file1000060: 31.69 seconds
+Time taken to process file1000094: 32.01 seconds
+Time taken to process file1000173: 34.40 seconds
+Time taken to process file1000245: 33.79 seconds
+Time taken to process file1000330: 34.39 seconds
+Time taken to process file1000416: 36.80 seconds
+Time taken to process file1000511: 28.70 seconds
+Time taken to process file1000586: 29.04 seconds
+Time taken to process file1000658: 27.36 seconds
+Time taken to process file1000755: 31.03 seconds
+Time taken to process file1000846: 30.51 seconds
+Time taken to process file1000941: 30.34 seconds
+Time taken to process file1001003: 33.30 seconds
+Time taken to process file1001098: 33.33 seconds
+Time taken to process file1001189: 27.51 seconds
+Time taken to process file1001257: 31.63 seconds
+Time taken to process file1001323: 27.54 seconds
+Time taken to process file1001392: 32.46 seconds
+Time taken to process file1001474: 36.42 seconds
+Time taken to process file1001584: 30.29 seconds
+Time taken to process file1001656: 35.61 seconds
+Time taken to process file1001739: 36.48 seconds
+Time taken to process file1001847: 34.03 seconds
+Time taken to process file1001919: 26.78 seconds
+Time taken to process file1001985: 37.36 seconds
+Time taken to process file1002054: 30.96 seconds
+Time taken to process file1002123: 30.10 seconds
+Time taken to process file1002201: 33.07 seconds
+Time taken to process file1002283: 32.17 seconds
+Time taken to process file1002361: 31.77 seconds
+Time taken to process file1002435: 36.10 seconds
+Time taken to process file1002511: 30.04 seconds
+Time taken to process file1000081: 31.53 seconds
+Time taken to process file1000090: 37.16 seconds
+Time taken to process file1000200: 34.11 seconds
+Time taken to process file1000262: 38.35 seconds
+Time taken to process file1000363: 29.55 seconds
+Time taken to process file1000426: 30.93 seconds
+Time taken to process file1000501: 31.52 seconds
+Time taken to process file1000587: 28.01 seconds
+Time taken to process file1000661: 27.94 seconds
+Time taken to process file1000768: 30.39 seconds
+Time taken to process file1000848: 29.64 seconds
+Time taken to process file1000936: 33.08 seconds
+Time taken to process file1001006: 32.28 seconds
+Time taken to process file1001101: 30.68 seconds
+Time taken to process file1001185: 34.80 seconds
+Time taken to process file1001261: 35.38 seconds
+Time taken to process file1001342: 31.09 seconds
+Time taken to process file1001422: 41.27 seconds
+Time taken to process file1001545: 29.11 seconds
+Time taken to process file1001623: 34.15 seconds
+Time taken to process file1001706: 33.97 seconds
+Time taken to process file1001777: 33.73 seconds
+Time taken to process file1001878: 32.64 seconds
+Time taken to process file1001956: 34.36 seconds
+Time taken to process file1002034: 35.59 seconds
+Time taken to process file1002094: 37.05 seconds
+Time taken to process file1002186: 30.95 seconds
+Time taken to process file1002262: 38.23 seconds
+Time taken to process file1002357: 29.99 seconds
+Time taken to process file1002431: 30.83 seconds
+Time taken to process file1002499: 31.95 seconds
+Time taken to process file1000069: 31.77 seconds
+Time taken to process file1000097: 34.90 seconds
+Time taken to process file1000188: 34.29 seconds
+Time taken to process file1000257: 29.73 seconds
+Time taken to process file1000321: 30.58 seconds
+Time taken to process file1000401: 34.76 seconds
+Time taken to process file1000492: 29.12 seconds
+Time taken to process file1000566: 28.07 seconds
+Time taken to process file1000627: 30.30 seconds
+Time taken to process file1000738: 37.84 seconds
+Time taken to process file1000856: 33.16 seconds
+Time taken to process file1000955: 34.20 seconds
+Time taken to process file1001024: 29.41 seconds
+Time taken to process file1001108: 36.01 seconds
+Time taken to process file1001198: 30.97 seconds
+Time taken to process file1001283: 34.21 seconds
+Time taken to process file1001360: 36.45 seconds
+Time taken to process file1001452: 29.84 seconds
+Time taken to process file1001541: 32.96 seconds
+Time taken to process file1001627: 25.18 seconds
+Time taken to process file1001692: 34.77 seconds
+Time taken to process file1001775: 30.31 seconds
+Time taken to process file1001857: 30.03 seconds
+Time taken to process file1001920: 31.25 seconds
+Time taken to process file1001999: 40.24 seconds
+Time taken to process file1002076: 32.46 seconds
+Time taken to process file1002139: 31.89 seconds
+Time taken to process file1002231: 30.82 seconds
+Time taken to process file1002300: 29.85 seconds
+Time taken to process file1002367: 30.92 seconds
+Time taken to process file1002444: 32.55 seconds
+Time taken to process file1002516: 29.40 seconds
+Time taken to process file1000048: 36.57 seconds
+Time taken to process file1000141: 35.30 seconds
+Time taken to process file1000216: 36.17 seconds
+Time taken to process file1000290: 33.10 seconds
+Time taken to process file1000357: 32.64 seconds
+Time taken to process file1000448: 32.24 seconds
+Time taken to process file1000521: 33.43 seconds
+Time taken to process file1000610: 29.50 seconds
+Time taken to process file1000715: 27.20 seconds
+Time taken to process file1000784: 39.46 seconds
+Time taken to process file1000884: 26.78 seconds
+Time taken to process file1000969: 29.29 seconds
+Time taken to process file1001029: 30.48 seconds
+Time taken to process file1001120: 32.61 seconds
+Time taken to process file1001205: 38.65 seconds
+Time taken to process file1001297: 28.23 seconds
+Time taken to process file1001373: 29.19 seconds
+Time taken to process file1001445: 30.53 seconds
+Time taken to process file1001521: 28.89 seconds
+Time taken to process file1001613: 35.95 seconds
+Time taken to process file1001698: 27.72 seconds
+Time taken to process file1001748: 32.07 seconds
+Time taken to process file1001849: 28.83 seconds
+Time taken to process file1001905: 27.53 seconds
+Time taken to process file1001975: 28.46 seconds
+Time taken to process file1002043: 30.51 seconds
+Time taken to process file1002095: 29.16 seconds
+Time taken to process file1002166: 28.40 seconds
+Time taken to process file1002238: 31.28 seconds
+Time taken to process file1002325: 36.49 seconds
+Time taken to process file1002395: 29.15 seconds
+Time taken to process file1002469: 25.37 seconds
+Time taken to process file1002518: 29.80 seconds
+Time taken to process file1000040: 37.12 seconds
+Time taken to process file1000142: 31.08 seconds
+Time taken to process file1000198: 38.75 seconds
+Time taken to process file1000287: 32.45 seconds
+Time taken to process file1000349: 31.95 seconds
+Time taken to process file1000427: 32.07 seconds
+Time taken to process file1000514: 35.64 seconds
+Time taken to process file1000605: 36.24 seconds
+Time taken to process file1000719: 31.80 seconds
+Time taken to process file1000808: 32.80 seconds
+Time taken to process file1000919: 29.51 seconds
+Time taken to process file1000985: 31.73 seconds
+Time taken to process file1001067: 34.06 seconds
+Time taken to process file1001169: 31.86 seconds
+Time taken to process file1001235: 34.09 seconds
+Time taken to process file1001311: 30.18 seconds
+Time taken to process file1001388: 37.97 seconds
+Time taken to process file1001491: 36.70 seconds
+Time taken to process file1001600: 31.59 seconds
+Time taken to process file1001675: 33.04 seconds
+Time taken to process file1001742: 30.89 seconds
+Time taken to process file1001832: 34.81 seconds
+Time taken to process file1001909: 26.90 seconds
+Time taken to process file1001979: 29.01 seconds
+Time taken to process file1002044: 29.94 seconds
+Time taken to process file1002097: 40.09 seconds
+Time taken to process file1002194: 23.78 seconds
+Time taken to process file1002251: 29.22 seconds
+Time taken to process file1002334: 29.21 seconds
+Time taken to process file1002386: 27.23 seconds
+Time taken to process file1002458: 26.16 seconds
+Time taken to process file1002514: 32.37 seconds
+Time taken to process file1000057: 38.22 seconds
+Time taken to process file1000148: 33.62 seconds
+Time taken to process file1000213: 36.68 seconds
+Time taken to process file1000296: 32.96 seconds
+Time taken to process file1000365: 33.41 seconds
+Time taken to process file1000449: 26.77 seconds
+Time taken to process file1000504: 25.34 seconds
+Time taken to process file1000582: 36.26 seconds
+Time taken to process file1000663: 28.98 seconds
+Time taken to process file1000776: 28.94 seconds
+Time taken to process file1000851: 34.15 seconds
+Time taken to process file1000962: 45.50 seconds
+Time taken to process file1001062: 32.21 seconds
+Time taken to process file1001150: 31.90 seconds
+Time taken to process file1001226: 29.12 seconds
+Time taken to process file1001299: 30.50 seconds
+Time taken to process file1001378: 25.91 seconds
+Time taken to process file1001437: 25.04 seconds
+Time taken to process file1001503: 24.05 seconds
+Time taken to process file1001580: 28.61 seconds
+Time taken to process file1001638: 38.99 seconds
+Time taken to process file1001737: 34.04 seconds
+Time taken to process file1001830: 38.69 seconds
+Time taken to process file1001922: 41.97 seconds
+Time taken to process file1002023: 30.51 seconds
+Time taken to process file1002088: 31.61 seconds
+Time taken to process file1002146: 36.35 seconds
+Time taken to process file1002241: 29.80 seconds
+Time taken to process file1002315: 29.41 seconds
+Time taken to process file1002379: 42.77 seconds
+Time taken to process file1002476: 24.98 seconds
+Time taken to process file1002532: 26.59 seconds
+Time taken to process file1000015: 32.47 seconds
+Time taken to process file1000116: 33.18 seconds
+Time taken to process file1000181: 27.70 seconds
+Time taken to process file1000233: 27.30 seconds
+Time taken to process file1000301: 38.41 seconds
+Time taken to process file1000390: 31.39 seconds
+Time taken to process file1000482: 35.50 seconds
+Time taken to process file1000573: 34.45 seconds
+Time taken to process file1000653: 28.03 seconds
+Time taken to process file1000762: 37.82 seconds
+Time taken to process file1000865: 26.76 seconds
+Time taken to process file1000952: 26.06 seconds
+Time taken to process file1001001: 28.92 seconds
+Time taken to process file1001084: 25.95 seconds
+Time taken to process file1001154: 30.62 seconds
+Time taken to process file1001222: 27.84 seconds
+Time taken to process file1001296: 29.23 seconds
+Time taken to process file1001372: 33.36 seconds
+Time taken to process file1001449: 30.24 seconds
+Time taken to process file1001540: 29.21 seconds
+Time taken to process file1001619: 28.80 seconds
+Time taken to process file1001690: 29.89 seconds
+Time taken to process file1001745: 33.82 seconds
+Time taken to process file1001854: 28.52 seconds
+Time taken to process file1001907: 30.63 seconds
+Time taken to process file1001986: 37.64 seconds
+Time taken to process file1002056: 30.84 seconds
+Time taken to process file1002127: 37.50 seconds
+Time taken to process file1002227: 31.78 seconds
+Time taken to process file1002296: 34.97 seconds
+Time taken to process file1002376: 27.48 seconds
+Time taken to process file1002449: 36.43 seconds
+Time taken to process file1002523: 33.47 seconds
+Time taken to process file1000075: 29.52 seconds
+Time taken to process file1000085: 40.71 seconds
+Time taken to process file1000208: 29.77 seconds
+Time taken to process file1000250: 25.62 seconds
+Time taken to process file1000313: 29.82 seconds
+Time taken to process file1000381: 28.72 seconds
+Time taken to process file1000467: 33.64 seconds
+Time taken to process file1000554: 36.47 seconds
+Time taken to process file1000633: 33.85 seconds
+Time taken to process file1000754: 30.40 seconds
+Time taken to process file1000834: 29.66 seconds
+Time taken to process file1000933: 27.79 seconds
+Time taken to process file1000999: 34.15 seconds
+Time taken to process file1001087: 30.73 seconds
+Time taken to process file1001175: 30.47 seconds
+Time taken to process file1001245: 35.34 seconds
+Time taken to process file1001327: 31.71 seconds
+Time taken to process file1001402: 34.29 seconds
+Time taken to process file1001496: 26.76 seconds
+Time taken to process file1001575: 35.80 seconds
+Time taken to process file1001666: 29.99 seconds
+Time taken to process file1001732: 34.72 seconds
+Time taken to process file1001823: 35.27 seconds
+Time taken to process file1001906: 30.98 seconds
+Time taken to process file1001989: 37.27 seconds
+Time taken to process file1002055: 27.07 seconds
+Time taken to process file1002113: 36.44 seconds
+Time taken to process file1002221: 39.57 seconds
+Time taken to process file1002303: 34.87 seconds
+Time taken to process file1002383: 33.44 seconds
+Time taken to process file1002462: 34.15 seconds
+Time taken to process file1002537: 27.42 seconds
+Time taken to process file1000027: 33.23 seconds
+Time taken to process file1000117: 34.83 seconds
+Time taken to process file1000195: 31.53 seconds
+Time taken to process file1000248: 32.21 seconds
+Time taken to process file1000326: 32.09 seconds
+Time taken to process file1000408: 31.59 seconds
+Time taken to process file1000489: 27.94 seconds
+Time taken to process file1000561: 32.93 seconds
+Time taken to process file1000639: 30.82 seconds
+Time taken to process file1000752: 25.13 seconds
+Time taken to process file1000827: 25.40 seconds
+Time taken to process file1000904: 25.96 seconds
+Time taken to process file1000973: 26.62 seconds
+Time taken to process file1001026: 32.15 seconds
+Time taken to process file1001121: 31.59 seconds
+Time taken to process file1001196: 34.25 seconds
+Time taken to process file1001294: 30.13 seconds
+Time taken to process file1001355: 29.08 seconds
+Time taken to process file1001425: 30.48 seconds
+Time taken to process file1001513: 26.65 seconds
+Time taken to process file1001588: 34.53 seconds
+Time taken to process file1001677: 31.05 seconds
+Time taken to process file1001741: 33.36 seconds
+Time taken to process file1001837: 32.81 seconds
+Time taken to process file1001910: 33.38 seconds
+Time taken to process file1001993: 37.09 seconds
+Time taken to process file1002063: 34.21 seconds
+Time taken to process file1002132: 22.68 seconds
+Time taken to process file1002195: 28.41 seconds
+Time taken to process file1002269: 31.65 seconds
+Time taken to process file1002353: 28.60 seconds
+Time taken to process file1002399: 30.97 seconds
+Time taken to process file1002479: 25.42 seconds
+Time taken to process file1002534: 25.23 seconds
+Time taken to process file1000058: 37.38 seconds
+Time taken to process file1000143: 32.04 seconds
+Time taken to process file1000204: 35.34 seconds
+Time taken to process file1000271: 50.68 seconds
+Time taken to process file1000382: 29.84 seconds
+Time taken to process file1000472: 30.56 seconds
+Time taken to process file1000548: 25.04 seconds
+Time taken to process file1000612: 39.29 seconds
+Time taken to process file1000736: 38.70 seconds
+Time taken to process file1000836: 32.98 seconds
+Time taken to process file1000947: 34.57 seconds
+Time taken to process file1001022: 33.86 seconds
+Time taken to process file1001113: 33.39 seconds
+Time taken to process file1001194: 32.56 seconds
+Time taken to process file1001286: 34.06 seconds
+Time taken to process file1001362: 29.20 seconds
+Time taken to process file1001432: 33.70 seconds
+Time taken to process file1001528: 38.84 seconds
+Time taken to process file1001628: 30.84 seconds
+Time taken to process file1001707: 32.31 seconds
+Time taken to process file1001778: 32.85 seconds
+Time taken to process file1001872: 32.55 seconds
+Time taken to process file1001953: 30.46 seconds
+Time taken to process file1002022: 27.03 seconds
+Time taken to process file1002071: 32.27 seconds
+Time taken to process file1002130: 34.92 seconds
+Time taken to process file1002233: 27.46 seconds
+Time taken to process file1002287: 35.60 seconds
+Time taken to process file1002371: 27.96 seconds
+Time taken to process file1002455: 35.99 seconds
+Time taken to process file1002520: 32.80 seconds
+Time taken to process file1000001: 36.07 seconds
+Time taken to process file1000138: 31.36 seconds
+Time taken to process file1000191: 36.52 seconds
+Time taken to process file1000265: 31.34 seconds
+Time taken to process file1000340: 34.03 seconds
+Time taken to process file1000420: 30.43 seconds
+Time taken to process file1000495: 29.79 seconds
+Time taken to process file1000583: 29.21 seconds
+Time taken to process file1000643: 37.34 seconds
+Time taken to process file1000778: 36.03 seconds
+Time taken to process file1000880: 31.11 seconds
+Time taken to process file1000971: 28.46 seconds
+Time taken to process file1001033: 37.26 seconds
+Time taken to process file1001139: 31.85 seconds
+Time taken to process file1001216: 27.71 seconds
+Time taken to process file1001295: 32.08 seconds
+Time taken to process file1001370: 26.42 seconds
+Time taken to process file1001424: 31.65 seconds
+Time taken to process file1001520: 27.65 seconds
+Time taken to process file1001602: 30.96 seconds
+Time taken to process file1001673: 37.18 seconds
+Time taken to process file1001752: 37.70 seconds
+Time taken to process file1001863: 33.86 seconds
+Time taken to process file1001948: 27.93 seconds
+Time taken to process file1002000: 36.25 seconds
+Time taken to process file1002074: 31.85 seconds
+Time taken to process file1002133: 31.55 seconds
+Time taken to process file1002229: 31.59 seconds
+Time taken to process file1002298: 22.61 seconds
+Time taken to process file1002358: 30.11 seconds
+Time taken to process file1002432: 29.86 seconds
+Time taken to process file1002497: 26.14 seconds
+Time taken to process file1002549: 21.43 seconds
+Time taken to process file1000061: 32.43 seconds
+Time taken to process file1000111: 30.19 seconds
+Time taken to process file1000167: 25.91 seconds
+Time taken to process file1000224: 32.20 seconds
+Time taken to process file1000306: 33.99 seconds
+Time taken to process file1000378: 30.88 seconds
+Time taken to process file1000479: 35.30 seconds
+Time taken to process file1000558: 35.80 seconds
+Time taken to process file1000640: 28.84 seconds
+Time taken to process file1000742: 32.97 seconds
+Time taken to process file1000833: 32.58 seconds
+Time taken to process file1000943: 32.76 seconds
+Time taken to process file1001008: 28.62 seconds
+Time taken to process file1001092: 24.70 seconds
+Time taken to process file1001173: 21.35 seconds
+Time taken to process file1001214: 27.33 seconds
+Time taken to process file1001285: 29.17 seconds
+Time taken to process file1001340: 28.40 seconds
+Time taken to process file1001415: 32.09 seconds
+Time taken to process file1001504: 33.75 seconds
+Time taken to process file1001605: 24.12 seconds
+Time taken to process file1001665: 26.25 seconds
+Time taken to process file1001713: 29.89 seconds
+Time taken to process file1001799: 27.64 seconds
+Time taken to process file1001867: 28.68 seconds
+Time taken to process file1001945: 30.10 seconds
+Time taken to process file1002010: 32.17 seconds
+Time taken to process file1002066: 35.85 seconds
+Time taken to process file1002143: 31.60 seconds
+Time taken to process file1002235: 27.67 seconds
+Time taken to process file1002293: 36.12 seconds
+Time taken to process file1002378: 33.94 seconds
+Time taken to process file1002461: 31.27 seconds
+Time taken to process file1002531: 32.12 seconds
+Time taken to process file1000066: 35.78 seconds
+Time taken to process file1000129: 29.60 seconds
+Time taken to process file1000179: 34.65 seconds
+Time taken to process file1000252: 42.09 seconds
+Time taken to process file1000369: 29.61 seconds
+Time taken to process file1000428: 31.81 seconds
+Time taken to process file1000518: 34.01 seconds
+Time taken to process file1000597: 30.12 seconds
+Time taken to process file1000709: 34.48 seconds
+Time taken to process file1000801: 29.48 seconds
+Time taken to process file1000876: 31.33 seconds
+Time taken to process file1000970: 34.19 seconds
+Time taken to process file1001051: 31.06 seconds
+Time taken to process file1001134: 34.29 seconds
+Time taken to process file1001220: 35.08 seconds
+Time taken to process file1001306: 31.91 seconds
+Time taken to process file1001383: 33.67 seconds
+Time taken to process file1001468: 29.94 seconds
+Time taken to process file1001560: 34.44 seconds
+Time taken to process file1001636: 30.69 seconds
+Time taken to process file1001711: 33.25 seconds
+Time taken to process file1001800: 26.85 seconds
+Time taken to process file1001873: 30.35 seconds
+Time taken to process file1001950: 35.24 seconds
+Time taken to process file1002027: 29.18 seconds
+Time taken to process file1002089: 32.78 seconds
+Time taken to process file1002151: 33.30 seconds
+Time taken to process file1002239: 28.81 seconds
+Time taken to process file1002307: 24.85 seconds
+Time taken to process file1002366: 23.36 seconds
+Time taken to process file1002423: 26.05 seconds
+Time taken to process file1002475: 26.71 seconds
+Time taken to process file1002541: 28.75 seconds
+Time taken to process file1000070: 32.25 seconds
+Time taken to process file1000101: 35.20 seconds
+Time taken to process file1000193: 32.36 seconds
+Time taken to process file1000249: 37.38 seconds
+Time taken to process file1000342: 27.91 seconds
+Time taken to process file1000410: 30.35 seconds
+Time taken to process file1000486: 28.50 seconds
+Time taken to process file1000563: 30.81 seconds
+Time taken to process file1000637: 29.96 seconds
+Time taken to process file1000740: 32.79 seconds
+Time taken to process file1000830: 37.35 seconds
+Time taken to process file1000956: 39.57 seconds
+Time taken to process file1001042: 33.66 seconds
+Time taken to process file1001131: 26.27 seconds
+Time taken to process file1001200: 33.33 seconds
+Time taken to process file1001288: 32.66 seconds
+Time taken to process file1001369: 30.09 seconds
+Time taken to process file1001436: 28.01 seconds
+Time taken to process file1001519: 26.43 seconds
+Time taken to process file1001590: 26.71 seconds
+Time taken to process file1001646: 30.33 seconds
+Time taken to process file1001728: 35.98 seconds
+Time taken to process file1001814: 39.09 seconds
+Time taken to process file1001912: 31.11 seconds
+Time taken to process file1001991: 26.83 seconds
+Time taken to process file1002046: 34.30 seconds
+Time taken to process file1002111: 26.14 seconds
+Time taken to process file1002171: 28.96 seconds
+Time taken to process file1002246: 24.01 seconds
+Time taken to process file1002309: 30.06 seconds
+Time taken to process file1002374: 34.10 seconds
+Time taken to process file1002459: 39.64 seconds
+Time taken to process file1002545: 25.67 seconds
+Time taken to process file1000005: 33.75 seconds
+Time taken to process file1000123: 32.76 seconds
+Time taken to process file1000185: 28.03 seconds
+Time taken to process file1000236: 32.13 seconds
+Time taken to process file1000315: 32.63 seconds
+Time taken to process file1000393: 32.46 seconds
+Time taken to process file1000483: 28.11 seconds
+Time taken to process file1000557: 29.75 seconds
+Time taken to process file1000617: 29.77 seconds
+Time taken to process file1000734: 31.11 seconds
+Time taken to process file1000824: 31.41 seconds
+Time taken to process file1000927: 33.81 seconds
+Time taken to process file1000997: 31.08 seconds
+Time taken to process file1001082: 35.55 seconds
+Time taken to process file1001183: 28.64 seconds
+Time taken to process file1001244: 32.05 seconds
+Time taken to process file1001319: 34.37 seconds
+Time taken to process file1001401: 30.08 seconds
+Time taken to process file1001485: 29.78 seconds
+Time taken to process file1001572: 37.95 seconds
+Time taken to process file1001671: 38.73 seconds
+Time taken to process file1001750: 36.85 seconds
+Time taken to process file1001861: 32.48 seconds
+Time taken to process file1001935: 32.06 seconds
+Time taken to process file1002004: 32.80 seconds
+Time taken to process file1002069: 38.17 seconds
+Time taken to process file1002153: 29.21 seconds
+Time taken to process file1002234: 38.35 seconds
+Time taken to process file1002332: 40.11 seconds
+Time taken to process file1002416: 31.23 seconds
+Time taken to process file1002491: 25.78 seconds
+Time taken to process file1002543: 26.47 seconds
+Time taken to process file1000029: 29.68 seconds
+Time taken to process file1000086: 31.74 seconds
+Time taken to process file1000161: 29.40 seconds
+Time taken to process file1000231: 32.69 seconds
+Time taken to process file1000311: 25.63 seconds
+Time taken to process file1000376: 30.52 seconds
+Time taken to process file1000459: 29.41 seconds
+Time taken to process file1000539: 29.28 seconds
+Time taken to process file1000600: 33.34 seconds
+Time taken to process file1000716: 31.00 seconds
+Time taken to process file1000806: 34.24 seconds
+Time taken to process file1000896: 30.93 seconds
+Time taken to process file1000981: 26.53 seconds
+Time taken to process file1001037: 38.26 seconds
+Time taken to process file1001149: 33.00 seconds
+Time taken to process file1001228: 33.55 seconds
+Time taken to process file1001307: 33.48 seconds
+Time taken to process file1001391: 29.62 seconds
+Time taken to process file1001460: 32.75 seconds
+Time taken to process file1001561: 37.43 seconds
+Time taken to process file1001654: 29.09 seconds
+Time taken to process file1001723: 30.01 seconds
+Time taken to process file1001801: 26.96 seconds
+Time taken to process file1001875: 26.84 seconds
+Time taken to process file1001944: 24.39 seconds
+Time taken to process file1001998: 31.02 seconds
+Time taken to process file1002050: 30.80 seconds
+Time taken to process file1002117: 32.74 seconds
+Time taken to process file1002203: 28.49 seconds
+Time taken to process file1002273: 32.86 seconds
+Time taken to process file1002354: 27.28 seconds
+Time taken to process file1002407: 33.98 seconds
+Time taken to process file1002494: 28.97 seconds
+Time taken to process file1002563: 25.24 seconds
+Time taken to process file1000039: 32.44 seconds
+Time taken to process file1000115: 42.59 seconds
+Time taken to process file1000223: 30.56 seconds
+Time taken to process file1000285: 38.44 seconds
+Time taken to process file1000371: 32.62 seconds
+Time taken to process file1000458: 30.50 seconds
+Time taken to process file1000529: 31.41 seconds
+Time taken to process file1000602: 28.02 seconds
+Time taken to process file1000708: 34.07 seconds
+Time taken to process file1000795: 31.72 seconds
+Time taken to process file1000882: 36.18 seconds
+Time taken to process file1000984: 31.30 seconds
+Time taken to process file1001061: 31.78 seconds
+Time taken to process file1001141: 34.57 seconds
+Time taken to process file1001229: 37.28 seconds
+Time taken to process file1001320: 30.14 seconds
+Time taken to process file1001393: 32.65 seconds
+Time taken to process file1001478: 34.12 seconds
+Time taken to process file1001582: 32.67 seconds
+Time taken to process file1001661: 32.81 seconds
+Time taken to process file1001733: 29.45 seconds
+Time taken to process file1001811: 28.15 seconds
+Time taken to process file1001883: 40.54 seconds
+Time taken to process file1001982: 29.96 seconds
+Time taken to process file1002045: 32.01 seconds
+Time taken to process file1002107: 27.90 seconds
+Time taken to process file1002169: 30.21 seconds
+Time taken to process file1002244: 27.41 seconds
+Time taken to process file1002326: 35.13 seconds
+Time taken to process file1002388: 34.28 seconds
+Time taken to process file1002474: 28.31 seconds
+Time taken to process file1002542: 27.33 seconds
+Time taken to process file1000064: 35.71 seconds
+Time taken to process file1000127: 35.95 seconds
+Time taken to process file1000211: 37.37 seconds
+Time taken to process file1000298: 29.31 seconds
+Time taken to process file1000347: 29.16 seconds
+Time taken to process file1000418: 28.32 seconds
+Time taken to process file1000490: 30.02 seconds
+Time taken to process file1000569: 37.86 seconds
+Time taken to process file1000685: 24.60 seconds
+Time taken to process file1000760: 39.60 seconds
+Time taken to process file1000873: 27.39 seconds
+Time taken to process file1000959: 32.47 seconds
+Time taken to process file1001023: 31.20 seconds
+Time taken to process file1001110: 36.62 seconds
+Time taken to process file1001206: 27.60 seconds
+Time taken to process file1001273: 48.38 seconds
+Time taken to process file1001390: 31.57 seconds
+Time taken to process file1001470: 32.13 seconds
+Time taken to process file1001565: 33.82 seconds
+Time taken to process file1001645: 35.02 seconds
+Time taken to process file1001730: 34.42 seconds
+Time taken to process file1001816: 29.59 seconds
+Time taken to process file1001892: 30.83 seconds
+Time taken to process file1001966: 30.20 seconds
+Time taken to process file1002042: 21.71 seconds
+Time taken to process file1002086: 29.23 seconds
+Time taken to process file1002129: 26.61 seconds
+Time taken to process file1002211: 22.90 seconds
+Time taken to process file1002264: 33.52 seconds
+Time taken to process file1002352: 33.59 seconds
+Time taken to process file1002430: 27.30 seconds
+Time taken to process file1002481: 30.53 seconds
+Time taken to process file1002561: 24.27 seconds
+Time taken to process file1000045: 38.91 seconds
+Time taken to process file1000149: 34.47 seconds
+Time taken to process file1000221: 32.16 seconds
+Time taken to process file1000284: 34.82 seconds
+Time taken to process file1000354: 29.79 seconds
+Time taken to process file1000425: 31.86 seconds
+Time taken to process file1000508: 31.81 seconds
+Time taken to process file1000590: 28.10 seconds
+Time taken to process file1000662: 32.09 seconds
+Time taken to process file1000777: 31.34 seconds
+Time taken to process file1000863: 31.33 seconds
+Time taken to process file1000964: 29.42 seconds
+Time taken to process file1001013: 27.41 seconds
+Time taken to process file1001099: 28.67 seconds
+Time taken to process file1001176: 30.67 seconds
+Time taken to process file1001246: 34.22 seconds
+Time taken to process file1001328: 32.53 seconds
+Time taken to process file1001403: 27.03 seconds
+Time taken to process file1001479: 30.66 seconds
+Time taken to process file1001571: 31.40 seconds
+Time taken to process file1001642: 31.94 seconds
+Time taken to process file1001721: 34.36 seconds
+Time taken to process file1001810: 32.91 seconds
+Time taken to process file1001891: 31.11 seconds
+Time taken to process file1001965: 27.97 seconds
+Time taken to process file1002038: 32.36 seconds
+Time taken to process file1002093: 39.46 seconds
+Time taken to process file1002189: 33.64 seconds
+Time taken to process file1002271: 35.43 seconds
+Time taken to process file1002359: 33.85 seconds
+Time taken to process file1002437: 33.72 seconds
+Time taken to process file1002509: 20.71 seconds
+Time taken to process file1002567: 25.50 seconds
+Time taken to process file1000002: 33.52 seconds
+Time taken to process file1000120: 34.76 seconds
+Time taken to process file1000199: 32.95 seconds
+Time taken to process file1000261: 33.73 seconds
+Time taken to process file1000338: 30.80 seconds
+Time taken to process file1000412: 36.33 seconds
+Time taken to process file1000509: 28.65 seconds
+Time taken to process file1000584: 32.55 seconds
+Time taken to process file1000682: 35.62 seconds
+Time taken to process file1000794: 36.98 seconds
+Time taken to process file1000888: 36.78 seconds
+Time taken to process file1000994: 26.20 seconds
+Time taken to process file1001056: 35.87 seconds
+Time taken to process file1001161: 34.17 seconds
+Time taken to process file1001242: 38.74 seconds
+Time taken to process file1001333: 33.23 seconds
+Time taken to process file1001410: 33.85 seconds
+Time taken to process file1001500: 30.63 seconds
+Time taken to process file1001599: 30.72 seconds
+Time taken to process file1001672: 37.72 seconds
+Time taken to process file1001746: 28.66 seconds
+Time taken to process file1001836: 30.96 seconds
+Time taken to process file1001902: 28.39 seconds
+Time taken to process file1001973: 33.97 seconds
+Time taken to process file1002049: 28.50 seconds
+Time taken to process file1002103: 32.84 seconds
+Time taken to process file1002175: 31.20 seconds
+Time taken to process file1002256: 27.72 seconds
+Time taken to process file1002335: 26.42 seconds
+Time taken to process file1002385: 38.30 seconds
+Time taken to process file1002473: 36.85 seconds
+Time taken to process file1002569: 26.28 seconds
+Time taken to process file1000023: 32.38 seconds
+Time taken to process file1000109: 32.00 seconds
+Time taken to process file1000177: 36.35 seconds
+Time taken to process file1000256: 32.35 seconds
+Time taken to process file1000335: 30.53 seconds
+Time taken to process file1000403: 37.46 seconds
+Time taken to process file1000499: 32.84 seconds
+Time taken to process file1000592: 31.20 seconds
+Time taken to process file1000691: 38.64 seconds
+Time taken to process file1000807: 36.16 seconds
+Time taken to process file1000914: 31.66 seconds
+Time taken to process file1000988: 26.83 seconds
+Time taken to process file1001053: 35.87 seconds
+Time taken to process file1001155: 39.62 seconds
+Time taken to process file1001256: 28.11 seconds
+Time taken to process file1001318: 33.32 seconds
+Time taken to process file1001395: 34.48 seconds
+Time taken to process file1001494: 33.28 seconds
+Time taken to process file1001587: 29.71 seconds
+Time taken to process file1001659: 32.09 seconds
+Time taken to process file1001731: 29.25 seconds
+Time taken to process file1001806: 34.64 seconds
+Time taken to process file1001901: 30.79 seconds
+Time taken to process file1001967: 35.90 seconds
+Time taken to process file1002048: 34.39 seconds
+Time taken to process file1002112: 28.13 seconds
+Time taken to process file1002185: 31.50 seconds
+Time taken to process file1002263: 33.25 seconds
+Time taken to process file1002343: 26.58 seconds
+Time taken to process file1002396: 30.34 seconds
+Time taken to process file1002471: 32.06 seconds
+Time taken to process file1002544: 27.12 seconds
+Time taken to process file1000003: 41.15 seconds
+Time taken to process file1000159: 31.13 seconds
+Time taken to process file1000220: 35.60 seconds
+Time taken to process file1000289: 36.26 seconds
+Time taken to process file1000372: 32.23 seconds
+Time taken to process file1000452: 31.50 seconds
+Time taken to process file1000535: 30.55 seconds
+Time taken to process file1000601: 27.20 seconds
+Time taken to process file1000693: 32.45 seconds
+Time taken to process file1000790: 34.97 seconds
+Time taken to process file1000883: 35.15 seconds
+Time taken to process file1000983: 28.65 seconds
+Time taken to process file1001048: 30.39 seconds
+Time taken to process file1001130: 35.16 seconds
+Time taken to process file1001217: 33.60 seconds
+Time taken to process file1001300: 30.28 seconds
+Time taken to process file1001379: 32.98 seconds
+Time taken to process file1001459: 33.80 seconds
+Time taken to process file1001550: 23.20 seconds
+Time taken to process file1001622: 31.93 seconds
+Time taken to process file1001699: 28.61 seconds
+Time taken to process file1001770: 30.59 seconds
+Time taken to process file1001855: 28.42 seconds
+Time taken to process file1001908: 24.98 seconds
+Time taken to process file1001969: 26.25 seconds
+Time taken to process file1002041: 34.66 seconds
+Time taken to process file1002096: 27.79 seconds
+Time taken to process file1002161: 25.37 seconds
+Time taken to process file1002232: 35.31 seconds
+Time taken to process file1002324: 25.94 seconds
+Time taken to process file1002368: 27.93 seconds
+Time taken to process file1002439: 26.44 seconds
+Time taken to process file1002500: 26.37 seconds
+Time taken to process file1002568: 27.17 seconds
+Time taken to process file1000059: 35.96 seconds
+Time taken to process file1000131: 33.48 seconds
+Time taken to process file1000205: 31.72 seconds
+Time taken to process file1000259: 31.39 seconds
+Time taken to process file1000331: 30.34 seconds
+Time taken to process file1000402: 33.59 seconds
+Time taken to process file1000493: 28.71 seconds
+Time taken to process file1000568: 26.42 seconds
+Time taken to process file1000626: 34.87 seconds
+Time taken to process file1000750: 35.64 seconds
+Time taken to process file1000859: 31.47 seconds
+Time taken to process file1000954: 29.17 seconds
+Time taken to process file1001007: 30.05 seconds
+Time taken to process file1001094: 33.00 seconds
+Time taken to process file1001186: 33.03 seconds
+Time taken to process file1001259: 38.67 seconds
+Time taken to process file1001353: 24.53 seconds
+Time taken to process file1001413: 35.19 seconds
+Time taken to process file1001511: 27.88 seconds
+Time taken to process file1001595: 36.46 seconds
+Time taken to process file1001688: 34.45 seconds
+Time taken to process file1001765: 32.86 seconds
+Time taken to process file1001858: 28.18 seconds
+Time taken to process file1001915: 31.67 seconds
+Time taken to process file1001992: 35.52 seconds
+Time taken to process file1002062: 29.14 seconds
+Time taken to process file1002118: 32.76 seconds
+Time taken to process file1002208: 29.82 seconds
+Time taken to process file1002276: 30.65 seconds
+Time taken to process file1002356: 32.01 seconds
+Time taken to process file1002434: 26.16 seconds
+Time taken to process file1002485: 29.14 seconds
+Time taken to process file1002554: 24.42 seconds
+Time taken to process file1000032: 31.89 seconds
+Time taken to process file1000098: 31.17 seconds
+Time taken to process file1000170: 25.64 seconds
+Time taken to process file1000225: 30.20 seconds
+Time taken to process file1000300: 28.12 seconds
+Time taken to process file1000374: 32.68 seconds
+Time taken to process file1000461: 31.06 seconds
+Time taken to process file1000540: 29.68 seconds
+Time taken to process file1000611: 35.81 seconds
+Time taken to process file1000721: 31.25 seconds
+Time taken to process file1000814: 29.63 seconds
+Time taken to process file1000898: 28.69 seconds
+Time taken to process file1000974: 36.73 seconds
+Time taken to process file1001071: 29.87 seconds
+Time taken to process file1001147: 34.75 seconds
+Time taken to process file1001236: 32.13 seconds
+Time taken to process file1001309: 30.76 seconds
+Time taken to process file1001385: 35.77 seconds
+Time taken to process file1001475: 25.23 seconds
+Time taken to process file1001546: 33.09 seconds
+Time taken to process file1001630: 36.70 seconds
+Time taken to process file1001722: 32.16 seconds
+Time taken to process file1001805: 31.39 seconds
+Time taken to process file1001888: 33.83 seconds
+Time taken to process file1001963: 28.08 seconds
+Time taken to process file1002037: 35.76 seconds
+Time taken to process file1002098: 36.95 seconds
+Time taken to process file1002190: 31.64 seconds
+Time taken to process file1002266: 29.23 seconds
+Time taken to process file1002341: 31.77 seconds
+Time taken to process file1002397: 31.05 seconds
+Time taken to process file1002478: 33.17 seconds
+Time taken to process file1002566: 26.09 seconds
+
+Total time for all files:  1044.541603088379

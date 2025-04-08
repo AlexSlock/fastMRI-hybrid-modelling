@@ -1,0 +1,4 @@
+data_dir: "/DATASERVER/MIC/SHARED/NYU_FastMRI/Knee/multicoil_train/"
+save_dir: "/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Full_RSS_target/"
+target_size: [640, 640]
+workers: 30
