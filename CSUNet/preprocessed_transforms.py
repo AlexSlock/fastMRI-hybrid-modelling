@@ -180,7 +180,7 @@ class UnetSample(NamedTuple):
     std: torch.Tensor
     fname: str
     slice_num: int
-    max_value: float
+    #max_value: float
 
 
 class UnetDataTransform:
@@ -211,45 +211,39 @@ class UnetDataTransform:
         self.use_seed = use_seed
 
     ################################################################################
-    # Modified to be compatible with preprocessed CS data appended to the h5 files #
+    # Modified for cs_data and target given with function call #
     ################################################################################
     def __call__(
         self,
         cs_data: np.ndarray,
         target: np.ndarray,
-        attrs: Dict,
         fname: str,
         slice_num: int,
     ) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor, str, int, float]:
         """
+        handles all pre-processing after CS of the given image as well as for target image.
+        The following operations are performed:
+        - complex absolute value
+        - normalization
+        
         Args:
             cs_data: Input image of shape (rows, cols).
             target: Target image.
-            attrs: Acquisition related information stored in the HDF5 object.
             fname: File name.
             slice_num: Serial number of the slice.
 
         Returns:
-            A tuple containing, zero-filled input image, the reconstruction
+            A tuple containing, input image, the reconstruction
             target, the mean used for normalization, the standard deviations
             used for normalization, the filename, and the slice number.
         """
+
         image = to_tensor(cs_data)
 
         # check for max value
-        max_value = attrs["max"] if "max" in attrs.keys() else 0.0
+        # max_value = attrs["max"] if "max" in attrs.keys() else 0.0
 
-        # crop input to correct size
-        if target is not None:
-            crop_size = (target.shape[-2], target.shape[-1])
-        else:
-            crop_size = (attrs["recon_size"][0], attrs["recon_size"][1])
-
-        # check for FLAIR 203
-        if image.shape[-2] < crop_size[1]:
-            crop_size = (image.shape[-2], image.shape[-2])
-
-        image = complex_center_crop(image, crop_size)
+        # don't have to crop anymore, already 640x640
 
         # absolute value
         image = fastmri.complex_abs(image)
@@ -258,10 +252,10 @@ class UnetDataTransform:
         image, mean, std = normalize_instance(image, eps=1e-11)
         image = image.clamp(-6, 6)
 
-        # normalize target
+        # preprocess target if given
         if target is not None:
             target_torch = to_tensor(target)
-            target_torch = center_crop(target_torch, crop_size)
+            # target_torch = center_crop(target_torch, crop_size)
             target_torch = normalize(target_torch, mean, std, eps=1e-11)
             target_torch = target_torch.clamp(-6, 6)
         else:
@@ -274,6 +268,6 @@ class UnetDataTransform:
             std=std,
             fname=fname,
             slice_num=slice_num,
-            max_value=max_value,
+            # max_value=max_value,
         )
 

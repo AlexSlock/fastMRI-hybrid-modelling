@@ -111,7 +111,7 @@ def estimate_sensitivity_maps(kspace):
     S = np.moveaxis(S.squeeze(), 2, 0)
     return S
 
-def zero_pad_kspace(kspace, target_size):
+def zero_pad_kspace(kspace, target_size=(640, 640)):
     """
     Zero-pad k-space to achieve sinc interpolation in image domain
     
