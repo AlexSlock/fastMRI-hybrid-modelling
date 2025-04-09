@@ -8,7 +8,7 @@ import torch
 import fastmri
 
 ################################################################################
-# Modified to be compatible with preprocessed CS data appended to the h5 files #
+# Modified to be compatible with preprocessed CS data and RSS targets in other directory #
 ################################################################################
 from preprocessed_mri_data import CombinedSliceDataset, SliceDataset
 
@@ -37,6 +37,7 @@ class FastMriDataModule(pl.LightningDataModule):
     def __init__(
         self,
         data_path: Path,
+        rss_path: Path, # ADDED
         challenge: str,
         train_transform: Callable,
         val_transform: Callable,
@@ -114,6 +115,7 @@ class FastMriDataModule(pl.LightningDataModule):
             )
 
         self.data_path = data_path
+        self.rss_path = rss_path # ADDED
         self.challenge = challenge
         self.train_transform = train_transform
         self.val_transform = val_transform
@@ -178,8 +180,8 @@ class FastMriDataModule(pl.LightningDataModule):
         dataset: Union[SliceDataset, CombinedSliceDataset]
         if is_train and self.combine_train_val:
             data_paths = [
-                self.data_path / f"{self.challenge}_train",
-                self.data_path / f"{self.challenge}_val",
+                self.data_path / f"{self.challenge}_train",  # multicoil_train
+                self.data_path / f"{self.challenge}_val",    # multicoil_val
             ]
             data_transforms = [data_transform, data_transform]
             challenges = [self.challenge, self.challenge]
@@ -190,6 +192,7 @@ class FastMriDataModule(pl.LightningDataModule):
                 volume_sample_rates = [volume_sample_rate, volume_sample_rate]
             dataset = CombinedSliceDataset(
                 roots=data_paths,
+                rss_path=self.rss_path, # ADDED
                 transforms=data_transforms,
                 challenges=challenges,
                 sample_rates=sample_rates,
@@ -205,6 +208,7 @@ class FastMriDataModule(pl.LightningDataModule):
 
             dataset = SliceDataset(
                 root=data_path,
+                rss_path = self.rss_path, # ADDED
                 transform=data_transform,
                 sample_rate=sample_rate,
                 volume_sample_rate=volume_sample_rate,
@@ -258,6 +262,7 @@ class FastMriDataModule(pl.LightningDataModule):
                 volume_sample_rate = self.volume_sample_rate  # if i == 0 else None
                 _ = SliceDataset(
                     root=data_path,
+                    rss_path=self.rss_path, # ADDED
                     transform=data_transform,
                     sample_rate=sample_rate,
                     volume_sample_rate=volume_sample_rate,
@@ -289,6 +294,13 @@ class FastMriDataModule(pl.LightningDataModule):
             default=None,
             type=Path,
             help="Path to fastMRI data root",
+        )
+        parser.add_argument( # ADDED
+            "--rss_path", 
+            default=None,
+            type=Path, 
+            required=True, 
+            help="Path to RSS target .pt files"
         )
         parser.add_argument(
             "--test_path",

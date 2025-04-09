@@ -18,7 +18,7 @@ class UnetModule(MriModule):
     MRI. arXiv:1811.08839. 2018.
     """
 
-    def __init__(
+    def __init__( # sets up moddel and loss
         self,
         in_chans=1,
         out_chans=1,
@@ -74,6 +74,7 @@ class UnetModule(MriModule):
     def forward(self, image):
         return self.unet(image.unsqueeze(1)).squeeze(1)
 
+    # Computes loss from predicted and target images
     def training_step(self, batch, batch_idx):
         output = self(batch.image)
         loss = F.l1_loss(output, batch.target)
@@ -84,14 +85,18 @@ class UnetModule(MriModule):
             print("Loss is infinite")
         ############################
 
-        self.log("loss", loss.detach())
+        self.log("train_loss", loss.detach(), prog_bar=True)
 
         return loss
 
+    # Same as above for val set
     def validation_step(self, batch, batch_idx):
         output = self(batch.image)
         mean = batch.mean.unsqueeze(1).unsqueeze(2)
         std = batch.std.unsqueeze(1).unsqueeze(2)
+        # ADDED
+        val_loss = F.l1_loss(output, batch.target)
+        self.log("val_loss", val_loss.detach(), on_step=False, on_epoch=True, prog_bar=True)
 
         return {
             "batch_idx": batch_idx,
@@ -100,7 +105,7 @@ class UnetModule(MriModule):
             "max_value": batch.max_value,
             "output": output * std + mean,
             "target": batch.target * std + mean,
-            "val_loss": F.l1_loss(output, batch.target),
+            "val_loss": val_loss,
         }
 
     def test_step(self, batch, batch_idx):
@@ -114,6 +119,7 @@ class UnetModule(MriModule):
             "output": (output * std + mean).cpu().numpy(),
         }
 
+    # Sets optimizer (RMSProp) and learning rate scheduler
     def configure_optimizers(self):
         optim = torch.optim.RMSprop(
             self.parameters(),

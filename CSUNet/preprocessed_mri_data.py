@@ -115,6 +115,7 @@ class CombinedSliceDataset(torch.utils.data.Dataset):
     def __init__(
         self,
         roots: Sequence[Path],
+        rss_dir: Union[str, Path, os.PathLike], # ADDED: path to full RSS reconstructions
         challenges: Sequence[str],
         transforms: Optional[Sequence[Optional[Callable]]] = None,
         sample_rates: Optional[Sequence[Optional[float]]] = None,
@@ -181,6 +182,7 @@ class CombinedSliceDataset(torch.utils.data.Dataset):
             self.datasets.append(
                 SliceDataset(
                     root=roots[i],
+                    rss_dir=rss_dir, # ADDED: 
                     transform=transforms[i],
                     challenge=challenges[i],
                     sample_rate=sample_rates[i],
@@ -214,8 +216,8 @@ class SliceDataset(torch.utils.data.Dataset):
 
     def __init__(
         self,
-        rss_dir: Union[str, Path, os.PathLike], # path to full RSS reconstructions
         root: Union[str, Path, os.PathLike],
+        rss_dir: Union[str, Path, os.PathLike], # ADDED: path to full RSS reconstructions
         challenge: str,
         transform: Optional[Callable] = None,
         use_dataset_cache: bool = False,

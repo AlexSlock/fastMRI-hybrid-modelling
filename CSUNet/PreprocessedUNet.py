@@ -16,7 +16,7 @@ def cli_main(args):
     # data
     # ------------
     ################################################################################
-    # Modified to be compatible with preprocessed CS data appended to the h5 files #
+    # Modified to be compatible with preprocessed CS data and RSS targets in other directory #
     ################################################################################
     train_transform = UnetDataTransform(args.challenge)
     val_transform = UnetDataTransform(args.challenge)
@@ -24,6 +24,7 @@ def cli_main(args):
     # ptl data module - this handles data loaders
     data_module = FastMriDataModule(
         data_path=args.data_path,
+        rss_path=args.rss_path, # added
         challenge=args.challenge,
         train_transform=train_transform,
         val_transform=val_transform,
@@ -80,8 +81,9 @@ def build_args():
     backend = "ddp"
     batch_size = 1 if backend == "ddp" else num_gpus
 
-    # set defaults based on optional directory config
-    data_path = fetch_dir("brain_path", path_config)
+    # set defaults based on optional directory config  
+    data_path = fetch_dir("data_path", path_config) # changed: path to both brain + knee
+    rss_path = fetch_dir("rss_path", path_config) # ADDED
     default_root_dir = fetch_dir("log_path", path_config)
 
     # client arguments
@@ -118,15 +120,17 @@ def build_args():
 
     # data config with path to fastMRI data and batch size
     parser = FastMriDataModule.add_data_specific_args(parser)
-    parser.set_defaults(data_path=data_path, batch_size=batch_size, test_path=None)
+    # CHANGED
+    parser.set_defaults(data_path=data_path, rss_path=rss_path, batch_size=batch_size, test_path=None)
 
     # module config
+    # this is where Unet architecture variables are defined (passed to unet_module then!)
     parser = UnetModule.add_model_specific_args(parser)
     parser.set_defaults(
-        in_chans=1,  # number of input channels to U-Net
-        out_chans=1,  # number of output chanenls to U-Net
-        chans=32,  # number of top-level U-Net channels
-        num_pool_layers=4,  # number of U-Net pooling layers
+        in_chans=1,  # number of input channels to U-Net (input = magnitude image)
+        out_chans=1,  # number of output chanenls to U-Net (output = RSS image)
+        chans=32,  # number of top-level U-Net channels (start of # filters, dubbels every pooling)
+        num_pool_layers=4,  # number of U-Net pooling layers (depth of network)
         drop_prob=0.0,  # dropout probability
         lr=0.001,  # RMSProp learning rate
         lr_step_size=40,  # epoch at which to decrease learning rate
