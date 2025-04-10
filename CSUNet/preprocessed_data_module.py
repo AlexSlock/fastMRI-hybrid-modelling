@@ -8,7 +8,7 @@ import torch
 import fastmri
 
 ################################################################################
-# Modified to be compatible with preprocessed CS data and RSS targets in other directory #
+# Modified to be compatible with preprocessed CS data in bart_path directory #
 ################################################################################
 from preprocessed_mri_data import CombinedSliceDataset, SliceDataset
 
@@ -37,7 +37,7 @@ class FastMriDataModule(pl.LightningDataModule):
     def __init__(
         self,
         data_path: Path,
-        rss_path: Path, # ADDED
+        bart_path: Path, # ADDED
         challenge: str,
         train_transform: Callable,
         val_transform: Callable,
@@ -64,6 +64,7 @@ class FastMriDataModule(pl.LightningDataModule):
             data_path: Path to root data directory. For example, if knee/path
                 is the root directory with subdirectories multicoil_train and
                 multicoil_val, you would input knee/path for data_path.
+            bart_path: Path to BART directory. This is used to load the BART reconstructions
             challenge: Name of challenge from ('multicoil', 'singlecoil').
             train_transform: A transform object for the training split.
             val_transform: A transform object for the validation split.
@@ -115,7 +116,7 @@ class FastMriDataModule(pl.LightningDataModule):
             )
 
         self.data_path = data_path
-        self.rss_path = rss_path # ADDED
+        self.bart_path = bart_path # ADDED
         self.challenge = challenge
         self.train_transform = train_transform
         self.val_transform = val_transform
@@ -137,6 +138,7 @@ class FastMriDataModule(pl.LightningDataModule):
         self.num_workers = num_workers
         self.distributed_sampler = distributed_sampler
 
+    # key function of loading the data:
     def _create_data_loader(
         self,
         data_transform: Callable,
@@ -183,6 +185,11 @@ class FastMriDataModule(pl.LightningDataModule):
                 self.data_path / f"{self.challenge}_train",  # multicoil_train
                 self.data_path / f"{self.challenge}_val",    # multicoil_val
             ]
+            # POINT TO BART RECONSTRUCTIONS where train/val/test division should be done
+            bart_paths = [
+                self.bart_path / "multicoil_train",  
+                self.bart_path / "multicoil_val",    
+            ]
             data_transforms = [data_transform, data_transform]
             challenges = [self.challenge, self.challenge]
             sample_rates, volume_sample_rates = None, None  # default: no subsampling
@@ -192,7 +199,7 @@ class FastMriDataModule(pl.LightningDataModule):
                 volume_sample_rates = [volume_sample_rate, volume_sample_rate]
             dataset = CombinedSliceDataset(
                 roots=data_paths,
-                rss_path=self.rss_path, # ADDED
+                bart_paths= bart_paths, # ADDED
                 transforms=data_transforms,
                 challenges=challenges,
                 sample_rates=sample_rates,
@@ -200,15 +207,17 @@ class FastMriDataModule(pl.LightningDataModule):
                 use_dataset_cache=self.use_dataset_cache_file,
                 raw_sample_filter=raw_sample_filter,
             )
-        else:
+        else:  # TODO: change?
             if data_partition in ("test", "challenge") and self.test_path is not None:
                 data_path = self.test_path
             else:
                 data_path = self.data_path / f"{self.challenge}_{data_partition}"
 
+            bart_path = self.bart_path / f"{self.challenge}_{data_partition}" # ADDED
+
             dataset = SliceDataset(
                 root=data_path,
-                rss_path = self.rss_path, # ADDED
+                bart_path= bart_path, # ADDED
                 transform=data_transform,
                 sample_rate=sample_rate,
                 volume_sample_rate=volume_sample_rate,
@@ -244,25 +253,31 @@ class FastMriDataModule(pl.LightningDataModule):
                 test_path = self.test_path
             else:
                 test_path = self.data_path / f"{self.challenge}_test"
-            data_paths = [
+            data_paths = [ # TODO: change?
                 self.data_path / f"{self.challenge}_train",
                 self.data_path / f"{self.challenge}_val",
                 test_path,
+            ]
+            # ADDED
+            bart_paths = [
+                self.bart_path / f"{self.challenge}_train",
+                self.bart_path / f"{self.challenge}_val",
+                self.bart_path / f"{self.challenge}_test",
             ]
             data_transforms = [
                 self.train_transform,
                 self.val_transform,
                 self.test_transform,
             ]
-            for i, (data_path, data_transform) in enumerate(
-                zip(data_paths, data_transforms)
+            for i, (data_path, data_transform, bart_path) in enumerate(
+                zip(data_paths, data_transforms, bart_paths)
             ):
                 # NOTE: Fixed so that val and test use correct sample rates
                 sample_rate = self.sample_rate  # if i == 0 else 1.0
                 volume_sample_rate = self.volume_sample_rate  # if i == 0 else None
                 _ = SliceDataset(
                     root=data_path,
-                    rss_path=self.rss_path, # ADDED
+                    bart_path=bart_path, # ADDED
                     transform=data_transform,
                     sample_rate=sample_rate,
                     volume_sample_rate=volume_sample_rate,
@@ -296,11 +311,11 @@ class FastMriDataModule(pl.LightningDataModule):
             help="Path to fastMRI data root",
         )
         parser.add_argument( # ADDED
-            "--rss_path", 
+            "--bart_path", 
             default=None,
             type=Path, 
             required=True, 
-            help="Path to RSS target .pt files"
+            help="Path to bart reconstructions, .npy files"
         )
         parser.add_argument(
             "--test_path",

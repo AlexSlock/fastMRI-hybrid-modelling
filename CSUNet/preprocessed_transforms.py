@@ -7,6 +7,8 @@ import fastmri
 
 from fastmri.data.subsample import MaskFunc
 
+import torch.nn.functional as F
+
 
 def to_tensor(data: np.ndarray) -> torch.Tensor:
     """
@@ -159,6 +161,22 @@ def normalize_instance(
 
     return normalize(data, mean, std, eps), mean, std
 
+# ADDED
+def downscale_bart_output(img_torch: torch.Tensor, target_size: tuple) -> torch.Tensor:
+    """
+    Downscale a BART output image (real or complex) from 640x640 to target_size.
+    Assumes the input is a 2D complex-valued TENSOR of shape or (H, W, 2) = output of T.to_tensor
+    """
+    img_torch = img_torch.permute(2, 0, 1).unsqueeze(0)  # -> (1, 2, H, W)
+
+    # Resize to 320x3taget_shape 20 using bilinear interpolation
+    img_resized = F.interpolate(img_torch, target_size, mode='bilinear', align_corners=False)
+    #img_resized = F.interpolate(img_torch, target_size, mode='area')
+
+     # Convert back to (H, W, 2)
+    img_resized = img_resized.squeeze(0).permute(1, 2, 0)  # -> (H, W, 2)
+
+    return img_resized
 
 class UnetSample(NamedTuple):
     """
@@ -180,7 +198,7 @@ class UnetSample(NamedTuple):
     std: torch.Tensor
     fname: str
     slice_num: int
-    #max_value: float
+    max_value: float
 
 
 class UnetDataTransform:
@@ -211,24 +229,30 @@ class UnetDataTransform:
         self.use_seed = use_seed
 
     ################################################################################
-    # Modified for cs_data and target given with function call #
+    # Modified for cs_data in seperate folder #
     ################################################################################
     def __call__(
         self,
         cs_data: np.ndarray,
+        orig_shape: tuple,
         target: np.ndarray,
+        attrs: Dict,
         fname: str,
         slice_num: int,
     ) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor, str, int, float]:
         """
         handles all pre-processing after CS of the given image as well as for target image.
         The following operations are performed:
+        - rescaling of CS output
+        - cropping to 320x320
         - complex absolute value
         - normalization
         
         Args:
             cs_data: Input image of shape (rows, cols).
+            orig_shape: Original shape of the cs_data
             target: Target image.
+            attrs: Acquisition related information stored in the HDF5 object.
             fname: File name.
             slice_num: Serial number of the slice.
 
@@ -240,10 +264,23 @@ class UnetDataTransform:
 
         image = to_tensor(cs_data)
 
+        # ADDED: reshape cs_data:
+        image = downscale_bart_output(image, orig_shape)
+        
         # check for max value
-        # max_value = attrs["max"] if "max" in attrs.keys() else 0.0
+        max_value = attrs["max"] if "max" in attrs.keys() else 0.0
 
-        # don't have to crop anymore, already 640x640
+        # crop input to correct size
+        if target is not None:
+            crop_size = (target.shape[-2], target.shape[-1])
+        else:
+            crop_size = (attrs["recon_size"][0], attrs["recon_size"][1])
+
+        # check for FLAIR 203
+        if image.shape[-2] < crop_size[1]:
+            crop_size = (image.shape[-2], image.shape[-2])
+
+        image = complex_center_crop(image, crop_size)
 
         # absolute value
         image = fastmri.complex_abs(image)
@@ -255,7 +292,7 @@ class UnetDataTransform:
         # preprocess target if given
         if target is not None:
             target_torch = to_tensor(target)
-            # target_torch = center_crop(target_torch, crop_size)
+            target_torch = center_crop(target_torch, crop_size)
             target_torch = normalize(target_torch, mean, std, eps=1e-11)
             target_torch = target_torch.clamp(-6, 6)
         else:
@@ -268,6 +305,6 @@ class UnetDataTransform:
             std=std,
             fname=fname,
             slice_num=slice_num,
-            # max_value=max_value,
+            max_value=max_value,
         )
 

@@ -79,9 +79,9 @@ def fetch_dir(
     """
     data_config_file = Path(data_config_file)
     if not data_config_file.is_file():
-        default_config = {
-            "knee_path": "/path/to/knee",
-            "brain_path": "/path/to/brain",
+        default_config = {  
+            "bart_path": "/path/to/bart", # ADDED (but should always be defined...)
+            "data_path": "/path/to/NYU_FastMRI", # ADDED
             "log_path": ".",
         }
         with open(data_config_file, "w") as f:
@@ -104,7 +104,7 @@ def fetch_dir(
 class FastMRIRawDataSample(NamedTuple):
     fname: Path
     slice_ind: int
-    #metadata: Dict[str, Any]
+    metadata: Dict[str, Any]
 
 
 class CombinedSliceDataset(torch.utils.data.Dataset):
@@ -115,7 +115,7 @@ class CombinedSliceDataset(torch.utils.data.Dataset):
     def __init__(
         self,
         roots: Sequence[Path],
-        rss_dir: Union[str, Path, os.PathLike], # ADDED: path to full RSS reconstructions
+        bart_paths: Sequence[Path], # ADDED: paths to CS BART output
         challenges: Sequence[str],
         transforms: Optional[Sequence[Optional[Callable]]] = None,
         sample_rates: Optional[Sequence[Optional[float]]] = None,
@@ -182,7 +182,7 @@ class CombinedSliceDataset(torch.utils.data.Dataset):
             self.datasets.append(
                 SliceDataset(
                     root=roots[i],
-                    rss_dir=rss_dir, # ADDED: 
+                    bart_path= bart_paths[i], # ADDED
                     transform=transforms[i],
                     challenge=challenges[i],
                     sample_rate=sample_rates[i],
@@ -206,8 +206,7 @@ class CombinedSliceDataset(torch.utils.data.Dataset):
             else:
                 i = i - len(dataset)
 
-#####################
-# root = now path to preprocessed data: containing ONLY BART OUTPUT => no more metadata
+
 class SliceDataset(torch.utils.data.Dataset):
     """
     A PyTorch Dataset that provides access to MR image slices.
@@ -217,7 +216,7 @@ class SliceDataset(torch.utils.data.Dataset):
     def __init__(
         self,
         root: Union[str, Path, os.PathLike],
-        rss_dir: Union[str, Path, os.PathLike], # ADDED: path to full RSS reconstructions
+        bart_path: Union[str, Path, os.PathLike], # ADDED: path to CS BART output (already has train/val/test attached)
         challenge: str,
         transform: Optional[Callable] = None,
         use_dataset_cache: bool = False,
@@ -229,13 +228,12 @@ class SliceDataset(torch.utils.data.Dataset):
     ):
         """
         Args:
-            root: Path to the BART CS OUTPUT.
-            rss_dir: Path to the full RSS reconstructions.
+            root: Path to the dataset.
             challenge: "singlecoil" or "multicoil" depending on which challenge
                 to use.
             transform: Optional; A callable object that pre-processes the raw
                 data into appropriate form. The transform function should take
-                cs_data, target, fname.name and dataslice as
+                'cs_data', 'target', 'attributes', 'filename', and 'slice' as
                 inputs. 'target' may be null for test data.
             use_dataset_cache: Whether to cache dataset metadata. This is very
                 useful for large datasets like the brain data.
@@ -255,7 +253,7 @@ class SliceDataset(torch.utils.data.Dataset):
                 metadata as input and returns a boolean indicating whether the
                 raw_sample should be included in the dataset.
         """
-        self.rss_dir = rss_dir
+        self.bart_path = bart_path # ADDED
         if challenge not in ("singlecoil", "multicoil"):
             raise ValueError('challenge should be either "singlecoil" or "multicoil"')
 
@@ -292,15 +290,29 @@ class SliceDataset(torch.utils.data.Dataset):
         # check if our dataset is in the cache
         # if there, use that metadata, if not, then regenerate the metadata
         if dataset_cache.get(root) is None or not use_dataset_cache:
-            files = list(Path(root).iterdir())
-            for fname in sorted(files):
-                ################# MODIFIED FOR NEW DATASET #########################
-                #metadata, num_slices = self._retrieve_metadata(fname)
-                bart_file = np.load(fname)
-                num_slices = bart_file.shape[0]
+            # CHANGED
+            #files = list(Path(root).iterdir())  
+            files = list(Path(self.bart_path).iterdir()) 
+            for fname_cs in sorted(files): # now you iterate over BART output sets (train/val/test)
+                ## get original root/fname.h5 back so you can still load all data!
+                # first get fname
+                fname_stem = fname_cs.stem 
+                fname_stem = fname_stem.replace("_cs", "") 
+                # get brain or knee folder
+                if "brain" in str(fname_stem):
+                    # root now looks like /path/to/NYU_FastMRI/multicoil_...
+                    folder = Path(root).parent / "Preprocessed" / Path(root).name
+                else:
+                    folder = Path(root).parent/ "Knee" / Path(root).name
+                fname = folder / (fname_stem + ".h5")
+                assert fname.exists(), f"Original file not found: {fname}" # for debugging
+                ## 
+
+                metadata, num_slices = self._retrieve_metadata(fname)
+
                 new_raw_samples = []
                 for slice_ind in range(num_slices):
-                    raw_sample = FastMRIRawDataSample(fname, slice_ind)
+                    raw_sample = FastMRIRawDataSample(fname, slice_ind, metadata)
                     if self.raw_sample_filter(raw_sample):
                         new_raw_samples.append(raw_sample)
 
@@ -315,94 +327,93 @@ class SliceDataset(torch.utils.data.Dataset):
             logging.info(f"Using dataset cache from {self.dataset_cache_file}.")
             self.raw_samples = dataset_cache[root]
 
-        # # subsample if desired
-        # if sample_rate < 1.0:  # sample by slice
-        #     random.shuffle(self.raw_samples)
-        #     num_raw_samples = round(len(self.raw_samples) * sample_rate)
-        #     self.raw_samples = self.raw_samples[:num_raw_samples]
-        # elif volume_sample_rate < 1.0:  # sample by volume
-        #     vol_names = sorted(list(set([f[0].stem for f in self.raw_samples])))
-        #     random.shuffle(vol_names)
-        #     num_volumes = round(len(vol_names) * volume_sample_rate)
-        #     sampled_vols = vol_names[:num_volumes]
-        #     self.raw_samples = [
-        #         raw_sample
-        #         for raw_sample in self.raw_samples
-        #         if raw_sample[0].stem in sampled_vols
-        #     ]
+        # subsample if desired
+        if sample_rate < 1.0:  # sample by slice
+            random.shuffle(self.raw_samples)
+            num_raw_samples = round(len(self.raw_samples) * sample_rate)
+            self.raw_samples = self.raw_samples[:num_raw_samples]
+        elif volume_sample_rate < 1.0:  # sample by volume
+            vol_names = sorted(list(set([f[0].stem for f in self.raw_samples])))
+            random.shuffle(vol_names)
+            num_volumes = round(len(vol_names) * volume_sample_rate)
+            sampled_vols = vol_names[:num_volumes]
+            self.raw_samples = [
+                raw_sample
+                for raw_sample in self.raw_samples
+                if raw_sample[0].stem in sampled_vols
+            ]
 
-        # if num_cols:
-        #     self.raw_samples = [
-        #         ex
-        #         for ex in self.raw_samples
-        #         if ex[2]["encoding_size"][1] in num_cols  # type: ignore
-        #     ]
-    
-    # NO MORE METADATA 
-    # def _retrieve_metadata(self, fname):
-    #     with h5py.File(fname, "r") as hf:
-    #         et_root = etree.fromstring(hf["ismrmrd_header"][()])
+        if num_cols:
+            self.raw_samples = [
+                ex
+                for ex in self.raw_samples
+                if ex[2]["encoding_size"][1] in num_cols  # type: ignore
+            ]
 
-    #         enc = ["encoding", "encodedSpace", "matrixSize"]
-    #         enc_size = (
-    #             int(et_query(et_root, enc + ["x"])),
-    #             int(et_query(et_root, enc + ["y"])),
-    #             int(et_query(et_root, enc + ["z"])),
-    #         )
-    #         rec = ["encoding", "reconSpace", "matrixSize"]
-    #         recon_size = (
-    #             int(et_query(et_root, rec + ["x"])),
-    #             int(et_query(et_root, rec + ["y"])),
-    #             int(et_query(et_root, rec + ["z"])),
-    #         )
+    def _retrieve_metadata(self, fname):
+        with h5py.File(fname, "r") as hf:
+            et_root = etree.fromstring(hf["ismrmrd_header"][()])
 
-    #         lims = ["encoding", "encodingLimits", "kspace_encoding_step_1"]
-    #         enc_limits_center = int(et_query(et_root, lims + ["center"]))
-    #         enc_limits_max = int(et_query(et_root, lims + ["maximum"])) + 1
+            enc = ["encoding", "encodedSpace", "matrixSize"]
+            enc_size = (
+                int(et_query(et_root, enc + ["x"])),
+                int(et_query(et_root, enc + ["y"])),
+                int(et_query(et_root, enc + ["z"])),
+            )
+            rec = ["encoding", "reconSpace", "matrixSize"]
+            recon_size = (
+                int(et_query(et_root, rec + ["x"])),
+                int(et_query(et_root, rec + ["y"])),
+                int(et_query(et_root, rec + ["z"])),
+            )
 
-    #         padding_left = enc_size[1] // 2 - enc_limits_center
-    #         padding_right = padding_left + enc_limits_max
+            lims = ["encoding", "encodingLimits", "kspace_encoding_step_1"]
+            enc_limits_center = int(et_query(et_root, lims + ["center"]))
+            enc_limits_max = int(et_query(et_root, lims + ["maximum"])) + 1
 
-    #         ##############################################################################
-    #         # Should be the same number of slices as the number of slices in the CS data #
-    #         ##############################################################################
-    #         num_slices = hf["kspace"].shape[0]
+            padding_left = enc_size[1] // 2 - enc_limits_center
+            padding_right = padding_left + enc_limits_max
 
-    #         metadata = {
-    #             "padding_left": padding_left,
-    #             "padding_right": padding_right,
-    #             "encoding_size": enc_size,
-    #             "recon_size": recon_size,
-    #             **hf.attrs,
-    #         }
+            ##############################################################################
+            # Should be the same number of slices as the number of slices in the CS data #
+            ##############################################################################
+            num_slices = hf["kspace"].shape[0]
 
-    #     return metadata, num_slices
+            metadata = {
+                "padding_left": padding_left,
+                "padding_right": padding_right,
+                "encoding_size": enc_size,
+                "recon_size": recon_size,
+                **hf.attrs,
+            }
+
+        return metadata, num_slices
 
     def __len__(self):
         return len(self.raw_samples)
 
     def __getitem__(self, i: int):
-        fname, dataslice = self.raw_samples[i]
+        fname, dataslice, metadata = self.raw_samples[i]
+        ################ MODIFIED TO ADD NEW BART DATA + ORIG SHAPE ######################
+        # load CS data 640x640 numpy array
+        bart_fname = fname.stem.replace('.h5', '_cs.npy')
+        bart_fname = Path(self.bart_path) / bart_fname
+        bart_file = np.load(bart_fname)
+        cs_data = bart_file[dataslice] 
 
-        ### MODIFIED FOR NEW DATASET #########################
+        with h5py.File(fname, "r") as hf:
+            orig_shape = hf["kspace"][dataslice].shape
+            # mask = np.asarray(hf["mask"]) if "mask" in hf else None
+            target = hf[self.recons_key][dataslice] if self.recons_key in hf else None
 
-        # load cs data: 640x640 numpy array
-        bart_file = np.load(fname)
-        cs_data = bart_file[dataslice]
-
-        # load target image: 640x640 numpy array
-        rss_filename = fname.stem.replace('_cs', '_rss') + '.pt'
-        target = torch.load(self.rss_dir + rss_filename)['image'][dataslice].numpy() 
-
-        #attrs = dict(hf.attrs)
-        #attrs.update(metadata)
+            attrs = dict(hf.attrs)
+            attrs.update(metadata)
 
         if self.transform is None:
-            #sample = (cs_data, target, attrs, fname.name, dataslice)
-            sample = (cs_data, target, fname.name, dataslice)
+            # sample = (cs_data, mask, target, attrs, fname.name, dataslice)
+            sample = (cs_data, orig_shape, target, attrs, fname.name, dataslice)
         else:
-            #sample = self.transform(cs_data, target, attrs, fname.name, dataslice)
-            sample = self.transform(cs_data, target, fname.name, dataslice)
+            # sample = self.transform(cs_data, mask, target, attrs, fname.name, dataslice)
+            sample = self.transform(cs_data, orig_shape, target, attrs, fname.name, dataslice)
 
         return sample
-

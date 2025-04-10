@@ -16,7 +16,7 @@ def cli_main(args):
     # data
     # ------------
     ################################################################################
-    # Modified to be compatible with preprocessed CS data and RSS targets in other directory #
+    # Modified to be compatible with preprocessed CS data in other directory #
     ################################################################################
     train_transform = UnetDataTransform(args.challenge)
     val_transform = UnetDataTransform(args.challenge)
@@ -24,7 +24,7 @@ def cli_main(args):
     # ptl data module - this handles data loaders
     data_module = FastMriDataModule(
         data_path=args.data_path,
-        rss_path=args.rss_path, # added
+        bart_path=args.bart_path, # added
         challenge=args.challenge,
         train_transform=train_transform,
         val_transform=val_transform,
@@ -82,8 +82,8 @@ def build_args():
     batch_size = 1 if backend == "ddp" else num_gpus
 
     # set defaults based on optional directory config  
-    data_path = fetch_dir("data_path", path_config) # changed: path to both brain + knee
-    rss_path = fetch_dir("rss_path", path_config) # ADDED
+    data_path = fetch_dir("data_path", path_config) # /path/to/NYU_fastMRI
+    bart_path = fetch_dir("bart_path", path_config) # ADDED
     default_root_dir = fetch_dir("log_path", path_config)
 
     # client arguments
@@ -121,7 +121,7 @@ def build_args():
     # data config with path to fastMRI data and batch size
     parser = FastMriDataModule.add_data_specific_args(parser)
     # CHANGED
-    parser.set_defaults(data_path=data_path, rss_path=rss_path, batch_size=batch_size, test_path=None)
+    parser.set_defaults(data_path=data_path, bart_path=bart_path, batch_size=batch_size, test_path=None)
 
     # module config
     # this is where Unet architecture variables are defined (passed to unet_module then!)

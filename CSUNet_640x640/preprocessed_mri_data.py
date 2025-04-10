@@ -255,7 +255,7 @@ class SliceDataset(torch.utils.data.Dataset):
                 metadata as input and returns a boolean indicating whether the
                 raw_sample should be included in the dataset.
         """
-        self.rss_dir = rss_dir
+        self.rss_dir = rss_dir # ADDED
         if challenge not in ("singlecoil", "multicoil"):
             raise ValueError('challenge should be either "singlecoil" or "multicoil"')
 
