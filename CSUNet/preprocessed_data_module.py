@@ -22,6 +22,7 @@ def _check_both_not_none(val1, val2):
 
 class FastMriDataModule(pl.LightningDataModule):
     """
+    !!
     Data module class for fastMRI data sets.
 
     This class handles configurations for training on fastMRI data. It is set
@@ -207,13 +208,19 @@ class FastMriDataModule(pl.LightningDataModule):
                 use_dataset_cache=self.use_dataset_cache_file,
                 raw_sample_filter=raw_sample_filter,
             )
-        else:  # TODO: change?
+        else:  
             if data_partition in ("test", "challenge") and self.test_path is not None:
                 data_path = self.test_path
             else:
                 data_path = self.data_path / f"{self.challenge}_{data_partition}"
 
             bart_path = self.bart_path / f"{self.challenge}_{data_partition}" # ADDED
+
+            # print(f"data path: {data_path}")
+            # print(f"BART path: {bart_path}")
+            # print(f"Data partition: {data_partition}")
+            # print(f"Sample rate: {sample_rate}")
+            # print(f"Challenge: {self.challenge}")
 
             dataset = SliceDataset(
                 root=data_path,
@@ -225,6 +232,8 @@ class FastMriDataModule(pl.LightningDataModule):
                 use_dataset_cache=self.use_dataset_cache_file,
                 raw_sample_filter=raw_sample_filter,
             )
+
+            print(f"Using {data_partition} dataset with {len(dataset)} samples")
 
         # ensure that entire volumes go to the same GPU in the ddp setting
         sampler = None
@@ -314,7 +323,6 @@ class FastMriDataModule(pl.LightningDataModule):
             "--bart_path", 
             default=None,
             type=Path, 
-            required=True, 
             help="Path to bart reconstructions, .npy files"
         )
         parser.add_argument(

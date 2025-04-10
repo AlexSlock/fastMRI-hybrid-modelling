@@ -209,6 +209,7 @@ class CombinedSliceDataset(torch.utils.data.Dataset):
 
 class SliceDataset(torch.utils.data.Dataset):
     """
+    !!
     A PyTorch Dataset that provides access to MR image slices.
     applies transform to the data (defined in transforms.py)
     """
@@ -284,12 +285,12 @@ class SliceDataset(torch.utils.data.Dataset):
         if self.dataset_cache_file.exists() and use_dataset_cache:
             with open(self.dataset_cache_file, "rb") as f:
                 dataset_cache = pickle.load(f)
+                print(f"Loaded dataset cache from {self.dataset_cache_file}.")
         else:
             dataset_cache = {}
 
-        # check if our dataset is in the cache
-        # if there, use that metadata, if not, then regenerate the metadata
-        if dataset_cache.get(root) is None or not use_dataset_cache:
+        #if dataset_cache.get(root) is None or not use_dataset_cache:
+        if not dataset_cache.get(root) or not use_dataset_cache:
             # CHANGED
             #files = list(Path(root).iterdir())  
             files = list(Path(self.bart_path).iterdir()) 
@@ -301,10 +302,16 @@ class SliceDataset(torch.utils.data.Dataset):
                 # get brain or knee folder
                 if "brain" in str(fname_stem):
                     # root now looks like /path/to/NYU_FastMRI/multicoil_...
-                    folder = Path(root).parent / "Preprocessed" / Path(root).name
+                    folder = Path(root).parent / "Preprocessed/" 
                 else:
-                    folder = Path(root).parent/ "Knee" / Path(root).name
-                fname = folder / (fname_stem + ".h5")
+                    folder = Path(root).parent/ "Knee/" 
+                # since BART train/val/test set is different from original fastmri one 
+                # need to check all folders of fastmri!!
+                for subset in ["multicoil_train", "multicoil_val", "multicoil_test"]:
+                    folder_sub = folder / subset
+                    fname = folder_sub / (fname_stem + ".h5")
+                    if fname.exists():
+                        break                       
                 assert fname.exists(), f"Original file not found: {fname}" # for debugging
                 ## 
 
@@ -396,13 +403,13 @@ class SliceDataset(torch.utils.data.Dataset):
         fname, dataslice, metadata = self.raw_samples[i]
         ################ MODIFIED TO ADD NEW BART DATA + ORIG SHAPE ######################
         # load CS data 640x640 numpy array
-        bart_fname = fname.stem.replace('.h5', '_cs.npy')
+        bart_fname = Path(fname).name.replace('.h5', '_cs.npy')
         bart_fname = Path(self.bart_path) / bart_fname
         bart_file = np.load(bart_fname)
         cs_data = bart_file[dataslice] 
 
         with h5py.File(fname, "r") as hf:
-            orig_shape = hf["kspace"][dataslice].shape
+            orig_shape = (hf["kspace"][dataslice].shape[1], hf["kspace"][dataslice].shape[2])
             # mask = np.asarray(hf["mask"]) if "mask" in hf else None
             target = hf[self.recons_key][dataslice] if self.recons_key in hf else None
 
