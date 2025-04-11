@@ -266,4 +266,3 @@ for file in files:
     elapsed_time_file = end_time_file - start_time_file
     #print(f"Total time for processing the entire file: {elapsed_time_file:.4f} seconds")
     logging.info(f"Total time for processing the entire file: {elapsed_time_file:.4f} seconds")
-

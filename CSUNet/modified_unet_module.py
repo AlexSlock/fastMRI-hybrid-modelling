@@ -96,7 +96,7 @@ class UnetModule(MriModule):
         std = batch.std.unsqueeze(1).unsqueeze(2)
         # ADDED
         val_loss = F.l1_loss(output, batch.target)
-        self.log("val_loss", val_loss.detach(), on_step=False, on_epoch=True, prog_bar=True)
+        # self.log("val_loss", val_loss.detach(), on_step=False, on_epoch=True, prog_bar=True)
 
         return {
             "batch_idx": batch_idx,

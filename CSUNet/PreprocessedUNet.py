@@ -10,10 +10,9 @@ from preprocessed_data_module import FastMriDataModule
 
 # FOR TESTING:
 # slicedataset: limit of 10 raw samples
-# --volume_sample_rate 0.01
 # set max epochs to 1
 
-# python preprocessedUNet.py --mode train --challenge multicoil --mask_type equispaced --center_fractions 0.08 0.04 --accelerations 4 8 --volume_sample_rate 0.01
+# python PreprocessedUNet.py --mode train --challenge multicoil --mask_type equispaced --center_fractions 0.08 0.04 --accelerations 4 8 --volume_sample_rate 0.1 --num_workers 8
 
 def cli_main(args):
     pl.seed_everything(args.seed)
@@ -60,6 +59,7 @@ def cli_main(args):
             weight_decay=args.weight_decay,
         )
         trainer.fit(model, datamodule=data_module)
+        print("Training complete.")
     elif args.mode == "test":
         model = UnetModule.load_from_checkpoint(
             checkpoint_path=args.resume_from_checkpoint,
@@ -85,7 +85,7 @@ def build_args():
     path_config = pathlib.Path("fastmri_dirs.yaml")
     num_gpus = 2
     backend = "ddp"
-    batch_size = 1 if backend == "ddp" else num_gpus
+    batch_size = 1 #if backend == "ddp_cpu" else num_gpus  #(just always set to 1 for now)
 
     # set defaults based on optional directory config  
     data_path = fetch_dir("data_path", path_config) # /path/to/NYU_fastMRI

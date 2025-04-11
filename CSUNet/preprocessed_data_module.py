@@ -239,6 +239,7 @@ class FastMriDataModule(pl.LightningDataModule):
         sampler = None
 
         if self.distributed_sampler:
+            print("Using distributed sampler")
             if is_train:
                 sampler = torch.utils.data.DistributedSampler(dataset)
             else:
