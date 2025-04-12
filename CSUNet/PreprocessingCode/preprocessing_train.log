@@ -1,0 +1,1696 @@
+INFO:root:Started processing
+INFO:root:Started processing
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080336_cs.npy
+INFO:root:Total time for processing the entire file: 144.8942 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070227_cs.npy
+INFO:root:Total time for processing the entire file: 172.7936 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_203_6000638_cs.npy
+INFO:root:Total time for processing the entire file: 173.3402 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080098_cs.npy
+INFO:root:Total time for processing the entire file: 175.2345 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030391_cs.npy
+INFO:root:Total time for processing the entire file: 176.5854 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080341_cs.npy
+INFO:root:Total time for processing the entire file: 178.9753 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080418_cs.npy
+INFO:root:Total time for processing the entire file: 179.6825 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070492_cs.npy
+INFO:root:Total time for processing the entire file: 185.7384 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090218_cs.npy
+INFO:root:Total time for processing the entire file: 554.1690 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001314_cs.npy
+INFO:root:Total time for processing the entire file: 554.2486 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020570_cs.npy
+INFO:root:Total time for processing the entire file: 569.2593 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000346_cs.npy
+INFO:root:Total time for processing the entire file: 572.3346 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000267_cs.npy
+INFO:root:Total time for processing the entire file: 635.8088 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_209_6001178_cs.npy
+INFO:root:Total time for processing the entire file: 640.7757 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090016_cs.npy
+INFO:root:Total time for processing the entire file: 663.0154 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000285_cs.npy
+INFO:root:Total time for processing the entire file: 673.4817 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020074_cs.npy
+INFO:root:Total time for processing the entire file: 674.0943 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6000981_cs.npy
+INFO:root:Total time for processing the entire file: 674.4803 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_209_6001115_cs.npy
+INFO:root:Total time for processing the entire file: 541.4252 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070052_cs.npy
+INFO:root:Total time for processing the entire file: 171.4056 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_210_6001671_cs.npy
+INFO:root:Total time for processing the entire file: 746.4087 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_200_6002008_cs.npy
+INFO:root:Total time for processing the entire file: 755.0321 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000398_cs.npy
+INFO:root:Total time for processing the entire file: 755.4025 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010257_cs.npy
+INFO:root:Total time for processing the entire file: 760.7887 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010291_cs.npy
+INFO:root:Total time for processing the entire file: 769.3281 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020022_cs.npy
+INFO:root:Total time for processing the entire file: 771.5122 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020454_cs.npy
+INFO:root:Total time for processing the entire file: 772.7065 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100322_cs.npy
+INFO:root:Total time for processing the entire file: 773.2138 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000266_cs.npy
+INFO:root:Total time for processing the entire file: 777.8938 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070607_cs.npy
+INFO:root:Total time for processing the entire file: 178.0530 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070630_cs.npy
+INFO:root:Total time for processing the entire file: 172.1078 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080698_cs.npy
+INFO:root:Total time for processing the entire file: 187.0602 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070717_cs.npy
+INFO:root:Total time for processing the entire file: 177.7088 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_200_6002124_cs.npy
+INFO:root:Total time for processing the entire file: 757.9740 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_200_6002267_cs.npy
+INFO:root:Total time for processing the entire file: 781.5881 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_201_6002897_cs.npy
+INFO:root:Total time for processing the entire file: 1003.2121 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_204_2040032_cs.npy
+INFO:root:Total time for processing the entire file: 1007.2504 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020542_cs.npy
+INFO:root:Total time for processing the entire file: 1010.7548 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020237_cs.npy
+INFO:root:Total time for processing the entire file: 1014.5092 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010260_cs.npy
+INFO:root:Total time for processing the entire file: 1035.7776 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030198_cs.npy
+INFO:root:Total time for processing the entire file: 179.3994 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000562_cs.npy
+INFO:root:Total time for processing the entire file: 981.1460 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020272_cs.npy
+INFO:root:Total time for processing the entire file: 998.0414 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070839_cs.npy
+INFO:root:Total time for processing the entire file: 175.0170 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080035_cs.npy
+INFO:root:Total time for processing the entire file: 175.8203 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070490_cs.npy
+INFO:root:Total time for processing the entire file: 172.8706 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030345_cs.npy
+INFO:root:Total time for processing the entire file: 175.2297 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030122_cs.npy
+INFO:root:Total time for processing the entire file: 187.7652 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050101_cs.npy
+INFO:root:Total time for processing the entire file: 772.1164 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080451_cs.npy
+INFO:root:Total time for processing the entire file: 172.3551 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080711_cs.npy
+INFO:root:Total time for processing the entire file: 182.0804 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070017_cs.npy
+INFO:root:Total time for processing the entire file: 195.5229 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000752_cs.npy
+INFO:root:Total time for processing the entire file: 176.9913 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001808_cs.npy
+INFO:root:Total time for processing the entire file: 771.5127 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050225_cs.npy
+INFO:root:Total time for processing the entire file: 763.8530 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_205_2050148_cs.npy
+INFO:root:Total time for processing the entire file: 771.3711 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001466_cs.npy
+INFO:root:Total time for processing the entire file: 649.5291 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070746_cs.npy
+INFO:root:Total time for processing the entire file: 172.8915 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000503_cs.npy
+INFO:root:Total time for processing the entire file: 769.5468 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020348_cs.npy
+INFO:root:Total time for processing the entire file: 760.3086 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020060_cs.npy
+INFO:root:Total time for processing the entire file: 764.5478 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010127_cs.npy
+INFO:root:Total time for processing the entire file: 1002.1582 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002314_cs.npy
+INFO:root:Total time for processing the entire file: 773.0850 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_200_6002169_cs.npy
+INFO:root:Total time for processing the entire file: 998.0356 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020114_cs.npy
+INFO:root:Total time for processing the entire file: 1027.1236 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080155_cs.npy
+INFO:root:Total time for processing the entire file: 169.9036 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002667_cs.npy
+INFO:root:Total time for processing the entire file: 773.8582 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_210_6001545_cs.npy
+INFO:root:Total time for processing the entire file: 864.0743 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_210_6001891_cs.npy
+INFO:root:Total time for processing the entire file: 792.4320 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080054_cs.npy
+INFO:root:Total time for processing the entire file: 178.8634 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000327_cs.npy
+INFO:root:Total time for processing the entire file: 1001.1176 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_203_6000682_cs.npy
+INFO:root:Total time for processing the entire file: 167.7779 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010463_cs.npy
+INFO:root:Total time for processing the entire file: 981.1431 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100146_cs.npy
+INFO:root:Total time for processing the entire file: 1011.4667 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_209_6001126_cs.npy
+INFO:root:Total time for processing the entire file: 549.8699 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010302_cs.npy
+INFO:root:Total time for processing the entire file: 794.2210 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100235_cs.npy
+INFO:root:Total time for processing the entire file: 983.5246 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070244_cs.npy
+INFO:root:Total time for processing the entire file: 177.2597 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002107_cs.npy
+INFO:root:Total time for processing the entire file: 1009.3480 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070782_cs.npy
+INFO:root:Total time for processing the entire file: 178.8066 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001203_cs.npy
+INFO:root:Total time for processing the entire file: 747.5999 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070739_cs.npy
+INFO:root:Total time for processing the entire file: 171.5438 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020121_cs.npy
+INFO:root:Total time for processing the entire file: 985.3354 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_203_6000770_cs.npy
+INFO:root:Total time for processing the entire file: 182.0132 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_203_6000632_cs.npy
+INFO:root:Total time for processing the entire file: 178.6899 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080217_cs.npy
+INFO:root:Total time for processing the entire file: 179.8166 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_210_6001821_cs.npy
+INFO:root:Total time for processing the entire file: 1011.0300 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002670_cs.npy
+INFO:root:Total time for processing the entire file: 661.1797 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_205_2050210_cs.npy
+INFO:root:Total time for processing the entire file: 749.0787 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070836_cs.npy
+INFO:root:Total time for processing the entire file: 177.0436 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000829_cs.npy
+INFO:root:Total time for processing the entire file: 170.4672 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_200_6002456_cs.npy
+INFO:root:Total time for processing the entire file: 734.9634 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070225_cs.npy
+INFO:root:Total time for processing the entire file: 177.9874 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000873_cs.npy
+INFO:root:Total time for processing the entire file: 151.2536 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090289_cs.npy
+INFO:root:Total time for processing the entire file: 727.9904 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_209_6001450_cs.npy
+INFO:root:Total time for processing the entire file: 525.4552 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070214_cs.npy
+INFO:root:Total time for processing the entire file: 186.1905 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001734_cs.npy
+INFO:root:Total time for processing the entire file: 737.0999 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_200_6002553_cs.npy
+INFO:root:Total time for processing the entire file: 753.6930 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_200_6002358_cs.npy
+INFO:root:Total time for processing the entire file: 758.0075 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_206_6000197_cs.npy
+INFO:root:Total time for processing the entire file: 968.0538 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100082_cs.npy
+INFO:root:Total time for processing the entire file: 974.2562 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000509_cs.npy
+INFO:root:Total time for processing the entire file: 750.4794 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_204_2040045_cs.npy
+INFO:root:Total time for processing the entire file: 742.3166 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_210_6001787_cs.npy
+INFO:root:Total time for processing the entire file: 981.8916 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6002954_cs.npy
+INFO:root:Total time for processing the entire file: 960.8231 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010515_cs.npy
+INFO:root:Total time for processing the entire file: 763.5851 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070327_cs.npy
+INFO:root:Total time for processing the entire file: 148.1094 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070362_cs.npy
+INFO:root:Total time for processing the entire file: 167.7674 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080487_cs.npy
+INFO:root:Total time for processing the entire file: 172.7182 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070374_cs.npy
+INFO:root:Total time for processing the entire file: 165.4577 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020279_cs.npy
+INFO:root:Total time for processing the entire file: 948.0668 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_209_6001268_cs.npy
+INFO:root:Total time for processing the entire file: 483.7495 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6003024_cs.npy
+INFO:root:Total time for processing the entire file: 973.4262 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080303_cs.npy
+INFO:root:Total time for processing the entire file: 150.1304 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001715_cs.npy
+INFO:root:Total time for processing the entire file: 735.8404 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_203_6000951_cs.npy
+INFO:root:Total time for processing the entire file: 180.9818 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100339_cs.npy
+INFO:root:Total time for processing the entire file: 746.0511 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001195_cs.npy
+INFO:root:Total time for processing the entire file: 642.3284 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070284_cs.npy
+INFO:root:Total time for processing the entire file: 151.9098 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000683_cs.npy
+INFO:root:Total time for processing the entire file: 189.8903 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_201_6002836_cs.npy
+INFO:root:Total time for processing the entire file: 987.2366 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010358_cs.npy
+INFO:root:Total time for processing the entire file: 717.9401 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070043_cs.npy
+INFO:root:Total time for processing the entire file: 178.3196 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_6000361_cs.npy
+INFO:root:Total time for processing the entire file: 757.9857 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050245_cs.npy
+INFO:root:Total time for processing the entire file: 985.0210 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070516_cs.npy
+INFO:root:Total time for processing the entire file: 174.4028 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6001974_cs.npy
+INFO:root:Total time for processing the entire file: 491.2778 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002694_cs.npy
+INFO:root:Total time for processing the entire file: 957.6510 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010340_cs.npy
+INFO:root:Total time for processing the entire file: 960.4713 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090226_cs.npy
+INFO:root:Total time for processing the entire file: 639.8187 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070101_cs.npy
+INFO:root:Total time for processing the entire file: 186.4553 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_203_6000930_cs.npy
+INFO:root:Total time for processing the entire file: 172.4733 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090292_cs.npy
+INFO:root:Total time for processing the entire file: 630.9289 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070793_cs.npy
+INFO:root:Total time for processing the entire file: 185.6752 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070847_cs.npy
+INFO:root:Total time for processing the entire file: 179.1846 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090169_cs.npy
+INFO:root:Total time for processing the entire file: 618.4306 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070330_cs.npy
+INFO:root:Total time for processing the entire file: 166.4241 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002449_cs.npy
+INFO:root:Total time for processing the entire file: 956.2223 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000231_cs.npy
+INFO:root:Total time for processing the entire file: 1005.7400 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100174_cs.npy
+INFO:root:Total time for processing the entire file: 749.0147 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_200_6002442_cs.npy
+INFO:root:Total time for processing the entire file: 744.9866 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050077_cs.npy
+INFO:root:Total time for processing the entire file: 671.1060 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080167_cs.npy
+INFO:root:Total time for processing the entire file: 175.5802 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_209_6001012_cs.npy
+INFO:root:Total time for processing the entire file: 617.1559 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010079_cs.npy
+INFO:root:Total time for processing the entire file: 953.9007 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000367_cs.npy
+INFO:root:Total time for processing the entire file: 757.3968 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_201_6002781_cs.npy
+INFO:root:Total time for processing the entire file: 751.2396 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090389_cs.npy
+INFO:root:Total time for processing the entire file: 760.8383 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_6000338_cs.npy
+INFO:root:Total time for processing the entire file: 973.5091 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070292_cs.npy
+INFO:root:Total time for processing the entire file: 184.1768 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_209_6001109_cs.npy
+INFO:root:Total time for processing the entire file: 640.3349 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6002909_cs.npy
+INFO:root:Total time for processing the entire file: 828.8147 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002038_cs.npy
+INFO:root:Total time for processing the entire file: 944.1288 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100041_cs.npy
+INFO:root:Total time for processing the entire file: 747.6546 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090160_cs.npy
+INFO:root:Total time for processing the entire file: 638.8476 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000310_cs.npy
+INFO:root:Total time for processing the entire file: 745.5952 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_206_6000234_cs.npy
+INFO:root:Total time for processing the entire file: 730.2520 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020432_cs.npy
+INFO:root:Total time for processing the entire file: 763.2677 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050222_cs.npy
+INFO:root:Total time for processing the entire file: 719.3577 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080511_cs.npy
+INFO:root:Total time for processing the entire file: 177.1894 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001622_cs.npy
+INFO:root:Total time for processing the entire file: 735.0452 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002676_cs.npy
+INFO:root:Total time for processing the entire file: 742.1785 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001602_cs.npy
+INFO:root:Total time for processing the entire file: 967.2476 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000204_cs.npy
+INFO:root:Total time for processing the entire file: 975.7520 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002361_cs.npy
+INFO:root:Total time for processing the entire file: 762.6852 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070307_cs.npy
+INFO:root:Total time for processing the entire file: 241.3393 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070704_cs.npy
+INFO:root:Total time for processing the entire file: 176.4967 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030047_cs.npy
+INFO:root:Total time for processing the entire file: 182.6489 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010513_cs.npy
+INFO:root:Total time for processing the entire file: 1008.1315 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080412_cs.npy
+INFO:root:Total time for processing the entire file: 178.6771 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000771_cs.npy
+INFO:root:Total time for processing the entire file: 178.3965 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001017_cs.npy
+INFO:root:Total time for processing the entire file: 554.8017 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070453_cs.npy
+INFO:root:Total time for processing the entire file: 183.3479 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070031_cs.npy
+INFO:root:Total time for processing the entire file: 180.5469 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080362_cs.npy
+INFO:root:Total time for processing the entire file: 180.5133 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070308_cs.npy
+INFO:root:Total time for processing the entire file: 179.9031 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002240_cs.npy
+INFO:root:Total time for processing the entire file: 863.7901 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_200_6002506_cs.npy
+INFO:root:Total time for processing the entire file: 721.0141 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001474_cs.npy
+INFO:root:Total time for processing the entire file: 656.4221 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070153_cs.npy
+INFO:root:Total time for processing the entire file: 175.4612 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000592_cs.npy
+INFO:root:Total time for processing the entire file: 985.5776 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_200_6002284_cs.npy
+INFO:root:Total time for processing the entire file: 959.6430 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002190_cs.npy
+INFO:root:Total time for processing the entire file: 768.5316 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002604_cs.npy
+INFO:root:Total time for processing the entire file: 995.8014 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_200_6002309_cs.npy
+INFO:root:Total time for processing the entire file: 726.0199 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080209_cs.npy
+INFO:root:Total time for processing the entire file: 171.7001 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010274_cs.npy
+INFO:root:Total time for processing the entire file: 864.2987 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070030_cs.npy
+INFO:root:Total time for processing the entire file: 176.9349 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002092_cs.npy
+INFO:root:Total time for processing the entire file: 761.1179 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070497_cs.npy
+INFO:root:Total time for processing the entire file: 171.5186 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_200_6002277_cs.npy
+INFO:root:Total time for processing the entire file: 940.4918 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000216_cs.npy
+INFO:root:Total time for processing the entire file: 721.7449 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090307_cs.npy
+INFO:root:Total time for processing the entire file: 634.2711 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_205_2050263_cs.npy
+INFO:root:Total time for processing the entire file: 711.5781 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080019_cs.npy
+INFO:root:Total time for processing the entire file: 184.1236 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070496_cs.npy
+INFO:root:Total time for processing the entire file: 178.7716 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6002981_cs.npy
+INFO:root:Total time for processing the entire file: 972.1393 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001709_cs.npy
+INFO:root:Total time for processing the entire file: 751.3167 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020505_cs.npy
+INFO:root:Total time for processing the entire file: 828.5159 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020211_cs.npy
+INFO:root:Total time for processing the entire file: 538.4250 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020238_cs.npy
+INFO:root:Total time for processing the entire file: 831.4528 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002905_cs.npy
+INFO:root:Total time for processing the entire file: 969.1698 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000114_cs.npy
+INFO:root:Total time for processing the entire file: 848.9994 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020374_cs.npy
+INFO:root:Total time for processing the entire file: 851.9640 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020079_cs.npy
+INFO:root:Total time for processing the entire file: 943.8842 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_209_6001355_cs.npy
+INFO:root:Total time for processing the entire file: 291.9612 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000643_cs.npy
+INFO:root:Total time for processing the entire file: 179.7366 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000362_cs.npy
+INFO:root:Total time for processing the entire file: 745.8734 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020290_cs.npy
+INFO:root:Total time for processing the entire file: 957.8155 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002500_cs.npy
+INFO:root:Total time for processing the entire file: 992.7979 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070566_cs.npy
+INFO:root:Total time for processing the entire file: 175.2770 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090339_cs.npy
+INFO:root:Total time for processing the entire file: 618.8210 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020070_cs.npy
+INFO:root:Total time for processing the entire file: 732.1435 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_203_6000954_cs.npy
+INFO:root:Total time for processing the entire file: 184.1978 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_200_6002207_cs.npy
+INFO:root:Total time for processing the entire file: 977.7193 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070827_cs.npy
+INFO:root:Total time for processing the entire file: 176.5202 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080504_cs.npy
+INFO:root:Total time for processing the entire file: 129.6353 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_200_6002006_cs.npy
+INFO:root:Total time for processing the entire file: 978.7841 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_209_6001153_cs.npy
+INFO:root:Total time for processing the entire file: 607.1857 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_205_2050255_cs.npy
+INFO:root:Total time for processing the entire file: 643.5472 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070222_cs.npy
+INFO:root:Total time for processing the entire file: 171.5809 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001186_cs.npy
+INFO:root:Total time for processing the entire file: 553.3969 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000268_cs.npy
+INFO:root:Total time for processing the entire file: 970.3326 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002498_cs.npy
+INFO:root:Total time for processing the entire file: 838.9493 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_205_6000057_cs.npy
+INFO:root:Total time for processing the entire file: 710.0057 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070113_cs.npy
+INFO:root:Total time for processing the entire file: 151.0063 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_6000007_cs.npy
+INFO:root:Total time for processing the entire file: 736.3228 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_202_6000572_cs.npy
+INFO:root:Total time for processing the entire file: 719.3600 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080168_cs.npy
+INFO:root:Total time for processing the entire file: 172.7744 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_204_2040005_cs.npy
+INFO:root:Total time for processing the entire file: 737.6448 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001082_cs.npy
+INFO:root:Total time for processing the entire file: 727.1697 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000208_cs.npy
+INFO:root:Total time for processing the entire file: 951.9693 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_204_2040025_cs.npy
+INFO:root:Total time for processing the entire file: 753.3542 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100371_cs.npy
+INFO:root:Total time for processing the entire file: 749.8773 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_6000966_cs.npy
+INFO:root:Total time for processing the entire file: 151.6051 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070460_cs.npy
+INFO:root:Total time for processing the entire file: 183.4247 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6002871_cs.npy
+INFO:root:Total time for processing the entire file: 554.8936 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020274_cs.npy
+INFO:root:Total time for processing the entire file: 701.8799 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_205_6000169_cs.npy
+INFO:root:Total time for processing the entire file: 975.2002 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100310_cs.npy
+INFO:root:Total time for processing the entire file: 963.4213 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001606_cs.npy
+INFO:root:Total time for processing the entire file: 985.6760 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080283_cs.npy
+INFO:root:Total time for processing the entire file: 182.5361 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000423_cs.npy
+INFO:root:Total time for processing the entire file: 748.1222 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_201_6002820_cs.npy
+INFO:root:Total time for processing the entire file: 975.4319 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002132_cs.npy
+INFO:root:Total time for processing the entire file: 731.6328 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_210_6001850_cs.npy
+INFO:root:Total time for processing the entire file: 742.5951 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_204_2040048_cs.npy
+INFO:root:Total time for processing the entire file: 752.2307 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_201_6002688_cs.npy
+INFO:root:Total time for processing the entire file: 751.7574 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001494_cs.npy
+INFO:root:Total time for processing the entire file: 878.5451 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_206_2060010_cs.npy
+INFO:root:Total time for processing the entire file: 721.9858 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080117_cs.npy
+INFO:root:Total time for processing the entire file: 172.5502 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000740_cs.npy
+INFO:root:Total time for processing the entire file: 173.1328 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_209_6001467_cs.npy
+INFO:root:Total time for processing the entire file: 482.3245 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010423_cs.npy
+INFO:root:Total time for processing the entire file: 995.2065 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000613_cs.npy
+INFO:root:Total time for processing the entire file: 998.4452 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070501_cs.npy
+INFO:root:Total time for processing the entire file: 173.5039 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_210_6001667_cs.npy
+INFO:root:Total time for processing the entire file: 747.0428 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090258_cs.npy
+INFO:root:Total time for processing the entire file: 640.8195 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_204_2040089_cs.npy
+INFO:root:Total time for processing the entire file: 734.1885 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070633_cs.npy
+INFO:root:Total time for processing the entire file: 166.8932 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000354_cs.npy
+INFO:root:Total time for processing the entire file: 728.2278 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080523_cs.npy
+INFO:root:Total time for processing the entire file: 186.4516 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070728_cs.npy
+INFO:root:Total time for processing the entire file: 177.2801 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_202_6000440_cs.npy
+INFO:root:Total time for processing the entire file: 733.7685 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020568_cs.npy
+INFO:root:Total time for processing the entire file: 779.0080 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_202_6000548_cs.npy
+INFO:root:Total time for processing the entire file: 507.1230 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_204_2040082_cs.npy
+INFO:root:Total time for processing the entire file: 973.6982 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001721_cs.npy
+INFO:root:Total time for processing the entire file: 637.3397 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050035_cs.npy
+INFO:root:Total time for processing the entire file: 716.0296 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070266_cs.npy
+INFO:root:Total time for processing the entire file: 181.2860 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_203_6000739_cs.npy
+INFO:root:Total time for processing the entire file: 157.0880 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010389_cs.npy
+INFO:root:Total time for processing the entire file: 764.3078 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002222_cs.npy
+INFO:root:Total time for processing the entire file: 638.3748 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090173_cs.npy
+INFO:root:Total time for processing the entire file: 527.8786 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000414_cs.npy
+INFO:root:Total time for processing the entire file: 714.1907 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030350_cs.npy
+INFO:root:Total time for processing the entire file: 174.2338 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080516_cs.npy
+INFO:root:Total time for processing the entire file: 173.6017 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_210_6001848_cs.npy
+INFO:root:Total time for processing the entire file: 744.0454 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020226_cs.npy
+INFO:root:Total time for processing the entire file: 929.2056 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090305_cs.npy
+INFO:root:Total time for processing the entire file: 610.8371 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_206_2060013_cs.npy
+INFO:root:Total time for processing the entire file: 949.3189 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100013_cs.npy
+INFO:root:Total time for processing the entire file: 863.0533 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_209_6001199_cs.npy
+INFO:root:Total time for processing the entire file: 621.3558 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050086_cs.npy
+INFO:root:Total time for processing the entire file: 710.3599 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_203_6000959_cs.npy
+INFO:root:Total time for processing the entire file: 148.8524 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100244_cs.npy
+INFO:root:Total time for processing the entire file: 761.1668 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010467_cs.npy
+INFO:root:Total time for processing the entire file: 948.5768 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100271_cs.npy
+INFO:root:Total time for processing the entire file: 743.3699 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020148_cs.npy
+INFO:root:Total time for processing the entire file: 739.9319 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080388_cs.npy
+INFO:root:Total time for processing the entire file: 150.0645 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002731_cs.npy
+INFO:root:Total time for processing the entire file: 972.9947 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_6000157_cs.npy
+INFO:root:Total time for processing the entire file: 747.2730 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_201_6002900_cs.npy
+INFO:root:Total time for processing the entire file: 971.4729 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090220_cs.npy
+INFO:root:Total time for processing the entire file: 626.8267 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080088_cs.npy
+INFO:root:Total time for processing the entire file: 175.9919 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020077_cs.npy
+INFO:root:Total time for processing the entire file: 723.0251 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000314_cs.npy
+INFO:root:Total time for processing the entire file: 755.4890 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002857_cs.npy
+INFO:root:Total time for processing the entire file: 955.0539 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020307_cs.npy
+INFO:root:Total time for processing the entire file: 728.4485 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_200_6002648_cs.npy
+INFO:root:Total time for processing the entire file: 652.5435 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_6000179_cs.npy
+INFO:root:Total time for processing the entire file: 728.0218 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_206_2060005_cs.npy
+INFO:root:Total time for processing the entire file: 747.8189 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010048_cs.npy
+INFO:root:Total time for processing the entire file: 987.6297 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000660_cs.npy
+INFO:root:Total time for processing the entire file: 174.9812 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080488_cs.npy
+INFO:root:Total time for processing the entire file: 184.6250 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000379_cs.npy
+INFO:root:Total time for processing the entire file: 760.0535 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_206_2060079_cs.npy
+INFO:root:Total time for processing the entire file: 733.6160 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000843_cs.npy
+INFO:root:Total time for processing the entire file: 150.9043 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020381_cs.npy
+INFO:root:Total time for processing the entire file: 939.1454 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070560_cs.npy
+INFO:root:Total time for processing the entire file: 173.8445 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002563_cs.npy
+INFO:root:Total time for processing the entire file: 949.8226 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002542_cs.npy
+INFO:root:Total time for processing the entire file: 759.2236 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000811_cs.npy
+INFO:root:Total time for processing the entire file: 182.0968 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_200_6002570_cs.npy
+INFO:root:Total time for processing the entire file: 735.6503 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070314_cs.npy
+INFO:root:Total time for processing the entire file: 148.8625 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_206_2060072_cs.npy
+INFO:root:Total time for processing the entire file: 756.9567 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002489_cs.npy
+INFO:root:Total time for processing the entire file: 696.5609 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002696_cs.npy
+INFO:root:Total time for processing the entire file: 847.7676 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001025_cs.npy
+INFO:root:Total time for processing the entire file: 633.8491 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_201_6002719_cs.npy
+INFO:root:Total time for processing the entire file: 1000.5140 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070256_cs.npy
+INFO:root:Total time for processing the entire file: 226.9636 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020071_cs.npy
+INFO:root:Total time for processing the entire file: 985.9108 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6002992_cs.npy
+INFO:root:Total time for processing the entire file: 848.3286 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080681_cs.npy
+INFO:root:Total time for processing the entire file: 184.8771 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020245_cs.npy
+INFO:root:Total time for processing the entire file: 638.0723 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010466_cs.npy
+INFO:root:Total time for processing the entire file: 1010.1654 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_205_2050126_cs.npy
+INFO:root:Total time for processing the entire file: 716.1167 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_206_6000257_cs.npy
+INFO:root:Total time for processing the entire file: 851.4313 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070072_cs.npy
+INFO:root:Total time for processing the entire file: 175.1505 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6003023_cs.npy
+INFO:root:Total time for processing the entire file: 654.9341 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_203_6000947_cs.npy
+INFO:root:Total time for processing the entire file: 181.6520 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001090_cs.npy
+INFO:root:Total time for processing the entire file: 516.6942 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_209_6001010_cs.npy
+INFO:root:Total time for processing the entire file: 635.1266 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050041_cs.npy
+INFO:root:Total time for processing the entire file: 954.7847 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001089_cs.npy
+INFO:root:Total time for processing the entire file: 622.1002 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000744_cs.npy
+INFO:root:Total time for processing the entire file: 178.6053 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080043_cs.npy
+INFO:root:Total time for processing the entire file: 172.7388 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_200_6002548_cs.npy
+INFO:root:Total time for processing the entire file: 923.7324 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000781_cs.npy
+INFO:root:Total time for processing the entire file: 165.6324 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000072_cs.npy
+INFO:root:Total time for processing the entire file: 939.3161 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080298_cs.npy
+INFO:root:Total time for processing the entire file: 162.6760 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100086_cs.npy
+INFO:root:Total time for processing the entire file: 942.2097 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020146_cs.npy
+INFO:root:Total time for processing the entire file: 697.7182 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070809_cs.npy
+INFO:root:Total time for processing the entire file: 172.8408 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050151_cs.npy
+INFO:root:Total time for processing the entire file: 696.7883 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6002876_cs.npy
+INFO:root:Total time for processing the entire file: 951.2218 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080260_cs.npy
+INFO:root:Total time for processing the entire file: 174.8242 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010416_cs.npy
+INFO:root:Total time for processing the entire file: 912.2475 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070135_cs.npy
+INFO:root:Total time for processing the entire file: 162.4561 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050061_cs.npy
+INFO:root:Total time for processing the entire file: 719.2858 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020233_cs.npy
+INFO:root:Total time for processing the entire file: 926.4652 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001898_cs.npy
+INFO:root:Total time for processing the entire file: 698.8647 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_200_6002487_cs.npy
+INFO:root:Total time for processing the entire file: 934.1961 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000304_cs.npy
+INFO:root:Total time for processing the entire file: 701.2246 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030111_cs.npy
+INFO:root:Total time for processing the entire file: 168.1127 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010369_cs.npy
+INFO:root:Total time for processing the entire file: 865.0630 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002427_cs.npy
+INFO:root:Total time for processing the entire file: 926.7652 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6001978_cs.npy
+INFO:root:Total time for processing the entire file: 689.2626 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_6000100_cs.npy
+INFO:root:Total time for processing the entire file: 694.9780 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020351_cs.npy
+INFO:root:Total time for processing the entire file: 938.6445 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_6000182_cs.npy
+INFO:root:Total time for processing the entire file: 672.9774 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_203_6000877_cs.npy
+INFO:root:Total time for processing the entire file: 166.2445 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090320_cs.npy
+INFO:root:Total time for processing the entire file: 602.9817 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080100_cs.npy
+INFO:root:Total time for processing the entire file: 150.9372 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001432_cs.npy
+INFO:root:Total time for processing the entire file: 493.5119 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100234_cs.npy
+INFO:root:Total time for processing the entire file: 923.1865 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000101_cs.npy
+INFO:root:Total time for processing the entire file: 908.4083 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100119_cs.npy
+INFO:root:Total time for processing the entire file: 951.8127 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080370_cs.npy
+INFO:root:Total time for processing the entire file: 168.5365 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000155_cs.npy
+INFO:root:Total time for processing the entire file: 688.4683 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000308_cs.npy
+INFO:root:Total time for processing the entire file: 690.9187 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000826_cs.npy
+INFO:root:Total time for processing the entire file: 163.8657 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000057_cs.npy
+INFO:root:Total time for processing the entire file: 892.7573 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010177_cs.npy
+INFO:root:Total time for processing the entire file: 905.2552 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002043_cs.npy
+INFO:root:Total time for processing the entire file: 912.9323 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001483_cs.npy
+INFO:root:Total time for processing the entire file: 676.5033 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020359_cs.npy
+INFO:root:Total time for processing the entire file: 676.5145 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001117_cs.npy
+INFO:root:Total time for processing the entire file: 585.0765 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_6000365_cs.npy
+INFO:root:Total time for processing the entire file: 883.0994 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002157_cs.npy
+INFO:root:Total time for processing the entire file: 917.3278 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000795_cs.npy
+INFO:root:Total time for processing the entire file: 173.0666 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_202_6000464_cs.npy
+INFO:root:Total time for processing the entire file: 787.9810 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_206_2060015_cs.npy
+INFO:root:Total time for processing the entire file: 694.2958 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_210_6001753_cs.npy
+INFO:root:Total time for processing the entire file: 295.8141 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002184_cs.npy
+INFO:root:Total time for processing the entire file: 689.0776 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100099_cs.npy
+INFO:root:Total time for processing the entire file: 696.7043 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000220_cs.npy
+INFO:root:Total time for processing the entire file: 676.9637 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070435_cs.npy
+INFO:root:Total time for processing the entire file: 168.6081 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030339_cs.npy
+INFO:root:Total time for processing the entire file: 163.5885 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030367_cs.npy
+INFO:root:Total time for processing the entire file: 157.3135 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080432_cs.npy
+INFO:root:Total time for processing the entire file: 174.6240 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010613_cs.npy
+INFO:root:Total time for processing the entire file: 909.4268 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080616_cs.npy
+INFO:root:Total time for processing the entire file: 167.6874 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002967_cs.npy
+INFO:root:Total time for processing the entire file: 677.2159 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002787_cs.npy
+INFO:root:Total time for processing the entire file: 684.3793 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_210_6001790_cs.npy
+INFO:root:Total time for processing the entire file: 769.1623 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_210_6001517_cs.npy
+INFO:root:Total time for processing the entire file: 675.2035 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070677_cs.npy
+INFO:root:Total time for processing the entire file: 167.1715 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_203_6000727_cs.npy
+INFO:root:Total time for processing the entire file: 171.5818 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002655_cs.npy
+INFO:root:Total time for processing the entire file: 679.6984 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_202_6000550_cs.npy
+INFO:root:Total time for processing the entire file: 879.7919 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000515_cs.npy
+INFO:root:Total time for processing the entire file: 680.3474 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000165_cs.npy
+INFO:root:Total time for processing the entire file: 910.8146 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_203_6000646_cs.npy
+INFO:root:Total time for processing the entire file: 167.0562 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_205_2050161_cs.npy
+INFO:root:Total time for processing the entire file: 519.2965 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_6000005_cs.npy
+INFO:root:Total time for processing the entire file: 880.5949 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6000972_cs.npy
+INFO:root:Total time for processing the entire file: 679.4585 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002405_cs.npy
+INFO:root:Total time for processing the entire file: 885.1299 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002263_cs.npy
+INFO:root:Total time for processing the entire file: 877.2668 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_210_6001827_cs.npy
+INFO:root:Total time for processing the entire file: 904.5908 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6002925_cs.npy
+INFO:root:Total time for processing the entire file: 882.1259 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070167_cs.npy
+INFO:root:Total time for processing the entire file: 165.2133 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070465_cs.npy
+INFO:root:Total time for processing the entire file: 170.1275 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001072_cs.npy
+INFO:root:Total time for processing the entire file: 680.6153 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050215_cs.npy
+INFO:root:Total time for processing the entire file: 666.1868 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020341_cs.npy
+INFO:root:Total time for processing the entire file: 891.3781 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_205_6000103_cs.npy
+INFO:root:Total time for processing the entire file: 695.2848 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010329_cs.npy
+INFO:root:Total time for processing the entire file: 909.1065 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010015_cs.npy
+INFO:root:Total time for processing the entire file: 912.3473 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_202_6000498_cs.npy
+INFO:root:Total time for processing the entire file: 765.9816 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_206_6000201_cs.npy
+INFO:root:Total time for processing the entire file: 682.3714 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070588_cs.npy
+INFO:root:Total time for processing the entire file: 167.5775 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_206_2060044_cs.npy
+INFO:root:Total time for processing the entire file: 701.4410 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002040_cs.npy
+INFO:root:Total time for processing the entire file: 695.2762 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080306_cs.npy
+INFO:root:Total time for processing the entire file: 166.5394 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030260_cs.npy
+INFO:root:Total time for processing the entire file: 170.2931 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_210_6001882_cs.npy
+INFO:root:Total time for processing the entire file: 895.5148 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001605_cs.npy
+INFO:root:Total time for processing the entire file: 900.1403 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020418_cs.npy
+INFO:root:Total time for processing the entire file: 694.9086 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100011_cs.npy
+INFO:root:Total time for processing the entire file: 697.3277 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090251_cs.npy
+INFO:root:Total time for processing the entire file: 513.9659 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090248_cs.npy
+INFO:root:Total time for processing the entire file: 589.5803 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_200_6002180_cs.npy
+INFO:root:Total time for processing the entire file: 891.8989 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010196_cs.npy
+INFO:root:Total time for processing the entire file: 692.8768 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000539_cs.npy
+INFO:root:Total time for processing the entire file: 915.4480 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000053_cs.npy
+INFO:root:Total time for processing the entire file: 693.3994 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001596_cs.npy
+INFO:root:Total time for processing the entire file: 693.3525 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_204_2040051_cs.npy
+INFO:root:Total time for processing the entire file: 603.9438 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_203_6000935_cs.npy
+INFO:root:Total time for processing the entire file: 182.0561 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020016_cs.npy
+INFO:root:Total time for processing the entire file: 696.4643 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080638_cs.npy
+INFO:root:Total time for processing the entire file: 147.7861 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050118_cs.npy
+INFO:root:Total time for processing the entire file: 901.9345 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_210_6001582_cs.npy
+INFO:root:Total time for processing the entire file: 918.8411 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6002928_cs.npy
+INFO:root:Total time for processing the entire file: 707.1947 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080570_cs.npy
+INFO:root:Total time for processing the entire file: 171.7588 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020156_cs.npy
+INFO:root:Total time for processing the entire file: 907.2129 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002866_cs.npy
+INFO:root:Total time for processing the entire file: 914.3466 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001191_cs.npy
+INFO:root:Total time for processing the entire file: 607.5221 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100121_cs.npy
+INFO:root:Total time for processing the entire file: 708.4049 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002367_cs.npy
+INFO:root:Total time for processing the entire file: 899.4076 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_203_6000608_cs.npy
+INFO:root:Total time for processing the entire file: 164.3081 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080405_cs.npy
+INFO:root:Total time for processing the entire file: 166.7594 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050179_cs.npy
+INFO:root:Total time for processing the entire file: 703.5921 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_209_6000989_cs.npy
+INFO:root:Total time for processing the entire file: 525.7835 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080666_cs.npy
+INFO:root:Total time for processing the entire file: 210.1909 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080475_cs.npy
+INFO:root:Total time for processing the entire file: 147.5471 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_206_6000196_cs.npy
+INFO:root:Total time for processing the entire file: 916.8317 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_6000324_cs.npy
+INFO:root:Total time for processing the entire file: 788.7354 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070471_cs.npy
+INFO:root:Total time for processing the entire file: 165.3002 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070685_cs.npy
+INFO:root:Total time for processing the entire file: 170.8634 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000508_cs.npy
+INFO:root:Total time for processing the entire file: 727.2757 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020191_cs.npy
+INFO:root:Total time for processing the entire file: 713.3656 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001460_cs.npy
+INFO:root:Total time for processing the entire file: 513.3076 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020209_cs.npy
+INFO:root:Total time for processing the entire file: 915.0017 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100314_cs.npy
+INFO:root:Total time for processing the entire file: 964.5558 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_210_6001937_cs.npy
+INFO:root:Total time for processing the entire file: 904.7754 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070032_cs.npy
+INFO:root:Total time for processing the entire file: 164.3272 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030118_cs.npy
+INFO:root:Total time for processing the entire file: 170.7187 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001151_cs.npy
+INFO:root:Total time for processing the entire file: 591.0666 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002104_cs.npy
+INFO:root:Total time for processing the entire file: 941.8474 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010495_cs.npy
+INFO:root:Total time for processing the entire file: 937.3106 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010145_cs.npy
+INFO:root:Total time for processing the entire file: 914.8555 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001217_cs.npy
+INFO:root:Total time for processing the entire file: 484.2999 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020063_cs.npy
+INFO:root:Total time for processing the entire file: 716.7031 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070360_cs.npy
+INFO:root:Total time for processing the entire file: 198.2689 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010123_cs.npy
+INFO:root:Total time for processing the entire file: 932.2314 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020034_cs.npy
+INFO:root:Total time for processing the entire file: 898.9298 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_210_6001499_cs.npy
+INFO:root:Total time for processing the entire file: 686.3397 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070636_cs.npy
+INFO:root:Total time for processing the entire file: 164.3827 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020452_cs.npy
+INFO:root:Total time for processing the entire file: 944.4745 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050025_cs.npy
+INFO:root:Total time for processing the entire file: 699.8315 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010151_cs.npy
+INFO:root:Total time for processing the entire file: 910.2477 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090210_cs.npy
+INFO:root:Total time for processing the entire file: 501.5838 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_202_6000566_cs.npy
+INFO:root:Total time for processing the entire file: 914.4083 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080273_cs.npy
+INFO:root:Total time for processing the entire file: 168.3930 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000484_cs.npy
+INFO:root:Total time for processing the entire file: 686.2566 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_203_6000597_cs.npy
+INFO:root:Total time for processing the entire file: 167.4018 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_204_2040076_cs.npy
+INFO:root:Total time for processing the entire file: 795.0172 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050081_cs.npy
+INFO:root:Total time for processing the entire file: 708.1960 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002601_cs.npy
+INFO:root:Total time for processing the entire file: 726.2344 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020396_cs.npy
+INFO:root:Total time for processing the entire file: 919.7705 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002582_cs.npy
+INFO:root:Total time for processing the entire file: 770.2535 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002692_cs.npy
+INFO:root:Total time for processing the entire file: 924.1848 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070586_cs.npy
+INFO:root:Total time for processing the entire file: 162.4425 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050138_cs.npy
+INFO:root:Total time for processing the entire file: 684.5198 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080363_cs.npy
+INFO:root:Total time for processing the entire file: 172.2106 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070693_cs.npy
+INFO:root:Total time for processing the entire file: 161.5314 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070750_cs.npy
+INFO:root:Total time for processing the entire file: 165.9061 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070690_cs.npy
+INFO:root:Total time for processing the entire file: 181.5677 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001233_cs.npy
+INFO:root:Total time for processing the entire file: 496.5521 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001614_cs.npy
+INFO:root:Total time for processing the entire file: 696.9670 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002534_cs.npy
+INFO:root:Total time for processing the entire file: 1436.7133 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001124_cs.npy
+INFO:root:Total time for processing the entire file: 591.0693 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001751_cs.npy
+INFO:root:Total time for processing the entire file: 682.8909 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001563_cs.npy
+INFO:root:Total time for processing the entire file: 908.3418 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010213_cs.npy
+INFO:root:Total time for processing the entire file: 515.9390 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080477_cs.npy
+INFO:root:Total time for processing the entire file: 148.8107 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_200_6002136_cs.npy
+INFO:root:Total time for processing the entire file: 673.7928 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000624_cs.npy
+INFO:root:Total time for processing the entire file: 693.8411 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020151_cs.npy
+INFO:root:Total time for processing the entire file: 901.7480 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020053_cs.npy
+INFO:root:Total time for processing the entire file: 1118.5810 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_205_6000155_cs.npy
+INFO:root:Total time for processing the entire file: 798.9953 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010524_cs.npy
+INFO:root:Total time for processing the entire file: 880.0197 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020502_cs.npy
+INFO:root:Total time for processing the entire file: 872.2142 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020108_cs.npy
+INFO:root:Total time for processing the entire file: 885.4356 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_209_6001354_cs.npy
+INFO:root:Total time for processing the entire file: 499.2073 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080126_cs.npy
+INFO:root:Total time for processing the entire file: 223.3455 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_6000184_cs.npy
+INFO:root:Total time for processing the entire file: 900.1907 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002168_cs.npy
+INFO:root:Total time for processing the entire file: 668.0398 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_202_6000575_cs.npy
+INFO:root:Total time for processing the entire file: 881.0716 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_210_6001955_cs.npy
+INFO:root:Total time for processing the entire file: 878.4201 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010571_cs.npy
+INFO:root:Total time for processing the entire file: 884.9539 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_205_2050197_cs.npy
+INFO:root:Total time for processing the entire file: 682.8048 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_210_6001645_cs.npy
+INFO:root:Total time for processing the entire file: 666.2916 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020081_cs.npy
+INFO:root:Total time for processing the entire file: 869.1786 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_203_6000834_cs.npy
+INFO:root:Total time for processing the entire file: 169.0316 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_200_6002492_cs.npy
+INFO:root:Total time for processing the entire file: 669.1433 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001755_cs.npy
+INFO:root:Total time for processing the entire file: 274.9680 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020298_cs.npy
+INFO:root:Total time for processing the entire file: 681.2007 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001809_cs.npy
+INFO:root:Total time for processing the entire file: 671.5834 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001583_cs.npy
+INFO:root:Total time for processing the entire file: 889.3058 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002308_cs.npy
+INFO:root:Total time for processing the entire file: 871.1799 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001786_cs.npy
+INFO:root:Total time for processing the entire file: 866.1776 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_6000317_cs.npy
+INFO:root:Total time for processing the entire file: 602.0815 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070651_cs.npy
+INFO:root:Total time for processing the entire file: 162.4157 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020521_cs.npy
+INFO:root:Total time for processing the entire file: 900.9095 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_6000448_cs.npy
+INFO:root:Total time for processing the entire file: 902.7621 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000614_cs.npy
+INFO:root:Total time for processing the entire file: 170.2403 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_206_6000216_cs.npy
+INFO:root:Total time for processing the entire file: 750.9199 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002821_cs.npy
+INFO:root:Total time for processing the entire file: 892.7428 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080213_cs.npy
+INFO:root:Total time for processing the entire file: 180.6006 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020463_cs.npy
+INFO:root:Total time for processing the entire file: 781.0749 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020534_cs.npy
+INFO:root:Total time for processing the entire file: 793.0400 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_204_2040053_cs.npy
+INFO:root:Total time for processing the entire file: 674.4902 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_203_6000907_cs.npy
+INFO:root:Total time for processing the entire file: 162.8299 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000271_cs.npy
+INFO:root:Total time for processing the entire file: 878.4252 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001077_cs.npy
+INFO:root:Total time for processing the entire file: 569.1407 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6003029_cs.npy
+INFO:root:Total time for processing the entire file: 891.9317 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_200_6002629_cs.npy
+INFO:root:Total time for processing the entire file: 681.7140 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_206_6000223_cs.npy
+INFO:root:Total time for processing the entire file: 687.6097 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6001983_cs.npy
+INFO:root:Total time for processing the entire file: 676.3823 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070211_cs.npy
+INFO:root:Total time for processing the entire file: 168.3138 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_202_6000585_cs.npy
+INFO:root:Total time for processing the entire file: 902.1964 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080531_cs.npy
+INFO:root:Total time for processing the entire file: 172.3525 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070263_cs.npy
+INFO:root:Total time for processing the entire file: 171.4603 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001232_cs.npy
+INFO:root:Total time for processing the entire file: 497.0544 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002249_cs.npy
+INFO:root:Total time for processing the entire file: 674.6986 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_200_6002501_cs.npy
+INFO:root:Total time for processing the entire file: 885.8172 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000451_cs.npy
+INFO:root:Total time for processing the entire file: 696.2649 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6002882_cs.npy
+INFO:root:Total time for processing the entire file: 696.9348 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070692_cs.npy
+INFO:root:Total time for processing the entire file: 168.9460 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070769_cs.npy
+INFO:root:Total time for processing the entire file: 169.6357 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070612_cs.npy
+INFO:root:Total time for processing the entire file: 170.5952 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001503_cs.npy
+INFO:root:Total time for processing the entire file: 684.2569 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020304_cs.npy
+INFO:root:Total time for processing the entire file: 878.6235 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_203_6000933_cs.npy
+INFO:root:Total time for processing the entire file: 166.6551 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002319_cs.npy
+INFO:root:Total time for processing the entire file: 799.2172 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001588_cs.npy
+INFO:root:Total time for processing the entire file: 691.7311 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_200_6002000_cs.npy
+INFO:root:Total time for processing the entire file: 663.5085 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070731_cs.npy
+INFO:root:Total time for processing the entire file: 169.8489 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_209_6001270_cs.npy
+INFO:root:Total time for processing the entire file: 480.5653 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6002896_cs.npy
+INFO:root:Total time for processing the entire file: 873.4914 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050165_cs.npy
+INFO:root:Total time for processing the entire file: 771.9212 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_202_6000556_cs.npy
+INFO:root:Total time for processing the entire file: 668.8896 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001527_cs.npy
+INFO:root:Total time for processing the entire file: 670.8436 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_6000091_cs.npy
+INFO:root:Total time for processing the entire file: 585.6430 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090358_cs.npy
+INFO:root:Total time for processing the entire file: 689.1502 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_200_6002503_cs.npy
+INFO:root:Total time for processing the entire file: 883.2295 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000888_cs.npy
+INFO:root:Total time for processing the entire file: 159.3146 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070649_cs.npy
+INFO:root:Total time for processing the entire file: 169.0543 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020479_cs.npy
+INFO:root:Total time for processing the entire file: 920.5976 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010243_cs.npy
+INFO:root:Total time for processing the entire file: 885.6367 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_210_6001504_cs.npy
+INFO:root:Total time for processing the entire file: 674.4054 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030051_cs.npy
+INFO:root:Total time for processing the entire file: 151.9744 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020496_cs.npy
+INFO:root:Total time for processing the entire file: 890.2108 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_205_2050259_cs.npy
+INFO:root:Total time for processing the entire file: 617.8756 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030262_cs.npy
+INFO:root:Total time for processing the entire file: 180.5674 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020221_cs.npy
+INFO:root:Total time for processing the entire file: 901.3483 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080545_cs.npy
+INFO:root:Total time for processing the entire file: 152.6761 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_206_6000218_cs.npy
+INFO:root:Total time for processing the entire file: 710.2743 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050185_cs.npy
+INFO:root:Total time for processing the entire file: 697.2448 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002393_cs.npy
+INFO:root:Total time for processing the entire file: 709.2970 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001311_cs.npy
+INFO:root:Total time for processing the entire file: 624.1760 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001076_cs.npy
+INFO:root:Total time for processing the entire file: 648.1338 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050212_cs.npy
+INFO:root:Total time for processing the entire file: 692.6517 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000147_cs.npy
+INFO:root:Total time for processing the entire file: 687.1319 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070512_cs.npy
+INFO:root:Total time for processing the entire file: 173.5704 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070428_cs.npy
+INFO:root:Total time for processing the entire file: 167.0600 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001764_cs.npy
+INFO:root:Total time for processing the entire file: 694.8958 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080685_cs.npy
+INFO:root:Total time for processing the entire file: 177.6627 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_204_2040077_cs.npy
+INFO:root:Total time for processing the entire file: 708.0436 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_204_2040070_cs.npy
+INFO:root:Total time for processing the entire file: 937.5760 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100301_cs.npy
+INFO:root:Total time for processing the entire file: 710.7711 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010060_cs.npy
+INFO:root:Total time for processing the entire file: 904.3978 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000094_cs.npy
+INFO:root:Total time for processing the entire file: 690.3018 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000549_cs.npy
+INFO:root:Total time for processing the entire file: 516.2836 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030143_cs.npy
+INFO:root:Total time for processing the entire file: 169.2270 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000365_cs.npy
+INFO:root:Total time for processing the entire file: 715.3015 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_205_2050021_cs.npy
+INFO:root:Total time for processing the entire file: 944.9581 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001176_cs.npy
+INFO:root:Total time for processing the entire file: 613.3385 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000642_cs.npy
+INFO:root:Total time for processing the entire file: 689.1273 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_206_2060066_cs.npy
+INFO:root:Total time for processing the entire file: 706.5518 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010522_cs.npy
+INFO:root:Total time for processing the entire file: 822.7328 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020358_cs.npy
+INFO:root:Total time for processing the entire file: 801.4120 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_201_6002712_cs.npy
+INFO:root:Total time for processing the entire file: 926.4807 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_6000339_cs.npy
+INFO:root:Total time for processing the entire file: 708.5541 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001145_cs.npy
+INFO:root:Total time for processing the entire file: 540.5076 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002776_cs.npy
+INFO:root:Total time for processing the entire file: 924.3901 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_202_6000431_cs.npy
+INFO:root:Total time for processing the entire file: 699.3486 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070526_cs.npy
+INFO:root:Total time for processing the entire file: 175.7570 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001495_cs.npy
+INFO:root:Total time for processing the entire file: 922.9526 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_200_6002068_cs.npy
+INFO:root:Total time for processing the entire file: 713.5492 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050170_cs.npy
+INFO:root:Total time for processing the entire file: 691.4983 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_210_6001533_cs.npy
+INFO:root:Total time for processing the entire file: 618.7136 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_201_6002834_cs.npy
+INFO:root:Total time for processing the entire file: 707.3072 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6002892_cs.npy
+INFO:root:Total time for processing the entire file: 745.8538 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080655_cs.npy
+INFO:root:Total time for processing the entire file: 170.2512 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010299_cs.npy
+INFO:root:Total time for processing the entire file: 518.5846 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002709_cs.npy
+INFO:root:Total time for processing the entire file: 689.2539 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_200_6002349_cs.npy
+INFO:root:Total time for processing the entire file: 726.8774 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090353_cs.npy
+INFO:root:Total time for processing the entire file: 607.1862 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_205_2050214_cs.npy
+INFO:root:Total time for processing the entire file: 620.8225 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_210_6001893_cs.npy
+INFO:root:Total time for processing the entire file: 742.2932 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080533_cs.npy
+INFO:root:Total time for processing the entire file: 148.0087 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070054_cs.npy
+INFO:root:Total time for processing the entire file: 178.4624 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010313_cs.npy
+INFO:root:Total time for processing the entire file: 926.8757 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100222_cs.npy
+INFO:root:Total time for processing the entire file: 942.7063 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000326_cs.npy
+INFO:root:Total time for processing the entire file: 952.6723 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6002902_cs.npy
+INFO:root:Total time for processing the entire file: 801.0372 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020037_cs.npy
+INFO:root:Total time for processing the entire file: 614.5774 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000588_cs.npy
+INFO:root:Total time for processing the entire file: 709.0746 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020167_cs.npy
+INFO:root:Total time for processing the entire file: 621.9929 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000607_cs.npy
+INFO:root:Total time for processing the entire file: 938.3670 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6003027_cs.npy
+INFO:root:Total time for processing the entire file: 515.3175 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090113_cs.npy
+INFO:root:Total time for processing the entire file: 527.1147 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_204_2040022_cs.npy
+INFO:root:Total time for processing the entire file: 834.2730 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000273_cs.npy
+INFO:root:Total time for processing the entire file: 630.6621 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070241_cs.npy
+INFO:root:Total time for processing the entire file: 180.4488 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020277_cs.npy
+INFO:root:Total time for processing the entire file: 928.8419 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080731_cs.npy
+INFO:root:Total time for processing the entire file: 169.0153 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_205_2050181_cs.npy
+INFO:root:Total time for processing the entire file: 1031.3899 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_205_2050113_cs.npy
+INFO:root:Total time for processing the entire file: 955.8982 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_200_6002221_cs.npy
+INFO:root:Total time for processing the entire file: 930.2871 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090298_cs.npy
+INFO:root:Total time for processing the entire file: 542.6826 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070517_cs.npy
+INFO:root:Total time for processing the entire file: 120.6414 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010009_cs.npy
+INFO:root:Total time for processing the entire file: 937.8665 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050206_cs.npy
+INFO:root:Total time for processing the entire file: 529.4382 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001282_cs.npy
+INFO:root:Total time for processing the entire file: 527.7258 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_209_6001253_cs.npy
+INFO:root:Total time for processing the entire file: 726.4922 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090069_cs.npy
+INFO:root:Total time for processing the entire file: 558.8412 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_209_6001402_cs.npy
+INFO:root:Total time for processing the entire file: 526.3836 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070500_cs.npy
+INFO:root:Total time for processing the entire file: 173.8188 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_204_2040098_cs.npy
+INFO:root:Total time for processing the entire file: 696.8318 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_200_6002458_cs.npy
+INFO:root:Total time for processing the entire file: 742.3687 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050062_cs.npy
+INFO:root:Total time for processing the entire file: 708.5028 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100336_cs.npy
+INFO:root:Total time for processing the entire file: 721.6218 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_202_6000567_cs.npy
+INFO:root:Total time for processing the entire file: 504.7048 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070648_cs.npy
+INFO:root:Total time for processing the entire file: 168.7758 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050247_cs.npy
+INFO:root:Total time for processing the entire file: 644.1379 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080382_cs.npy
+INFO:root:Total time for processing the entire file: 163.3155 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_203_6000886_cs.npy
+INFO:root:Total time for processing the entire file: 148.3726 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010128_cs.npy
+INFO:root:Total time for processing the entire file: 454.4313 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070703_cs.npy
+INFO:root:Total time for processing the entire file: 167.5596 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080222_cs.npy
+INFO:root:Total time for processing the entire file: 155.3168 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_204_2040090_cs.npy
+INFO:root:Total time for processing the entire file: 730.2213 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_209_6001138_cs.npy
+INFO:root:Total time for processing the entire file: 512.7286 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010141_cs.npy
+INFO:root:Total time for processing the entire file: 668.3996 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_209_6000969_cs.npy
+INFO:root:Total time for processing the entire file: 626.1772 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020566_cs.npy
+INFO:root:Total time for processing the entire file: 540.1414 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001651_cs.npy
+INFO:root:Total time for processing the entire file: 738.0607 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000097_cs.npy
+INFO:root:Total time for processing the entire file: 948.6075 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090070_cs.npy
+INFO:root:Total time for processing the entire file: 611.2783 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002390_cs.npy
+INFO:root:Total time for processing the entire file: 722.1015 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010112_cs.npy
+INFO:root:Total time for processing the entire file: 970.6138 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070416_cs.npy
+INFO:root:Total time for processing the entire file: 147.6522 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080664_cs.npy
+INFO:root:Total time for processing the entire file: 166.0767 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020427_cs.npy
+INFO:root:Total time for processing the entire file: 343.6794 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_205_6000162_cs.npy
+INFO:root:Total time for processing the entire file: 863.2761 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000295_cs.npy
+INFO:root:Total time for processing the entire file: 956.5601 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000071_cs.npy
+INFO:root:Total time for processing the entire file: 718.2893 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080637_cs.npy
+INFO:root:Total time for processing the entire file: 173.5166 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030294_cs.npy
+INFO:root:Total time for processing the entire file: 174.1206 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070777_cs.npy
+INFO:root:Total time for processing the entire file: 149.1374 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010452_cs.npy
+INFO:root:Total time for processing the entire file: 718.0190 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020216_cs.npy
+INFO:root:Total time for processing the entire file: 463.3954 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001926_cs.npy
+INFO:root:Total time for processing the entire file: 735.1756 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001342_cs.npy
+INFO:root:Total time for processing the entire file: 736.4530 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080335_cs.npy
+INFO:root:Total time for processing the entire file: 172.4497 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000383_cs.npy
+INFO:root:Total time for processing the entire file: 698.8533 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070208_cs.npy
+INFO:root:Total time for processing the entire file: 174.9585 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6003005_cs.npy
+INFO:root:Total time for processing the entire file: 927.0019 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090333_cs.npy
+INFO:root:Total time for processing the entire file: 626.6856 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_6000410_cs.npy
+INFO:root:Total time for processing the entire file: 696.7915 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_200_6002516_cs.npy
+INFO:root:Total time for processing the entire file: 732.0274 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_203_6000946_cs.npy
+INFO:root:Total time for processing the entire file: 127.7715 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_202_6000421_cs.npy
+INFO:root:Total time for processing the entire file: 642.6987 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_205_2050100_cs.npy
+INFO:root:Total time for processing the entire file: 698.0157 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002097_cs.npy
+INFO:root:Total time for processing the entire file: 962.8061 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090380_cs.npy
+INFO:root:Total time for processing the entire file: 548.7689 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070742_cs.npy
+INFO:root:Total time for processing the entire file: 181.7910 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100241_cs.npy
+INFO:root:Total time for processing the entire file: 824.1548 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070824_cs.npy
+INFO:root:Total time for processing the entire file: 186.6061 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_203_6000825_cs.npy
+INFO:root:Total time for processing the entire file: 171.9764 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070668_cs.npy
+INFO:root:Total time for processing the entire file: 169.3682 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100161_cs.npy
+INFO:root:Total time for processing the entire file: 959.8913 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070427_cs.npy
+INFO:root:Total time for processing the entire file: 175.3625 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090357_cs.npy
+INFO:root:Total time for processing the entire file: 525.2385 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090319_cs.npy
+INFO:root:Total time for processing the entire file: 611.4438 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001520_cs.npy
+INFO:root:Total time for processing the entire file: 694.9816 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_203_6000912_cs.npy
+INFO:root:Total time for processing the entire file: 183.4255 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002479_cs.npy
+INFO:root:Total time for processing the entire file: 880.5781 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000444_cs.npy
+INFO:root:Total time for processing the entire file: 656.7900 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100066_cs.npy
+INFO:root:Total time for processing the entire file: 743.1913 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080011_cs.npy
+INFO:root:Total time for processing the entire file: 173.5771 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010012_cs.npy
+INFO:root:Total time for processing the entire file: 906.0694 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020080_cs.npy
+INFO:root:Total time for processing the entire file: 963.2239 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010132_cs.npy
+INFO:root:Total time for processing the entire file: 930.1965 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080220_cs.npy
+INFO:root:Total time for processing the entire file: 166.6094 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020189_cs.npy
+INFO:root:Total time for processing the entire file: 743.1575 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_210_6001769_cs.npy
+INFO:root:Total time for processing the entire file: 727.7897 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_203_6000926_cs.npy
+INFO:root:Total time for processing the entire file: 164.5191 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001547_cs.npy
+INFO:root:Total time for processing the entire file: 943.4784 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_200_6002328_cs.npy
+INFO:root:Total time for processing the entire file: 640.6348 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020540_cs.npy
+INFO:root:Total time for processing the entire file: 646.2473 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_209_6001052_cs.npy
+INFO:root:Total time for processing the entire file: 531.6781 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001678_cs.npy
+INFO:root:Total time for processing the entire file: 942.5959 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_6000294_cs.npy
+INFO:root:Total time for processing the entire file: 723.3038 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100325_cs.npy
+INFO:root:Total time for processing the entire file: 721.0015 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010528_cs.npy
+INFO:root:Total time for processing the entire file: 718.3839 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020109_cs.npy
+INFO:root:Total time for processing the entire file: 966.4160 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000728_cs.npy
+INFO:root:Total time for processing the entire file: 146.2539 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010434_cs.npy
+INFO:root:Total time for processing the entire file: 734.0646 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002831_cs.npy
+INFO:root:Total time for processing the entire file: 724.7095 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100306_cs.npy
+INFO:root:Total time for processing the entire file: 708.5729 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_200_6002258_cs.npy
+INFO:root:Total time for processing the entire file: 722.4169 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_201_6002699_cs.npy
+INFO:root:Total time for processing the entire file: 929.9743 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001242_cs.npy
+INFO:root:Total time for processing the entire file: 534.8139 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002265_cs.npy
+INFO:root:Total time for processing the entire file: 937.8678 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001524_cs.npy
+INFO:root:Total time for processing the entire file: 685.2058 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020377_cs.npy
+INFO:root:Total time for processing the entire file: 712.3287 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001378_cs.npy
+INFO:root:Total time for processing the entire file: 625.0582 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070270_cs.npy
+INFO:root:Total time for processing the entire file: 173.8073 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020546_cs.npy
+INFO:root:Total time for processing the entire file: 708.6107 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_202_6000481_cs.npy
+INFO:root:Total time for processing the entire file: 911.6152 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_201_6002695_cs.npy
+INFO:root:Total time for processing the entire file: 700.6439 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_203_6000905_cs.npy
+INFO:root:Total time for processing the entire file: 167.2474 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030233_cs.npy
+INFO:root:Total time for processing the entire file: 146.8798 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001446_cs.npy
+INFO:root:Total time for processing the entire file: 532.7395 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_209_6000986_cs.npy
+INFO:root:Total time for processing the entire file: 517.5627 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_206_2060064_cs.npy
+INFO:root:Total time for processing the entire file: 710.2199 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100079_cs.npy
+INFO:root:Total time for processing the entire file: 936.3822 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001736_cs.npy
+INFO:root:Total time for processing the entire file: 675.3390 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080482_cs.npy
+INFO:root:Total time for processing the entire file: 169.2732 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100114_cs.npy
+INFO:root:Total time for processing the entire file: 704.5803 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100106_cs.npy
+INFO:root:Total time for processing the entire file: 630.4015 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002325_cs.npy
+INFO:root:Total time for processing the entire file: 734.0952 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020349_cs.npy
+INFO:root:Total time for processing the entire file: 945.8175 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070594_cs.npy
+INFO:root:Total time for processing the entire file: 183.5040 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000775_cs.npy
+INFO:root:Total time for processing the entire file: 176.2804 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_205_6000036_cs.npy
+INFO:root:Total time for processing the entire file: 926.7441 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_210_6001672_cs.npy
+INFO:root:Total time for processing the entire file: 717.7397 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070771_cs.npy
+INFO:root:Total time for processing the entire file: 145.9248 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001050_cs.npy
+INFO:root:Total time for processing the entire file: 523.0959 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_210_6001657_cs.npy
+INFO:root:Total time for processing the entire file: 705.7877 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080119_cs.npy
+INFO:root:Total time for processing the entire file: 173.5686 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080374_cs.npy
+INFO:root:Total time for processing the entire file: 189.3122 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_210_6001710_cs.npy
+INFO:root:Total time for processing the entire file: 931.8867 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002117_cs.npy
+INFO:root:Total time for processing the entire file: 696.1529 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080181_cs.npy
+INFO:root:Total time for processing the entire file: 174.9833 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050125_cs.npy
+INFO:root:Total time for processing the entire file: 701.2369 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090055_cs.npy
+INFO:root:Total time for processing the entire file: 588.2135 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020378_cs.npy
+INFO:root:Total time for processing the entire file: 913.9761 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070715_cs.npy
+INFO:root:Total time for processing the entire file: 183.3281 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100042_cs.npy
+INFO:root:Total time for processing the entire file: 764.9774 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010239_cs.npy
+INFO:root:Total time for processing the entire file: 823.1918 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010111_cs.npy
+INFO:root:Total time for processing the entire file: 938.3544 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010601_cs.npy
+INFO:root:Total time for processing the entire file: 929.9712 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080484_cs.npy
+INFO:root:Total time for processing the entire file: 168.6262 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_204_2130023_cs.npy
+INFO:root:Total time for processing the entire file: 904.7842 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080262_cs.npy
+INFO:root:Total time for processing the entire file: 173.5325 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000351_cs.npy
+INFO:root:Total time for processing the entire file: 706.1224 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080257_cs.npy
+INFO:root:Total time for processing the entire file: 145.4209 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_203_2030288_cs.npy
+INFO:root:Total time for processing the entire file: 169.1531 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020487_cs.npy
+INFO:root:Total time for processing the entire file: 696.5795 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_210_6001712_cs.npy
+INFO:root:Total time for processing the entire file: 892.3265 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020524_cs.npy
+INFO:root:Total time for processing the entire file: 963.6959 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070397_cs.npy
+INFO:root:Total time for processing the entire file: 166.2397 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_208_2080203_cs.npy
+INFO:root:Total time for processing the entire file: 175.1224 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_6001349_cs.npy
+INFO:root:Total time for processing the entire file: 600.2102 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002810_cs.npy
+INFO:root:Total time for processing the entire file: 930.4464 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000433_cs.npy
+INFO:root:Total time for processing the entire file: 610.1541 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_209_6001118_cs.npy
+INFO:root:Total time for processing the entire file: 506.7698 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070732_cs.npy
+INFO:root:Total time for processing the entire file: 175.5839 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_207_2070348_cs.npy
+INFO:root:Total time for processing the entire file: 175.3547 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100005_cs.npy
+INFO:root:Total time for processing the entire file: 712.6843 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_203_6000763_cs.npy
+INFO:root:Total time for processing the entire file: 178.8605 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080277_cs.npy
+INFO:root:Total time for processing the entire file: 176.6194 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080565_cs.npy
+INFO:root:Total time for processing the entire file: 177.7961 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000485_cs.npy
+INFO:root:Total time for processing the entire file: 725.3020 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_208_2080317_cs.npy
+INFO:root:Total time for processing the entire file: 182.6363 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001537_cs.npy
+INFO:root:Total time for processing the entire file: 749.0003 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100343_cs.npy
+INFO:root:Total time for processing the entire file: 746.4362 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020122_cs.npy
+INFO:root:Total time for processing the entire file: 946.5455 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_2000214_cs.npy
+INFO:root:Total time for processing the entire file: 739.0320 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_200_6002435_cs.npy
+INFO:root:Total time for processing the entire file: 721.2888 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_205_2050227_cs.npy
+INFO:root:Total time for processing the entire file: 732.1786 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_207_2070842_cs.npy
+INFO:root:Total time for processing the entire file: 183.7625 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_201_6002704_cs.npy
+INFO:root:Total time for processing the entire file: 748.3975 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_200_6002243_cs.npy
+INFO:root:Total time for processing the entire file: 850.2495 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_209_6001408_cs.npy
+INFO:root:Total time for processing the entire file: 624.4926 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001904_cs.npy
+INFO:root:Total time for processing the entire file: 721.9684 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_203_6000878_cs.npy
+INFO:root:Total time for processing the entire file: 169.0420 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_202_2020139_cs.npy
+INFO:root:Total time for processing the entire file: 703.0249 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_206_6000237_cs.npy
+INFO:root:Total time for processing the entire file: 611.7325 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_206_6000200_cs.npy
+INFO:root:Total time for processing the entire file: 915.0470 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020562_cs.npy
+INFO:root:Total time for processing the entire file: 899.5027 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090146_cs.npy
+INFO:root:Total time for processing the entire file: 561.0011 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXFLAIR_201_6002881_cs.npy
+INFO:root:Total time for processing the entire file: 1138.1492 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_209_2090252_cs.npy
+INFO:root:Total time for processing the entire file: 456.6169 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_200_6002341_cs.npy
+INFO:root:Total time for processing the entire file: 833.6659 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1_206_2060036_cs.npy
+INFO:root:Total time for processing the entire file: 890.7258 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002154_cs.npy
+INFO:root:Total time for processing the entire file: 872.0632 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_200_6001963_cs.npy
+INFO:root:Total time for processing the entire file: 877.7092 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1PRE_210_6001637_cs.npy
+INFO:root:Total time for processing the entire file: 619.5089 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001612_cs.npy
+INFO:root:Total time for processing the entire file: 630.3379 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_6001646_cs.npy
+INFO:root:Total time for processing the entire file: 880.8978 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_201_6002807_cs.npy
+INFO:root:Total time for processing the entire file: 536.1807 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_200_6002368_cs.npy
+INFO:root:Total time for processing the entire file: 897.0335 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_200_6002245_cs.npy
+INFO:root:Total time for processing the entire file: 855.0792 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6001972_cs.npy
+INFO:root:Total time for processing the entire file: 845.0806 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT1POST_202_6000545_cs.npy
+INFO:root:Total time for processing the entire file: 832.0280 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002241_cs.npy
+INFO:root:Total time for processing the entire file: 851.1403 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_200_6002617_cs.npy
+INFO:root:Total time for processing the entire file: 847.3216 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_201_2010563_cs.npy
+INFO:root:Total time for processing the entire file: 835.7100 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_210_2100035_cs.npy
+INFO:root:Total time for processing the entire file: 842.4069 seconds
+INFO:root:  Saved CS data to /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_train/file_brain_AXT2_202_2020164_cs.npy
+INFO:root:Total time for processing the entire file: 800.2926 seconds

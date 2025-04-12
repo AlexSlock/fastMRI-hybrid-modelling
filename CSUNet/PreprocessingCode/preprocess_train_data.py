@@ -12,27 +12,10 @@ import random
 import os
 import logging
 
-logging.basicConfig(filename='processing.log', level=logging.INFO)
-logging.info('Started processing')
-
-# Set number of CPU threads to 20
-os.environ["OMP_NUM_THREADS"] = "20"
-
-# matlab file with CS sampling profiles
-mat_file = sio.loadmat('/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/fastMRI-hybrid-modelling/fastMRI/sampling_profiles_CS.mat')
-
-# Directory containing HDF5 files
-INPUT_DIR = "/DATASERVER/MIC/SHARED/NYU_FastMRI/Knee/multicoil_train"
-
-# Get all HDF5 files in the input directory
-files = list(Path(INPUT_DIR).glob("**/*.h5"))
-file_count = 1
-
-# Output directory for CS data
-OUTPUT_DIR = "/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/CS_Output/knee_train"
-
-# Ensure output directory exists
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+from tqdm import tqdm
+from functools import partial
+from concurrent.futures import ProcessPoolExecutor, as_completed
+import yaml
 
 def fifty_fifty():
     '''
@@ -188,15 +171,13 @@ def CS(kspace, S, lamda=0.005, num_iter=50):
     reconstruction = bart.bart(1, 'pics -S -l1 -r {} -i {} -d 0'.format(lamda, num_iter), kspace_perm, S_perm)
     return reconstruction
 
-for file in files:
-    # print(str(file_count)+". Starting to process file "+str(file)+'...')
-    logging.info(f"{file_count}. Starting to process file {file}...")
 
+def process_volume(fname, save_dir, mat_file):
     # Timer for the entire file
     start_time_file = time.time()   
 
     # Open HDF5 file in read mode
-    with h5py.File(file, 'r') as hf:
+    with h5py.File(fname, 'r') as hf:
         kspace = hf['kspace'][()]
 
     #print("Shape of the raw kspace: ", str(np.shape(kspace)))
@@ -248,7 +229,7 @@ for file in files:
     # Save file to given output DIR 
     ## stem attribute gives the base name of the file without the extension. 
     # For example: If your input file is named sample_data.h5, file.stem will return sample_data
-    output_file = os.path.join(OUTPUT_DIR, file.stem + "_cs.npy")
+    output_file = os.path.join(save_dir, fname.stem + "_cs.npy")
     np.save(output_file, cs_data)
 
     # Free up memory and go to next file
@@ -256,7 +237,6 @@ for file in files:
     del kspace, masked_kspace, mask, cs_data    # Delete the variables to free up memory
     time.sleep(1)
     gc.collect()    # Collect garbage to free up memory
-    file_count += 1
     #print(f"  Saved CS data to {output_file}")
     logging.info(f"  Saved CS data to {output_file}")
 
@@ -266,3 +246,53 @@ for file in files:
     elapsed_time_file = end_time_file - start_time_file
     #print(f"Total time for processing the entire file: {elapsed_time_file:.4f} seconds")
     logging.info(f"Total time for processing the entire file: {elapsed_time_file:.4f} seconds")
+
+
+
+def process_dataset_parallel(data_dir, save_dir, mat_file, max_workers=8, amount_training_files=None):
+    os.makedirs(save_dir, exist_ok=True)
+      
+    h5_files = list(Path(data_dir).glob("**/*.h5"))
+
+    #TODO: Select... files for training => brain still 847 [1000:1847]
+    #if amount_training_files is not None:
+    h5_files = h5_files[1000:1847] 
+
+    process_fn = partial(process_volume, save_dir=save_dir, mat_file=mat_file)
+
+    with ProcessPoolExecutor(max_workers=max_workers) as executor:
+        futures = {executor.submit(process_fn, h5_path): h5_path for h5_path in h5_files}
+        for future in tqdm(as_completed(futures), total=len(futures), desc="Parallel RSS Gen"):
+            result = future.result()
+            #print(result)  # only printed 'None'
+
+
+
+def load_config(config_path):
+    with open(config_path, 'r') as file:
+        config = yaml.safe_load(file)
+    return config
+
+def main():
+    logging.basicConfig(filename='preprocessing_train.log', level=logging.INFO)
+    logging.info('Started processing')
+    # Load configuration
+    # assumes the config file is named rss_full_config.yaml 
+    # and is in the same directory as your script.
+    config = load_config("preprocess_config.yml") 
+
+    # Use values from config
+    data_dir = config["data_dir"]
+    save_dir = config["save_dir"]
+    mat_dir = config["mat_dir"]
+    mat_file = sio.loadmat(mat_dir)
+    workers = config["workers"]
+    amount_training_files = config["amount_training_files"]
+
+    start = time.time()
+    process_dataset_parallel(data_dir, save_dir, mat_file, max_workers=workers, amount_training_files=amount_training_files)
+    logging.info('Total time for all files: {:.2f} seconds'.format(time.time() - start))
+    logging.info('Finished processing')
+
+if __name__ == "__main__":
+    main()
