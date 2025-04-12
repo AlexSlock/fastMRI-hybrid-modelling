@@ -245,14 +245,32 @@ def process_volume(fname, save_dir, mat_file):
 
 
 
-def process_dataset_parallel(data_dir, save_dir, mat_file, max_workers=8, amount_training_files=None):
+def process_dataset_parallel(data_dir, save_dir, mat_file, max_workers=8):
     os.makedirs(save_dir, exist_ok=True)
-      
-    h5_files = list(Path(data_dir).glob("**/*.h5"))
+    # validation files: 527 brain data, 234 knee 
+    # already taken from knee: 821 from train (still 152 left)
+    # ==> so 152 from train + 82 from val
+    h5_files = list()
 
-    #TODO: Select... files for training
-    if amount_training_files is not None:
-        h5_files = h5_files[:amount_training_files] # only select the first # of training files
+    # Directory containing HDF5 files
+    knee_train_path = Path(data_dir).joinpath("Knee/multicoil_train/")
+    knee_val_path = Path(data_dir).joinpath("Knee/multicoil_val/")
+    brain_val_path = Path(data_dir).joinpath("Preprocessed/multicoil_val/")
+    
+    knee_train_files = list(knee_train_path.glob("**/*.h5"))
+    knee_train_files = knee_train_files[-152:]  # Select the last 152 files from the training set
+    h5_files.extend(knee_train_files)
+
+    knee_val_files = list(knee_val_path.glob("**/*.h5"))
+    knee_val_files = knee_val_files[:82]  # Select the first 83 files from the validation set
+    h5_files.extend(knee_val_files)
+
+    brain_val_files = list(brain_val_path.glob("**/*.h5"))
+    brain_val_files = brain_val_files[:527]  # Select the first 527 files from the validation set
+    h5_files.extend(brain_val_files)
+    #print("Number of files to process: ", str(len(h5_files)))
+    logging.info(f"Number of files to process: {len(h5_files)}")
+
 
     process_fn = partial(process_volume, save_dir=save_dir, mat_file=mat_file)
 
@@ -270,12 +288,12 @@ def load_config(config_path):
     return config
 
 def main():
-    logging.basicConfig(filename='preprocessing_train.log', level=logging.INFO)
+    logging.basicConfig(filename='preprocessing_val.log', level=logging.INFO)
     logging.info('Started processing')
     # Load configuration
     # assumes the config file is named rss_full_config.yaml 
     # and is in the same directory as your script.
-    config = load_config("preprocess_config.yml") 
+    config = load_config("preprocess_val_config.yml") 
 
     # Use values from config
     data_dir = config["data_dir"]
@@ -283,10 +301,10 @@ def main():
     mat_dir = config["mat_dir"]
     mat_file = sio.loadmat(mat_dir)
     workers = config["workers"]
-    amount_training_files = config["amount_training_files"]
+    #amount_training_files = config["amount_training_files"]
 
     start = time.time()
-    process_dataset_parallel(data_dir, save_dir, mat_file, max_workers=workers, amount_training_files=amount_training_files)
+    process_dataset_parallel(data_dir, save_dir, mat_file, max_workers=workers)
     logging.info('Total time for all files: {:.2f} seconds'.format(time.time() - start))
     logging.info('Finished processing')
 

@@ -255,7 +255,7 @@ def load_config(config_path):
     return config
 
 def main():
-    logging.basicConfig(filename='preprocessing_train.log', level=logging.INFO)
+    logging.basicConfig(filename='preprocessing_test.log', level=logging.INFO)
     logging.info('Started processing')
     # Load configuration
     # assumes the config file is named rss_full_config.yaml 

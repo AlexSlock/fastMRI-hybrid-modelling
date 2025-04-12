@@ -1,0 +1,4 @@
+data_dir: "/DATASERVER/MIC/SHARED/NYU_FastMRI/"
+save_dir: "/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_val/"
+mat_dir: '/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/fastMRI-hybrid-modelling/fastMRI/sampling_profiles_CS.mat'
+workers: 30
