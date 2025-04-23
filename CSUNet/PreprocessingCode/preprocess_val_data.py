@@ -247,28 +247,35 @@ def process_volume(fname, save_dir, mat_file):
 
 def process_dataset_parallel(data_dir, save_dir, mat_file, max_workers=8):
     os.makedirs(save_dir, exist_ok=True)
-    # validation files: 527 brain data, 234 knee 
-    # already taken from knee: 821 from train (still 152 left)
-    # ==> so 152 from train + 82 from val
-    h5_files = list()
+    ##################### VALIDATION ################################
+    # # validation files: 527 brain data, 234 knee 
+    # # already taken from knee: 821 from train (still 152 left)
+    # # ==> so 152 from train + 82 from val
+    # h5_files = list()
 
-    # Directory containing HDF5 files
-    knee_train_path = Path(data_dir).joinpath("Knee/multicoil_train/")
-    knee_val_path = Path(data_dir).joinpath("Knee/multicoil_val/")
-    brain_val_path = Path(data_dir).joinpath("Preprocessed/multicoil_val/")
+    # # Directory containing HDF5 files
+    # knee_train_path = Path(data_dir).joinpath("Knee/multicoil_train/")
+    # knee_val_path = Path(data_dir).joinpath("Knee/multicoil_val/")
+    # brain_val_path = Path(data_dir).joinpath("Preprocessed/multicoil_val/")
     
-    knee_train_files = list(knee_train_path.glob("**/*.h5"))
-    knee_train_files = knee_train_files[-152:]  # Select the last 152 files from the training set
-    h5_files.extend(knee_train_files)
+    # knee_train_files = list(knee_train_path.glob("**/*.h5"))
+    # knee_train_files = knee_train_files[-152:]  # Select the last 152 files from the training set
+    # h5_files.extend(knee_train_files)
 
-    knee_val_files = list(knee_val_path.glob("**/*.h5"))
-    knee_val_files = knee_val_files[:82]  # Select the first 83 files from the validation set
-    h5_files.extend(knee_val_files)
+    # knee_val_files = list(knee_val_path.glob("**/*.h5"))
+    # knee_val_files = knee_val_files[:82]  # Select the first 83 files from the validation set
+    # h5_files.extend(knee_val_files)
 
-    brain_val_files = list(brain_val_path.glob("**/*.h5"))
-    brain_val_files = brain_val_files[:527]  # Select the first 527 files from the validation set
-    h5_files.extend(brain_val_files)
-    #print("Number of files to process: ", str(len(h5_files)))
+    # brain_val_files = list(brain_val_path.glob("**/*.h5"))
+    # brain_val_files = brain_val_files[:527]  # Select the first 527 files from the validation set
+    # h5_files.extend(brain_val_files)
+    # #print("Number of files to process: ", str(len(h5_files)))
+
+    ##################### TEST KNEE: also use validation script #######################
+    # Select last 116 files from val set
+    knee_val_path = Path(data_dir).joinpath("Knee/multicoil_val/")
+    h5_files = list(knee_val_path.glob("**/*.h5"))
+    h5_files = h5_files[-116:]  # Select the last 116 files from the validation set
     logging.info(f"Number of files to process: {len(h5_files)}")
 
 

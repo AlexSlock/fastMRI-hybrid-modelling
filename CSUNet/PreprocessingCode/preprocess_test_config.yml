@@ -1,4 +1,6 @@
-data_dir: "/DATASERVER/MIC/SHARED/NYU_FastMRI/"
+data_dir: "/DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test/"
 save_dir: "/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_test/"
 mat_dir: '/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/fastMRI-hybrid-modelling/fastMRI/sampling_profiles_CS.mat'
 workers: 15
+amount_test_files: 261
+folder_path_full: "/DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test_full/"

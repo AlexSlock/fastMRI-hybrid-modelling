@@ -176,7 +176,7 @@ def process_volume(fname, save_dir, folder_path_full, mat_file):
     R = float(R)
     print("Shape of the raw kspace: ", str(np.shape(masked_kspace_ACS)))
 
-    # calculate CS reconstruction with deriven R and ACS region
+    # calculate masked_kspace with deriven R 
     # (open multicoil_test_full file: where original k_space is stored)
     hf = h5py.File(folder_path_full+fname.name, 'r') # Open in read mode!
     kspace = hf['kspace'][()]
@@ -187,7 +187,7 @@ def process_volume(fname, save_dir, folder_path_full, mat_file):
     target_size = (640, 640)  # Modify if needed
 
     ##################### CHANGED: SO WORKS WITH zero-padding/cropping BEFORE BART ############
-    # Perform CS reconstruction
+    # Perform CS reconstruction with given masked_kspace_ACS and calculated masked_kspace
     cs_data = np.zeros((kspace.shape[0], target_size[0], target_size[1]), dtype=np.complex64)
     for slice in range(kspace.shape[0]):
         # timer for each slice
@@ -231,14 +231,14 @@ def process_volume(fname, save_dir, folder_path_full, mat_file):
 
 
 
-def process_dataset_parallel(data_dir, save_dir, mat_file, folder_path_full, max_workers=8,  amount_training_files=None):
+def process_dataset_parallel(data_dir, save_dir, mat_file, folder_path_full, max_workers=8,  amount_test_files=None):
     os.makedirs(save_dir, exist_ok=True)
       
     h5_files = list(Path(data_dir).glob("**/*.h5"))
 
-    #TODO: Select... files for training
-    if amount_training_files is not None:
-        h5_files = h5_files[:amount_training_files] # only select the first # of training files
+    #Select... files for testing
+    if amount_test_files is not None:
+        h5_files = h5_files[:amount_test_files] # only select the first # of testing files
 
     process_fn = partial(process_volume, save_dir=save_dir, folder_path_full=folder_path_full, mat_file=mat_file)
 
@@ -260,7 +260,7 @@ def main():
     # Load configuration
     # assumes the config file is named rss_full_config.yaml 
     # and is in the same directory as your script.
-    config = load_config("preprocess_config.yml") 
+    config = load_config("preprocess_test_config.yml") 
 
     # Use values from config
     data_dir = config["data_dir"]
@@ -269,10 +269,10 @@ def main():
     mat_dir = config["mat_dir"]
     mat_file = sio.loadmat(mat_dir)
     workers = config["workers"]
-    amount_training_files = config["amount_training_files"]
+    amount_test_files = config["amount_test_files"]
 
     start = time.time()
-    process_dataset_parallel(data_dir, save_dir, mat_file, folder_path_full=folder_path_full, max_workers=workers, amount_training_files=amount_training_files)
+    process_dataset_parallel(data_dir, save_dir, mat_file, folder_path_full=folder_path_full, max_workers=workers, amount_test_files=amount_test_files)
     logging.info('Total time for all files: {:.2f} seconds'.format(time.time() - start))
     logging.info('Finished processing')
 
