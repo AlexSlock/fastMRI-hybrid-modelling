@@ -226,6 +226,7 @@ class SliceDataset(torch.utils.data.Dataset):
         dataset_cache_file: Union[str, Path, os.PathLike] = "dataset_cache.pkl",
         num_cols: Optional[Tuple[int]] = None,
         raw_sample_filter: Optional[Callable] = None,
+        test_mode: Optional[bool] = None, # ADDED: to know if we are in test mode or not
     ):
         """
         Args:
@@ -255,6 +256,7 @@ class SliceDataset(torch.utils.data.Dataset):
                 raw_sample should be included in the dataset.
         """
         self.bart_path = bart_path # ADDED
+        self.test_mode = None # ADDED
         if challenge not in ("singlecoil", "multicoil"):
             raise ValueError('challenge should be either "singlecoil" or "multicoil"')
 
@@ -311,8 +313,19 @@ class SliceDataset(torch.utils.data.Dataset):
                     folder_sub = folder / subset
                     fname = folder_sub / (fname_stem + ".h5")
                     if fname.exists():
+                        # ADDED: set test_mode based on subset => know if we need to give target along or not!
+                        if self.test_mode is None:
+                            # First file found → initialize test_mode
+                            self.test_mode = (subset == "multicoil_test")
+                        else:
+                            # If already set, check consistency (normally data given should always be consistently of test set)
+                            assert self.test_mode == (subset == "multicoil_test"), (
+                                f"Inconsistent subset detection! Previously: test_mode={self.test_mode}, "
+                                f"now found subset {subset} for file {fname_stem}"
+                            )
                         break                       
                 assert fname.exists(), f"Original file not found: {fname}" # for debugging
+                assert self.test_mode is not None, "No valid file subset found — cannot determine test mode."
                 ## 
 
                 metadata, num_slices = self._retrieve_metadata(fname)
@@ -411,7 +424,11 @@ class SliceDataset(torch.utils.data.Dataset):
         with h5py.File(fname, "r") as hf:
             orig_shape = (hf["kspace"][dataslice].shape[1], hf["kspace"][dataslice].shape[2])
             # mask = np.asarray(hf["mask"]) if "mask" in hf else None
-            target = hf[self.recons_key][dataslice] if self.recons_key in hf else None
+            # TODO: change, now: self.recons_key in hf for test set knee (uses multicoil_val set)!! => target SHOULD BE None
+            if self.test_mode:
+                target = None
+            else:
+                target = hf[self.recons_key][dataslice] if self.recons_key in hf else None 
 
             attrs = dict(hf.attrs)
             attrs.update(metadata)

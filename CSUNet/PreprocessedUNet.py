@@ -8,12 +8,9 @@ from preprocessed_transforms import UnetDataTransform
 from modified_unet_module import UnetModule
 from preprocessed_data_module import FastMriDataModule
 
-# FOR TESTING:
-# slicedataset: limit of 10 raw samples
-# set max epochs to 1
 
-# python PreprocessedUNet.py --mode train --challenge multicoil --mask_type equispaced --center_fractions 0.08 0.04 --accelerations 4 8 --volume_sample_rate 0.1 --num_workers 8
-
+# python PreprocessedUNet.py --mode train --challenge multicoil --mask_type equispaced --center_fractions 0.08 0.04 --accelerations 4 8 --num_workers 8
+# always change num of gpus to actual reservated amount!!
 def cli_main(args):
     pl.seed_everything(args.seed)
 
@@ -83,7 +80,7 @@ def build_args():
 
     # basic args
     path_config = pathlib.Path("fastmri_dirs.yaml")
-    num_gpus = 2
+    num_gpus = 3
     backend = "ddp"
     batch_size = 1 #if backend == "ddp_cpu" else num_gpus  #(just always set to 1 for now)
 
@@ -153,8 +150,7 @@ def build_args():
         seed=42,  # random seed
         deterministic=True,  # makes things slower, but deterministic
         default_root_dir=default_root_dir,  # directory for logs and checkpoints
-        #max_epochs=50,  # max number of epochs
-        max_epochs=1,  # TESTING
+        max_epochs=50,  # max number of epochs
     )
 
     args = parser.parse_args()
