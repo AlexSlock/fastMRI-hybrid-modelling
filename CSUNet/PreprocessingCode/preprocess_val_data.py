@@ -263,7 +263,7 @@ def process_dataset_parallel(data_dir, save_dir, mat_file, max_workers=8):
     # h5_files.extend(knee_train_files)
 
     # knee_val_files = list(knee_val_path.glob("**/*.h5"))
-    # knee_val_files = knee_val_files[:82]  # Select the first 83 files from the validation set
+    # knee_val_files = knee_val_files[:82]  # Select the first 82 files from the validation set
     # h5_files.extend(knee_val_files)
 
     # brain_val_files = list(brain_val_path.glob("**/*.h5"))
@@ -272,10 +272,10 @@ def process_dataset_parallel(data_dir, save_dir, mat_file, max_workers=8):
     # #print("Number of files to process: ", str(len(h5_files)))
 
     ##################### TEST KNEE: also use validation script #######################
-    # Select last 116 files from val set
+    # Select last 117 files from val set
     knee_val_path = Path(data_dir).joinpath("Knee/multicoil_val/")
     h5_files = list(knee_val_path.glob("**/*.h5"))
-    h5_files = h5_files[-116:]  # Select the last 116 files from the validation set
+    h5_files = h5_files[-117:]  # Select the last 117 files from the validation set
     logging.info(f"Number of files to process: {len(h5_files)}")
 
 

@@ -174,7 +174,7 @@ def process_volume(fname, save_dir, folder_path_full, mat_file):
     sampled_columns = np.sum(nPE_mask)
     R = len(nPE_mask)/sampled_columns
     R = float(R)
-    print("Shape of the raw kspace: ", str(np.shape(masked_kspace_ACS)))
+    #print("Shape of the raw kspace: ", str(np.shape(masked_kspace_ACS)))
 
     # calculate masked_kspace with deriven R 
     # (open multicoil_test_full file: where original k_space is stored)
