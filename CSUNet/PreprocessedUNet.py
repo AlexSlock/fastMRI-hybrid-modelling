@@ -8,9 +8,12 @@ from preprocessed_transforms import UnetDataTransform
 from modified_unet_module import UnetModule
 from preprocessed_data_module import FastMriDataModule
 
+# always change num of gpus to actual reservated amount!! + set CUDA_VISIBLE_DEVICES to the correct GPUs
 
 # python PreprocessedUNet.py --mode train --challenge multicoil --mask_type equispaced --center_fractions 0.08 0.04 --accelerations 4 8 --num_workers 8
-# always change num of gpus to actual reservated amount!!
+
+# python PreprocessedUNet.py --mode test --challenge multicoil --mask_type equispaced --resume_from_checkpoint Checkpoints_brain_and_knee/epoch=49-step=976549.ckpt --num_workers 8
+
 def cli_main(args):
     pl.seed_everything(args.seed)
 

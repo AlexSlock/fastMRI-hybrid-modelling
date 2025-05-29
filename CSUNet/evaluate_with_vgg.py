@@ -15,6 +15,13 @@ import torch
 from torchvision.models import vgg19
 from torchvision.transforms import Compose, ToTensor, Normalize, CenterCrop, Lambda
 
+# Run with conda DL_MRI_reconstruction_baselines
+
+# python evaluate_with_vgg.py 
+#  --target-paths /DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test_full/ 
+#   /DATASERVER/MIC/SHARED/NYU_FastMRI/Knee/multicoil_val/
+#  --predictions-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/CSUNet/reconstructions/
+#  --challenge multicoil
 
 # Define the preprocessing steps for the VGG loss
 preprocess = Compose([
@@ -175,32 +182,33 @@ class Metrics:
 def evaluate(args, recons_key):
     metrics = Metrics(METRIC_FUNCS)
 
-    for tgt_file in args.target_path.iterdir():
-        with h5py.File(tgt_file, "r") as target, h5py.File(
-            args.predictions_path / tgt_file.name, "r"
-        ) as recons:
-            if args.acquisition and args.acquisition != target.attrs["acquisition"]:
-                continue
+    for pred_file in args.predictions_path.iterdir():
+        # find matching target file (knee or brain)
+        tgt_file = None
+        for target_dir in args.target_paths:
+            candidate = target_dir / pred_file.name
+            if candidate.exists():
+                tgt_file = candidate
+                break
+        assert tgt_file is not None, f"Target file not found for {pred_file.name}"
 
-            if args.acceleration:
-                filename = tgt_file.name
-                mask_path = '/usr/local/micapollo01/MIC/DATA/SHARED/NYU_FastMRI/Preprocessed/multicoil_test/'
-                mask = h5py.File(os.path.join(mask_path,filename),'r')
-                nPE_mask = mask['mask'][()]
-                sampled_columns = np.sum(nPE_mask)
-                R = len(nPE_mask)/sampled_columns
-                R = float(R)
-                if R > float(args.acceleration)+0.1 or R < float(args.acceleration)-0.1:
-                    continue
 
-            target = target[recons_key][()]
+        with h5py.File(tgt_file, "r") as target, h5py.File(pred_file, "r") as recons:
+            
+            # select target and reconstruction
+            target = target[recons_key][()] # "reconstruction_rss" of target files exists in multicoil_test_full set!
             recons = recons["reconstruction"][()]
+
+            # center crop the images to the size of the target
             target = transforms.center_crop(
                 target, (target.shape[-1], target.shape[-1])
             )
             recons = transforms.center_crop(
                 recons, (target.shape[-1], target.shape[-1])
             )
+            # apply non-zero mask to target and reconstruction
+            #target, recons = determine_and_apply_mask(target, recons, tgt_file)
+            # calculate metrics
             metrics.push(target, recons)
 
     return metrics
@@ -209,8 +217,9 @@ def evaluate(args, recons_key):
 if __name__ == "__main__":
     parser = ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument(
-        "--target-path",
+        "--target-paths",
         type=pathlib.Path,
+        nargs="+",  # Accept one or more paths
         required=True,
         help="Path to the ground truth data",
     )
@@ -243,6 +252,7 @@ if __name__ == "__main__":
         "for evaluation. By default, all volumes are included.",
     )
     args = parser.parse_args()
+    #print(args.target_paths)  # Will now be a list of Path objects
 
     recons_key = (
         "reconstruction_rss" if args.challenge == "multicoil" else "reconstruction_esc"

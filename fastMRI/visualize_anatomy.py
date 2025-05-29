@@ -49,8 +49,10 @@ def visualize_anatomy(train_path, coil_indices, center_fractions, accelerations)
         for i, num in enumerate(coil_nums):
             plt.subplot(1, len(coil_nums), i + 1)
             plt.imshow(data[num], cmap=cmap)
-            plt.title(f"Coil {num}")
+            plt.title(f"Coil {num}", fontsize=20)
+            plt.axis('off')
         plt.show()
+        
 
     # Visualize raw k-space for selected coils
     print("Visualizing raw k-space...")
@@ -68,6 +70,7 @@ def visualize_anatomy(train_path, coil_indices, center_fractions, accelerations)
     slice_image_rss = fastmri.rss(slice_image_abs, dim=0)
     plt.imshow(np.abs(slice_image_rss.numpy()), cmap='gray')
     plt.title("Fully Sampled RSS Reconstruction")
+    plt.axis('off')
     plt.show()
 
     ####### Undersampled data (input of our classical methods/ hybrid models!)
@@ -87,6 +90,7 @@ def visualize_anatomy(train_path, coil_indices, center_fractions, accelerations)
     print("Visualizing undersampled reconstruction...")
     plt.imshow(np.abs(sampled_image_rss.numpy()), cmap='gray')
     plt.title("Undersampled RSS Reconstruction")
+    plt.axis('off')
     plt.show()
 
     #TODO: add visualization of classical and hybrid models!

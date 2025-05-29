@@ -17,13 +17,11 @@ from torchvision.transforms import Compose, ToTensor, Normalize, CenterCrop, Lam
 
 # Run with conda DL_MRI_reconstruction_baselines
 
-# python evaluate_with_vgg_and_mask.py 
-#  --target-path /DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test_full/
-#  --predictions-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/CSUNet/reconstructions/
+# python evaluate_with_vgg.py 
+#  --target-paths /DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test_full/ 
+#   /DATASERVER/MIC/SHARED/NYU_FastMRI/Knee/multicoil_val/
+#  --predictions-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/CSUNet/reconstructions/
 #  --challenge multicoil
-#  --acceleration 4
-
-# python evaluate_with_vgg_and_mask.py --target-path /DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test_full/ --predictions-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/CSUNet/reconstructions/ --challenge multicoil --acceleration 4
 
 def determine_and_apply_mask(target, recons, tgt_file):
     """
@@ -37,8 +35,8 @@ def determine_and_apply_mask(target, recons, tgt_file):
         tgt_file (pathlib.Path): path to the target file
     """
     # define the base paths for sense + CS reconstructions
-    reconstruction_sense_path_string = '/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/Sense/'
-    reconstruction_CS_path_string = '/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/CS/'
+    reconstruction_sense_path_string = '/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Sense/'
+    reconstruction_CS_path_string = '/DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/CS/'
     # Construct full pahts by appending target file name
     reconstruction_sense_path = pathlib.Path(reconstruction_sense_path_string) / tgt_file.name
     reconstruction_CS_path = pathlib.Path(reconstruction_CS_path_string) / tgt_file.name
@@ -226,14 +224,26 @@ class Metrics:
 
 def evaluate(args, recons_key):
     metrics = Metrics(METRIC_FUNCS)
+    
+    # TODO: change for loop => iterate over files in recon_path and look for target files in both knee + brain directory!
+    for pred_file in args.predictions_path.iterdir():
+        ###  find matching target file (knee or brain)
+        tgt_file = None
+        for target_dir in args.target_paths:
+            candidate = target_dir / pred_file.name
+            if candidate.exists():
+                tgt_file = candidate
+                break
+        assert tgt_file is not None, f"Target file not found for {pred_file.name}"
+        ###
 
-    for tgt_file in args.target_path.iterdir():
-        with h5py.File(tgt_file, "r") as target, h5py.File(
-            args.predictions_path / tgt_file.name, "r"
-        ) as recons:
+        with h5py.File(tgt_file, "r") as target, h5py.File(pred_file, "r") as recons:
+
+            # used if only test 1 type of acquisition
             if args.acquisition and args.acquisition != target.attrs["acquisition"]:
                 continue
-
+            
+            # used if only test 1 type of acceleration
             if args.acceleration:
                 filename = tgt_file.name
                 mask_path = '/DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test/'
@@ -243,18 +253,24 @@ def evaluate(args, recons_key):
                 R = len(nPE_mask)/sampled_columns
                 R = float(R)
                 # ignore file if R is not within +-0.1 of the target acceleration factor (too small margin?!)
+                # TODO: change? see fastmri/test_data_accelerations.ipynb => see that max margin is 0.26
                 if R > float(args.acceleration)+0.1 or R < float(args.acceleration)-0.1:
                     continue
-
-            target = target[recons_key][()] # "reconstruction_rss" does not exist?!
+            
+            # select target and reconstruction
+            target = target[recons_key][()] # "reconstruction_rss" of target files exists in multicoil_test_full set!
             recons = recons["reconstruction"][()]
+
+            # center crop the images to the size of the target
             target = transforms.center_crop(
                 target, (target.shape[-1], target.shape[-1])
             )
             recons = transforms.center_crop(
                 recons, (target.shape[-1], target.shape[-1])
             )
+            # apply non-zero mask to target and reconstruction
             target, recons = determine_and_apply_mask(target, recons, tgt_file)
+            # calculate metrics
             metrics.push(target, recons)
 
     return metrics
@@ -263,8 +279,9 @@ def evaluate(args, recons_key):
 if __name__ == "__main__":
     parser = ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument(
-        "--target-path",
+        "--target-paths",
         type=pathlib.Path,
+        nargs="+",  # Accept one or more paths
         required=True,
         help="Path to the ground truth data",
     )
@@ -280,7 +297,13 @@ if __name__ == "__main__":
         required=True,
         help="Which challenge",
     )
-    parser.add_argument("--acceleration", type=int, default=None)
+    parser.add_argument(
+        "--acceleration",
+        type=int,
+        default=None,
+        help= "If set, only volumes with specified acceleration factor are used. If not set, all "
+        "acceleration factors are evaluated. ",
+    )
     parser.add_argument(
         "--acquisition",
         choices=[

@@ -8,6 +8,14 @@ import time
 import gc
 import bart
 import random
+import os
+import logging
+
+from tqdm import tqdm
+from functools import partial
+from concurrent.futures import ProcessPoolExecutor, as_completed
+import yaml
+
 
 folder_path = '/usr/local/micapollo01/MIC/DATA/SHARED/NYU_FastMRI/Preprocessed/multicoil_val/'
 files = Path(folder_path).glob('**/*')
@@ -97,39 +105,131 @@ def CG_SENSE(kspace, S, lamda=0.005, num_iter=50):
     reconstruction = bart.bart(1, 'pics -S -l2 -r {} -i {} -d 0'.format(lamda, num_iter), kspace_perm, S_perm)
     return reconstruction
 
-for file in files:
-    print(str(file_count)+". Starting to process file "+str(file)+'...')
-    undersampling_bool = fifty_fifty()
-    hf = h5py.File(file, 'a') # Open in append mode
-    kspace = hf['kspace'][()]
-    print("Shape of the raw kspace: ", str(np.shape(kspace)))
+def process_volume(fname, save_dir):
+    # Timer for the entire file
+    start_time_file = time.time()   
+
+    # Open HDF5 file in read mode
+    with h5py.File(fname, 'r') as hf:
+        kspace = hf['kspace'][()]
+
+    undersampling_bool = fifty_fifty() # R=4 or R=8
+
+    # mask for ACS
     if undersampling_bool:
         mask_func = EquispacedMaskFunc(center_fractions=[0.08], accelerations=[4])
     else:
         mask_func = EquispacedMaskFunc(center_fractions=[0.04], accelerations=[8])
     masked_kspace_ACS, mask_ACS = apply_mask(kspace, mask_func)
-    print("Shape of the generated ACS mask: ", str(mask_ACS.shape))
+    #print("Shape of the generated ACS mask: ", str(mask_ACS.shape))
+
+    # mask for SENSE
     if undersampling_bool:
         mask = generate_array(kspace.shape, 4, tensor_out=False)
     else:
         mask = generate_array(kspace.shape, 8, tensor_out=False)
     masked_kspace = kspace * mask + 0.0
-    print("Shape of the generated SENSE mask: ", str(mask.shape))
+    # print("Shape of the generated SENSE mask: ", str(mask.shape))
+
+    # compute SENSE reconstruction
     sense_data = np.zeros((kspace.shape[0], kspace.shape[2], kspace.shape[3]), dtype=np.complex64)
     for slice in range(kspace.shape[0]):
         S = estimate_sensitivity_maps(masked_kspace_ACS[slice,:,:,:])
         sense_data[slice,:,:] = CG_SENSE(masked_kspace[slice,:,:,:], S)
-    print("Shape of the numpy-converted sense data: ", str(sense_data.shape))
-    # Check if 'sense_data' key exists
-    if 'sense_data' in hf:
-        del hf['sense_data'] # Delete the existing dataset
-    # Add a key to the h5 file with sense_data inside it
-    hf.create_dataset('sense_data', data=sense_data)
-    hf.close()
+    # print("Shape of the numpy-converted sense data: ", str(sense_data.shape))
+
+    # Save the Sense data to an HDF5 file
+    output_file = Path(save_dir) / fname.name
+    with h5py.File(output_file, 'w') as hf_out:
+        hf_out.create_dataset('reconstruction', data=sense_data)
+
     time.sleep(1)
-    del kspace, masked_kspace, mask, sense_data
-    time.sleep(1)
+    del kspace, masked_kspace, mask, sense_data, masked_kspace_ACS, mask_ACS
     gc.collect()
-    file_count += 1
-    print('Done.')
+    time.sleep(1)
+
+    logging.info(f"  Saved Sense data to {output_file}")
+
+    # Timer for the entire file: calculate and print total elapsed time after all slices
+    end_time_file = time.time()
+    elapsed_time_file = end_time_file - start_time_file
+    #print(f"Total time for processing the entire file: {elapsed_time_file:.4f} seconds")
+    logging.info(f"Total time for processing the entire file: {elapsed_time_file:.4f} seconds")
+
+
+
+def process_dataset_parallel(data_dir, save_dir, max_workers=8):
+    os.makedirs(save_dir, exist_ok=True)
+    ##################### VALIDATION ################################
+    # # validation files: 527 brain data, 234 knee 
+    # # already taken from knee: 821 from train (still 152 left)
+    # # ==> so 152 from train + 82 from val
+    # h5_files = list()
+
+    # # Directory containing HDF5 files
+    # knee_train_path = Path(data_dir).joinpath("Knee/multicoil_train/")
+    # knee_val_path = Path(data_dir).joinpath("Knee/multicoil_val/")
+    # brain_val_path = Path(data_dir).joinpath("Preprocessed/multicoil_val/")
+    
+    # knee_train_files = list(knee_train_path.glob("**/*.h5"))
+    # knee_train_files = knee_train_files[-152:]  # Select the last 152 files from the training set
+    # h5_files.extend(knee_train_files)
+
+    # knee_val_files = list(knee_val_path.glob("**/*.h5"))
+    # knee_val_files = knee_val_files[:82]  # Select the first 82 files from the validation set
+    # h5_files.extend(knee_val_files)
+
+    # brain_val_files = list(brain_val_path.glob("**/*.h5"))
+    # brain_val_files = brain_val_files[:527]  # Select the first 527 files from the validation set
+    # h5_files.extend(brain_val_files)
+    # #print("Number of files to process: ", str(len(h5_files)))
+
+    ##################### TEST KNEE: also use validation script #######################
+    # Select last 117 files from val set
+    knee_val_path = Path(data_dir).joinpath("Knee/multicoil_val/")
+    h5_files = list(knee_val_path.glob("**/*.h5"))
+    h5_files = h5_files[-117:]  # Select the last 117 files from the validation set
+    logging.info(f"Number of files to process: {len(h5_files)}")
+
+
+    process_fn = partial(process_volume, save_dir=save_dir)
+
+    with ProcessPoolExecutor(max_workers=max_workers) as executor:
+        futures = {executor.submit(process_fn, h5_path): h5_path for h5_path in h5_files}
+        for future in tqdm(as_completed(futures), total=len(futures), desc="Parallel RSS Gen"):
+            try:
+                result = future.result()
+            except Exception as e:
+                logging.error(f"Error processing {futures[future]}: {e}")
+
+def load_config(config_path):
+    with open(config_path, 'r') as file:
+        config = yaml.safe_load(file)
+    return config
+
+def main():
+    logging.basicConfig(filename='preprocessing_val.log', level=logging.INFO)
+    logging.info('Started processing')
+    # Load configuration
+    # assumes the config file is named rss_full_config.yaml 
+    # and is in the same directory as your script.
+    config = load_config("preprocess_val_config.yml") 
+
+    # Use values from config
+    data_dir = config["data_dir"]
+    save_dir = config["save_dir"]
+    workers = config["workers"]
+    #amount_training_files = config["amount_training_files"]
+
+    start = time.time()
+    process_dataset_parallel(data_dir, save_dir, max_workers=workers)
+    logging.info('Total time for all files: {:.2f} seconds'.format(time.time() - start))
+    logging.info('Finished processing')
+
+if __name__ == "__main__":
+    main()
+
+
+
+    
 

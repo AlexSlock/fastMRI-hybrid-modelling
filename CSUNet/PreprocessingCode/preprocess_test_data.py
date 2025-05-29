@@ -258,8 +258,6 @@ def main():
     logging.basicConfig(filename='preprocessing_test.log', level=logging.INFO)
     logging.info('Started processing')
     # Load configuration
-    # assumes the config file is named rss_full_config.yaml 
-    # and is in the same directory as your script.
     config = load_config("preprocess_test_config.yml") 
 
     # Use values from config

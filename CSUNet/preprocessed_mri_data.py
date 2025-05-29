@@ -256,7 +256,13 @@ class SliceDataset(torch.utils.data.Dataset):
                 raw_sample should be included in the dataset.
         """
         self.bart_path = bart_path # ADDED
-        self.test_mode = None # ADDED
+        # ADDED test_mode, set to True if given bart_path is from test set
+        if "test" in bart_path.name:
+            self.test_mode = True
+        else:
+            self.test_mode = False
+        
+
         if challenge not in ("singlecoil", "multicoil"):
             raise ValueError('challenge should be either "singlecoil" or "multicoil"')
 
@@ -313,19 +319,8 @@ class SliceDataset(torch.utils.data.Dataset):
                     folder_sub = folder / subset
                     fname = folder_sub / (fname_stem + ".h5")
                     if fname.exists():
-                        # ADDED: set test_mode based on subset => know if we need to give target along or not!
-                        if self.test_mode is None:
-                            # First file found → initialize test_mode
-                            self.test_mode = (subset == "multicoil_test")
-                        else:
-                            # If already set, check consistency (normally data given should always be consistently of test set)
-                            assert self.test_mode == (subset == "multicoil_test"), (
-                                f"Inconsistent subset detection! Previously: test_mode={self.test_mode}, "
-                                f"now found subset {subset} for file {fname_stem}"
-                            )
                         break                       
                 assert fname.exists(), f"Original file not found: {fname}" # for debugging
-                assert self.test_mode is not None, "No valid file subset found — cannot determine test mode."
                 ## 
 
                 metadata, num_slices = self._retrieve_metadata(fname)
