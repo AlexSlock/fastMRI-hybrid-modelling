@@ -15,11 +15,13 @@ from tqdm import tqdm
 from functools import partial
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import yaml
+import json
 
+# nohup python preprocess_val_data.py > output_val.log 2>&1 &
 
-folder_path = '/usr/local/micapollo01/MIC/DATA/SHARED/NYU_FastMRI/Preprocessed/multicoil_val/'
-files = Path(folder_path).glob('**/*')
-file_count = 1
+def process_wrapper(args):
+    fname, acceleration, save_dir = args
+    return process_volume(fname, save_dir, acceleration)
 
 def fifty_fifty():
     return random.random() < .5
@@ -105,7 +107,7 @@ def CG_SENSE(kspace, S, lamda=0.005, num_iter=50):
     reconstruction = bart.bart(1, 'pics -S -l2 -r {} -i {} -d 0'.format(lamda, num_iter), kspace_perm, S_perm)
     return reconstruction
 
-def process_volume(fname, save_dir):
+def process_volume(fname, save_dir, acceleration):
     # Timer for the entire file
     start_time_file = time.time()   
 
@@ -113,23 +115,32 @@ def process_volume(fname, save_dir):
     with h5py.File(fname, 'r') as hf:
         kspace = hf['kspace'][()]
 
-    undersampling_bool = fifty_fifty() # R=4 or R=8
+    
+    # undersampling_bool = fifty_fifty() # R=4 or R=8
 
-    # mask for ACS
-    if undersampling_bool:
+    # # mask for ACS
+    # if undersampling_bool:
+    #     mask_func = EquispacedMaskFunc(center_fractions=[0.08], accelerations=[4])
+    # else:
+    #     mask_func = EquispacedMaskFunc(center_fractions=[0.04], accelerations=[8])
+    # masked_kspace_ACS, mask_ACS = apply_mask(kspace, mask_func)
+    # #print("Shape of the generated ACS mask: ", str(mask_ACS.shape))
+
+    if acceleration == 4:
         mask_func = EquispacedMaskFunc(center_fractions=[0.08], accelerations=[4])
     else:
         mask_func = EquispacedMaskFunc(center_fractions=[0.04], accelerations=[8])
     masked_kspace_ACS, mask_ACS = apply_mask(kspace, mask_func)
-    #print("Shape of the generated ACS mask: ", str(mask_ACS.shape))
 
-    # mask for SENSE
-    if undersampling_bool:
-        mask = generate_array(kspace.shape, 4, tensor_out=False)
-    else:
-        mask = generate_array(kspace.shape, 8, tensor_out=False)
+    mask = generate_array(kspace.shape, acceleration, tensor_out=False)
+
+    # # mask for SENSE
+    # if undersampling_bool:
+    #     mask = generate_array(kspace.shape, 4, tensor_out=False)
+    # else:
+    #     mask = generate_array(kspace.shape, 8, tensor_out=False)
     masked_kspace = kspace * mask + 0.0
-    # print("Shape of the generated SENSE mask: ", str(mask.shape))
+    # # print("Shape of the generated SENSE mask: ", str(mask.shape))
 
     # compute SENSE reconstruction
     sense_data = np.zeros((kspace.shape[0], kspace.shape[2], kspace.shape[3]), dtype=np.complex64)
@@ -155,6 +166,8 @@ def process_volume(fname, save_dir):
     elapsed_time_file = end_time_file - start_time_file
     #print(f"Total time for processing the entire file: {elapsed_time_file:.4f} seconds")
     logging.info(f"Total time for processing the entire file: {elapsed_time_file:.4f} seconds")
+
+    return (fname.name, acceleration)
 
 
 
@@ -191,16 +204,47 @@ def process_dataset_parallel(data_dir, save_dir, max_workers=8):
     h5_files = h5_files[-117:]  # Select the last 117 files from the validation set
     logging.info(f"Number of files to process: {len(h5_files)}")
 
+    ### ADD to save AF + ensure (accurate!) fifty fifty division
+    n_files = len(h5_files)
 
-    process_fn = partial(process_volume, save_dir=save_dir)
+    # Create a balanced acceleration factor list: half 4s, half 8s
+    half = n_files // 2
+    af_list = [4] * half + [8] * (n_files - half)
 
+    np.random.seed(42)  # Set seed for reproducibility => get SENSE the same AF for same files!
+    np.random.shuffle(af_list)  # Shuffle once to randomize order
+
+    # We'll assign AF from af_list by index matching files
+    # Pair files with assigned acceleration factor
+    files_with_af = list(zip(h5_files, af_list))
+    args_list = [(fname, acc, save_dir) for fname, acc in files_with_af]
+
+    results = []
     with ProcessPoolExecutor(max_workers=max_workers) as executor:
-        futures = {executor.submit(process_fn, h5_path): h5_path for h5_path in h5_files}
-        for future in tqdm(as_completed(futures), total=len(futures), desc="Parallel RSS Gen"):
+        futures = {executor.submit(process_wrapper, args): args for args in args_list}
+        for future in tqdm(as_completed(futures), total=len(futures), desc="Parallel Sense Gen"):
             try:
                 result = future.result()
+                results.append(result)
             except Exception as e:
-                logging.error(f"Error processing {futures[future]}: {e}")
+                logging.error(f"Error processing file {futures[future][0]}: {e}")
+    
+    # Save acceleration factors mapping to JSON
+    json_file_path = os.path.join(save_dir, "acceleration_factors.json")
+    acc_dict = {fname: acc for fname, acc in results}
+    with open(json_file_path, 'w') as jf:
+        json.dump(acc_dict, jf, indent=4)
+    logging.info(f"Saved acceleration factors for {len(results)} files to {json_file_path}")
+
+    # process_fn = partial(process_volume, save_dir=save_dir)
+
+    # with ProcessPoolExecutor(max_workers=max_workers) as executor:
+    #     futures = {executor.submit(process_fn, h5_path): h5_path for h5_path in h5_files}
+    #     for future in tqdm(as_completed(futures), total=len(futures), desc="Parallel Gen"):
+    #         try:
+    #             result = future.result()
+    #         except Exception as e:
+    #             logging.error(f"Error processing {futures[future]}: {e}")
 
 def load_config(config_path):
     with open(config_path, 'r') as file:

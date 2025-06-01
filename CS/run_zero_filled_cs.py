@@ -38,7 +38,7 @@ def downscale_bart_output(img_torch: torch.Tensor, target_size: tuple) -> torch.
 def save_zero_filled(data_dir, out_dir):
     '''
     Takes CS reconstructions in preprocessed h5 files from data_dir
-    - crops to size from encodedSpace?!
+    - crops to size from encodedSpace (reconsace only needed @ evaluation time)
     - takes absolute value
     and saves as seperate h5 files with only classical CS reconstruction in out_dir
     '''

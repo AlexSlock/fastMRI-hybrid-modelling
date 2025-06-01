@@ -301,7 +301,8 @@ class SliceDataset(torch.utils.data.Dataset):
         if not dataset_cache.get(root) or not use_dataset_cache:
             # CHANGED
             #files = list(Path(root).iterdir())  
-            files = list(Path(self.bart_path).iterdir()) 
+            # CHANGED FROM ITERDIRER to GLOB.("*.h5") to only get .npy files (JSON FILE WITH acceleration factor added!)
+            files = list(Path(self.bart_path).glob("*.npy")) 
             for fname_cs in sorted(files): # now you iterate over BART output sets (train/val/test)
                 ## get original root/fname.h5 back so you can still load all data!
                 # first get fname

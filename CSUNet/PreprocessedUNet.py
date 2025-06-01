@@ -12,7 +12,11 @@ from preprocessed_data_module import FastMriDataModule
 
 # python PreprocessedUNet.py --mode train --challenge multicoil --mask_type equispaced --center_fractions 0.08 0.04 --accelerations 4 8 --num_workers 8
 
+# test for BRAIN + KNEE
 # python PreprocessedUNet.py --mode test --challenge multicoil --mask_type equispaced --resume_from_checkpoint Checkpoints_brain_and_knee/epoch=49-step=976549.ckpt --num_workers 8
+
+# test for BRAIN only (MAKE SURE TO CHANGE log PATHS IN fastmri_dirs.yaml FIRST)
+# python PreprocessedUNet.py --mode test --challenge multicoil --mask_type equispaced --resume_from_checkpoint Checkpoints_combined_R_regularized/epoch=49-step=3528899.ckpt
 
 def cli_main(args):
     pl.seed_everything(args.seed)
@@ -83,7 +87,7 @@ def build_args():
 
     # basic args
     path_config = pathlib.Path("fastmri_dirs.yaml")
-    num_gpus = 3
+    num_gpus = 1
     backend = "ddp"
     batch_size = 1 #if backend == "ddp_cpu" else num_gpus  #(just always set to 1 for now)
 

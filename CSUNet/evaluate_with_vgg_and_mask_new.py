@@ -15,14 +15,24 @@ import torch
 from torchvision.models import vgg19
 from torchvision.transforms import Compose, ToTensor, Normalize, CenterCrop, Lambda
 import json
+from tqdm import tqdm
+import json
 
 # Run with conda DL_MRI_reconstruction_baselines
 
-# python evaluate_with_vgg.py 
-#  --target-paths /DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test_full/ 
-#   /DATASERVER/MIC/SHARED/NYU_FastMRI/Knee/multicoil_val/
-#  --predictions-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/CSUNet/reconstructions/
-#  --challenge multicoil
+# python evaluate_with_vgg_and_mask_new.py \
+#   --target-paths /DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test_full/ \
+#                 /DATASERVER/MIC/SHARED/NYU_FastMRI/Knee/multicoil_val/ \
+#   --predictions-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/CSUNet/reconstructions/ \
+#   --bart-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_test/ \
+#   --acquisition AXFLAIR \
+
+## INITIALIZE GPU AND LOAD VGG19 MODEL
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(f"Using device: {device}")
+# Load the pre-trained VGG19 model
+vgg_model = vgg19(pretrained=True).features[:36].to(device).eval()
+
 
 def determine_and_apply_mask(target, recons, tgt_file):
     """
@@ -75,71 +85,25 @@ preprocess = Compose([
     Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
 ])
 
+
+@torch.no_grad()
 def vgg_loss(gt: np.ndarray, pred: np.ndarray) -> np.ndarray:
-    """Compute VGG loss metric."""
-    # Load the pre-trained VGG19 model
-    vgg = vgg19(pretrained=True).features
+    gt = gt * 255
+    pred = pred * 255
 
-    # Remove the last max pooling layer to get the feature maps
-    vgg = torch.nn.Sequential(*list(vgg.children())[:-1])
-
-    # Initialize a list to store the losses for each image in the batch
     losses = []
 
-    # Convert inputs to the expected pixel range for RGB networks
-    gt = gt*255
-    pred = pred*255
+    for gt_img, pred_img in zip(gt, pred):
+        gt_tensor = preprocess(gt_img).unsqueeze(0).to(device)
+        pred_tensor = preprocess(pred_img).unsqueeze(0).to(device)
 
-    # Loop over each image in the batch
-    for gt_image, pred_image in zip(gt, pred):
-        # Preprocess the images
-        gt_image = preprocess(gt_image)
-        pred_image = preprocess(pred_image)
+        gt_feat = vgg_model(gt_tensor)
+        pred_feat = vgg_model(pred_tensor)
 
-        # Ensure the images are batched
-        gt_image = gt_image.unsqueeze(0)
-        pred_image = pred_image.unsqueeze(0)
-
-        # Extract features
-        gt_features = vgg(gt_image)
-        pred_features = vgg(pred_image)
-
-        # Calculate VGG loss for the current pair of images
-        loss = torch.nn.functional.mse_loss(gt_features, pred_features)
+        loss = torch.nn.functional.mse_loss(gt_feat, pred_feat)
         losses.append(loss)
-
-    # Average the losses across all images in the batch
-    avg_loss = torch.mean(torch.stack(losses))
-
-    return avg_loss.detach().cpu().numpy()
-
-
-def stacked_svd(gt: np.ndarray, pred: np.ndarray) -> np.ndarray:
-    """
-    Compute the average number of Singular Values required 
-    to explain 90% of the variance in the residual error maps 
-    of the reconstruction
-    """
-    residual_error_map = (gt-pred)**2
-    U, S, Vh = np.linalg.svd(residual_error_map, full_matrices=True)
-    num_slices = S.shape[0]
-    im_size = S.shape[-1]
-    singular_values_1d = S.flatten()
-    abs_core = np.abs(singular_values_1d)
-    sorted_indices = abs_core.argsort()[::-1]
-    sorted_core = abs_core[sorted_indices]
-
-    total_variance = np.sum(np.abs(sorted_core))
-
-    # Calculate the cumulative sum of singular values
-    cumulative_sum = np.cumsum(np.abs(sorted_core))
-
-    num_svs = np.where(cumulative_sum >= 0.9*total_variance)[0][0] + 1
-
-    num_svs_average = num_svs / num_slices
-
-    return num_svs_average / im_size
-
+    
+    return torch.stack(losses).mean().cpu().numpy()
 
 def mse(gt: np.ndarray, pred: np.ndarray) -> np.ndarray:
     """Compute Mean Squared Error (MSE)"""
@@ -186,7 +150,7 @@ METRIC_FUNCS = dict(
     PSNR=psnr,
     SSIM=ssim,
     VGG=vgg_loss,
-    SVD=stacked_svd,
+    #SVD=stacked_svd,
 )
 
 
@@ -228,13 +192,14 @@ def evaluate(args, recons_key):
 
         
     # load acceleartion factors once
-    acc_factor_file = pathlib.Path(args.reconstruction_path) / "acceleration_factors.json"
+    acc_factor_file = pathlib.Path(args.bart_path) / "acceleration_factors.json"
     with open(acc_factor_file, "r") as f:
         acc_factors = json.load(f)
-
     
-    # TODO: change for loop => iterate over files in recon_path and look for target files in both knee + brain directory!
-    for pred_file in args.predictions_path.iterdir():
+    # TODO: change for prostate as well when needed
+    # changed for loop => iterate over files in predictions_path and look for target files in both knee + brain directory!
+    # changed iterdir() to glob() to only look for .h5 files (cause of .json file)
+    for pred_file in tqdm(sorted(args.predictions_path.glob("*.h5")), desc="Evaluating"):
         ###  find matching target file (knee or brain)
         tgt_file = None
         for target_dir in args.target_paths:
@@ -256,12 +221,10 @@ def evaluate(args, recons_key):
                 # for knee data, AF is stored in json file
                 R = float(acc_factors.get(pred_file.name, -1))
                 if R < 0:
-                    # for brain data, mask is stored in tgt_file (via the mask)
-                    # filename = tgt_file.name
-                    # mask_path = '/DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test/'
-                    # mask = h5py.File(os.path.join(mask_path,filename),'r')
-                    # nPE_mask = mask['mask'][()]
-                    nPE_mask = target['mask'][()]
+                    # for brain data, mask is stored in tgt_file (via the mask), but: IN THE MULTICOIL_TEST SET (while reconstruction is in multicoil_test_full)
+                    mask_path = tgt_file.parent.parent / "multicoil_test" / tgt_file.name
+                    with h5py.File(mask_path,'r') as mask:
+                        nPE_mask = mask['mask'][()]
                     sampled_columns = np.sum(nPE_mask)
                     R = len(nPE_mask)/sampled_columns
                     R = float(R)
@@ -307,9 +270,21 @@ if __name__ == "__main__":
         help="Path to reconstructions",
     )
     parser.add_argument(
+        "--bart-path",
+        type=pathlib.Path,
+        required=True,
+        help="Path to preprocessed BART data (for acceleration factors)",
+    )
+    parser.add_argument(
+        "--output-path",
+        type=pathlib.Path,
+        default=None,
+        help="Path to save the evaluation results",
+    )
+    parser.add_argument(
         "--challenge",
         choices=["singlecoil", "multicoil"],
-        required=True,
+        default="multicoil",
         help="Which challenge",
     )
     parser.add_argument(
@@ -341,3 +316,15 @@ if __name__ == "__main__":
     )
     metrics = evaluate(args, recons_key)
     print(metrics)
+    if args.output_path != None:
+        # average metrics
+        summary_out  = args.predictions_path / "metrics_summary.json"
+        with open(summary_out , "w") as f:
+            json.dump(metrics, f, indent=2)
+        # per slice metrics
+        # slice_metrics_path = args.predictions_path / "metrics_per_file.json"
+        # with open(slice_metrics_path, "w") as f:
+        #     json.dump(per_slice_dict, f, indent=2)
+        
+
+

@@ -21,7 +21,7 @@ import os
 # python run_zero_filled_sense.py --data_path /DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test/ --output_path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/Reconstructions/Sense/
 
 def set_default_gpu():
-    # Set the default GPU to GPU #1 if CUDA_VISIBLE_DEVICES is not set
+    # Set the default GPU to GPU #... if CUDA_VISIBLE_DEVICES is not set
     if "CUDA_VISIBLE_DEVICES" not in os.environ:
         os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # Force GPU #...
     print(f"Using GPU: {os.environ['CUDA_VISIBLE_DEVICES']}")
@@ -29,7 +29,7 @@ def set_default_gpu():
 def save_zero_filled(data_dir, fastmri_dir, out_dir):
     '''
     Takes SENSE reconstructions in preprocessed h5 files from data_dir
-    - crops to size from encodedSpace?!
+    - crops to size from encodedSpace (reconsace only needed @ evaluation time)
     - takes absolute value
     - and saves as seperate h5 files with only classical SENSE reconstruction in out_dir
     '''

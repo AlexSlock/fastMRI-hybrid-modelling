@@ -16,6 +16,13 @@ from tqdm import tqdm
 from functools import partial
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import yaml
+import json
+
+# nohup python preprocess_val_data.py > preprocess_val.log 2>&1 &
+
+def process_wrapper(args):
+    fname, acceleration, save_dir, mat_file = args
+    return process_volume(fname, save_dir, mat_file, acceleration)
 
 def fifty_fifty():
     return random.random() < .5
@@ -168,7 +175,7 @@ def CS(kspace, S, lamda=0.005, num_iter=50):
     reconstruction = bart.bart(1, 'pics -S -l1 -r {} -i {} -d 0'.format(lamda, num_iter), kspace_perm, S_perm)
     return reconstruction
 
-def process_volume(fname, save_dir, mat_file):
+def process_volume(fname, save_dir, mat_file, acceleration):
     # Timer for the entire file
     start_time_file = time.time()   
 
@@ -181,21 +188,27 @@ def process_volume(fname, save_dir, mat_file):
     # Define target resolution for zero-padding/cropping
     target_size = (640, 640)  # Modify if needed
 
-    # Randomly decide if R = 4 or 8 for equispaced mask => ACS region for estimating coil sensitivities! 
-    undersampling_bool = fifty_fifty()  
-    if undersampling_bool:
+    # # Randomly decide if R = 4 or 8 for equispaced mask => ACS region for estimating coil sensitivities! 
+    # undersampling_bool = fifty_fifty()  
+    # if undersampling_bool:
+    #     mask_func = EquispacedMaskFunc(center_fractions=[0.08], accelerations=[4])
+    # else:
+    #     mask_func = EquispacedMaskFunc(center_fractions=[0.04], accelerations=[8])
+    # masked_kspace_ACS, mask_ACS = apply_mask(kspace, mask_func)
+    # #print("Shape of the generated ACS mask: ", str(mask_ACS.shape))
+    if acceleration == 4:
         mask_func = EquispacedMaskFunc(center_fractions=[0.08], accelerations=[4])
     else:
         mask_func = EquispacedMaskFunc(center_fractions=[0.04], accelerations=[8])
     masked_kspace_ACS, mask_ACS = apply_mask(kspace, mask_func)
-    #print("Shape of the generated ACS mask: ", str(mask_ACS.shape))
 
-    # same random if R = 4 or 8 for CS mask
-    if undersampling_bool:
-        mask = generate_array(kspace.shape, 4, mat_file, tensor_out=False)
-    else:
-        mask = generate_array(kspace.shape, 8, mat_file, tensor_out=False)
-    # (following = OK, see Transforms.apply_mask)
+    mask = generate_array(kspace.shape, acceleration, mat_file, tensor_out=False)
+    # # same random if R = 4 or 8 for CS mask
+    # if undersampling_bool:
+    #     mask = generate_array(kspace.shape, 4, mat_file, tensor_out=False)
+    # else:
+    #     mask = generate_array(kspace.shape, 8, mat_file, tensor_out=False)
+    # # (following = OK, see Transforms.apply_mask)
     masked_kspace = kspace * mask + 0.0   # +0.0 removes the sign of the zeros
     #print("Shape of the generated CS mask: ", str(mask.shape))
 
@@ -243,6 +256,8 @@ def process_volume(fname, save_dir, mat_file):
     #print(f"Total time for processing the entire file: {elapsed_time_file:.4f} seconds")
     logging.info(f"Total time for processing the entire file: {elapsed_time_file:.4f} seconds")
 
+    return (fname.name, acceleration)
+
 
 
 def process_dataset_parallel(data_dir, save_dir, mat_file, max_workers=8):
@@ -278,14 +293,44 @@ def process_dataset_parallel(data_dir, save_dir, mat_file, max_workers=8):
     h5_files = h5_files[-117:]  # Select the last 117 files from the validation set
     logging.info(f"Number of files to process: {len(h5_files)}")
 
+    ### ADD to save AF + ensure (accurate!) fifty fifty division
+    n_files = len(h5_files)
 
-    process_fn = partial(process_volume, save_dir=save_dir, mat_file=mat_file)
+    # Create a balanced acceleration factor list: half 4s, half 8s
+    half = n_files // 2
+    af_list = [4] * half + [8] * (n_files - half)
 
+    np.random.seed(42)  # Set seed for reproducibility => get SENSE the same AF for same files!
+    np.random.shuffle(af_list)  # Shuffle once to randomize order
+
+    # We'll assign AF from af_list by index matching files
+    # Pair files with assigned acceleration factor
+    files_with_af = list(zip(h5_files, af_list))
+    args_list = [(fname, acc, save_dir, mat_file) for fname, acc in files_with_af]
+
+    results = []
     with ProcessPoolExecutor(max_workers=max_workers) as executor:
-        futures = {executor.submit(process_fn, h5_path): h5_path for h5_path in h5_files}
-        for future in tqdm(as_completed(futures), total=len(futures), desc="Parallel RSS Gen"):
-            result = future.result()
-            #print(result)  # only printed 'None'
+        futures = {executor.submit(process_wrapper, args): args for args in args_list}
+        for future in tqdm(as_completed(futures), total=len(futures), desc="Parallel CS Gen"):
+            try:
+                result = future.result()
+                results.append(result)
+            except Exception as e:
+                logging.error(f"Error processing file {futures[future][0]}: {e}")
+    
+    # process_fn = partial(process_volume, save_dir=save_dir, mat_file=mat_file)
+    # with ProcessPoolExecutor(max_workers=max_workers) as executor:
+    #     futures = {executor.submit(process_fn, h5_path): h5_path for h5_path in h5_files}
+    #     for future in tqdm(as_completed(futures), total=len(futures), desc="Parallel RSS Gen"):
+    #         result = future.result()
+    #         #print(result)  # only printed 'None'
+    
+    # Save acceleration factors mapping to JSON
+    json_file_path = os.path.join(save_dir, "acceleration_factors.json")
+    acc_dict = {fname: acc for fname, acc in results}
+    with open(json_file_path, 'w') as jf:
+        json.dump(acc_dict, jf, indent=4)
+    logging.info(f"Saved acceleration factors for {len(results)} files to {json_file_path}")
 
 
 
