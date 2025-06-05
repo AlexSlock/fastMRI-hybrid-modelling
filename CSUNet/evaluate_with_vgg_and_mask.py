@@ -18,11 +18,12 @@ import json
 
 # Run with conda DL_MRI_reconstruction_baselines
 
-# python evaluate_with_vgg.py 
-#  --target-paths /DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test_full/ 
-#   /DATASERVER/MIC/SHARED/NYU_FastMRI/Knee/multicoil_val/
-#  --predictions-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/CSUNet/reconstructions/
-#  --challenge multicoil
+# python evaluate_with_vgg_and_mask.py \
+#  --target-paths /DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test_full/ \
+#   /DATASERVER/MIC/SHARED/NYU_FastMRI/Knee/multicoil_val/ \
+#  --predictions-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/CSUNet_brain/reconstructions/ \
+#   --bart-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_test/ \
+#  --challenge multicoil \
 
 def determine_and_apply_mask(target, recons, tgt_file):
     """
@@ -228,7 +229,7 @@ def evaluate(args, recons_key):
 
         
     # load acceleartion factors once
-    acc_factor_file = pathlib.Path(args.reconstruction_path) / "acceleration_factors.json"
+    acc_factor_file = pathlib.Path(args.bart_path) / "acceleration_factors.json"
     with open(acc_factor_file, "r") as f:
         acc_factors = json.load(f)
 
@@ -305,6 +306,12 @@ if __name__ == "__main__":
         type=pathlib.Path,
         required=True,
         help="Path to reconstructions",
+    )
+    parser.add_argument(
+        "--bart-path",
+        type=pathlib.Path,
+        required=True,
+        help="Path to preprocessed BART data (for acceleration factors)",
     )
     parser.add_argument(
         "--challenge",

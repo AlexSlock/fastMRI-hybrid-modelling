@@ -19,14 +19,15 @@ from tqdm import tqdm
 import json
 import pandas as pd
 
-# Run with conda DL_MRI_reconstruction_baselines
+# Run with conda DL_MRI_reconstruction_baselines_2
 
-# python evaluate_with_vgg_and_mask_new.py \
+# python evaluate_with_vgg_and_mask_volume.py \
 #   --target-paths /DATASERVER/MIC/SHARED/NYU_FastMRI/Preprocessed/multicoil_test_full/ \
 #                 /DATASERVER/MIC/SHARED/NYU_FastMRI/Knee/multicoil_val/ \
-#   --predictions-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/CSUNet/reconstructions/ \
+#   --predictions-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/CSUNet_brain/reconstructions/ \
 #   --bart-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Preprocessed_CS/multicoil_test/ \
-#   --output-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/evaluation_results/ \
+#   --output-path /DATASERVER/MIC/GENERAL/STUDENTS/aslock2/Results/evaluations/ \
+
 
 ## INITIALIZE GPU AND LOAD VGG19 MODEL
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -89,21 +90,22 @@ preprocess = Compose([
 
 @torch.no_grad()
 def vgg_loss(gt: np.ndarray, pred: np.ndarray) -> np.ndarray:
-    """
-    Computes VGG-based perceptual loss for a single 2D image pair.
-    Expects inputs to be normalized grayscale images in range [0, 1].
-    """
     gt = gt * 255
     pred = pred * 255
 
-    gt_tensor = preprocess(gt).unsqueeze(0).to(device)
-    pred_tensor = preprocess(pred).unsqueeze(0).to(device)
+    losses = []
 
-    gt_feat = vgg_model(gt_tensor)
-    pred_feat = vgg_model(pred_tensor)
+    for gt_img, pred_img in zip(gt, pred):
+        gt_tensor = preprocess(gt_img).unsqueeze(0).to(device)
+        pred_tensor = preprocess(pred_img).unsqueeze(0).to(device)
 
-    loss = torch.nn.functional.mse_loss(gt_feat, pred_feat)
-    return loss.item()
+        gt_feat = vgg_model(gt_tensor)
+        pred_feat = vgg_model(pred_tensor)
+
+        loss = torch.nn.functional.mse_loss(gt_feat, pred_feat)
+        losses.append(loss)
+    
+    return torch.stack(losses).mean().cpu().numpy()
 
 def mse(gt: np.ndarray, pred: np.ndarray) -> np.ndarray:
     """Compute Mean Squared Error (MSE)"""
@@ -124,61 +126,63 @@ def psnr(
     return peak_signal_noise_ratio(gt, pred, data_range=maxval)
 
 
-def ssim(gt: np.ndarray, pred: np.ndarray, maxval: Optional[float] = None) -> np.ndarray:
-    """
-    Compute SSIM between two 2D images.
-    """
-    if gt.ndim != 2 or pred.ndim != 2:
-        raise ValueError("SSIM expects 2D arrays per call.")
+def ssim(
+    gt: np.ndarray, pred: np.ndarray, maxval: Optional[float] = None
+) -> np.ndarray:
+    """Compute Structural Similarity Index Metric (SSIM)"""
+    if not gt.ndim == 3:
+        raise ValueError("Unexpected number of dimensions in ground truth.")
+    if not gt.ndim == pred.ndim:
+        raise ValueError("Ground truth dimensions does not match pred.")
 
-    maxval = maxval or gt.max()
-    return structural_similarity(gt, pred, data_range=maxval)
+    maxval = gt.max() if maxval is None else maxval
+
+    ssim = np.array([0])
+    for slice_num in range(gt.shape[0]):
+        ssim = ssim + structural_similarity(
+            gt[slice_num], pred[slice_num], data_range=maxval
+        )
+
+    return ssim / gt.shape[0]
 
 
-METRIC_FUNCS = dict( 
+METRIC_FUNCS = dict(
     MSE=mse,
     NMSE=nmse,
     PSNR=psnr,
-    SSIM=ssim,    # now per-slice!
-    VGG=vgg_loss, # now per-slice!
+    SSIM=ssim,
+    VGG=vgg_loss,
     #SVD=stacked_svd,
 )
 
 
 class Metrics:
-    """
-    Maintains running statistics for a given collection of metrics.
-    Also stores per-slice metrics with metadata for statistical analysis.
-    """
     def __init__(self, metric_funcs):
         self.metric_funcs = metric_funcs
         self.metrics = {metric: Statistics() for metric in metric_funcs}
-        self.per_slice_metrics = []  # Now stores dictionaries per slice
+        self.per_volume = []
+    
+    def push(self, target, recons, filename=None, acquisition=None, R=None):
+        metric_result = {}
+        for metric, func in self.metric_funcs.items():
+            val = func(target, recons)
+            self.metrics[metric].push(val)
+            metric_result[metric] = val
+        self.per_volume.append({
+            "filename": filename,
+            "acquisition": acquisition,
+            "R": R,
+            **metric_result,
+        })
 
-    def push(self, target, recons, file_name, model_name, acquisition, acceleration):
-        for i in range(target.shape[0]):  # loop over slices
-            for metric, func in self.metric_funcs.items():
-                value = func(target[i], recons[i])
-                self.metrics[metric].push(value)
-
-                self.per_slice_metrics.append({
-                    "file_name": file_name,
-                    "slice_idx": i,
-                    "metric": metric,
-                    "value": value,
-                    "model_name": model_name,
-                    "acquisition": acquisition,
-                    "acceleration": acceleration,
-                })
+    def get_per_volume(self):
+        return self.per_volume
 
     def means(self):
         return {metric: stat.mean() for metric, stat in self.metrics.items()}
 
     def stddevs(self):
         return {metric: stat.stddev() for metric, stat in self.metrics.items()}
-
-    def get_per_slice_metrics(self):
-        return self.per_slice_metrics
 
     def __repr__(self):
         means = self.means()
@@ -215,7 +219,7 @@ def evaluate(args, recons_key):
 
         with h5py.File(tgt_file, "r") as target, h5py.File(pred_file, "r") as recons:
 
-            # used if only test 1 type of acquisition
+             # used if only test 1 type of acquisition
             target_acquisition = target.attrs["acquisition"]
             if args.acquisition and args.acquisition != target_acquisition:
                 continue
@@ -253,12 +257,10 @@ def evaluate(args, recons_key):
             target, recons = determine_and_apply_mask(target, recons, tgt_file)
             # calculate metrics
             metrics.push(
-                target=target,
-                recons=recons,
-                file_name=pred_file.stem,                    # must be defined
-                model_name=args.predictions_path.parts[-2],     # e.g., "CSUNET"
-                acquisition=target_acquisition,      # e.g., "AXFLAIR"
-                acceleration=round(R)                         # e.g., 4
+                target, recons,
+                filename=pred_file.stem,
+                acquisition=target_acquisition,
+                R=round(R)
             )
 
     return metrics
@@ -288,7 +290,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output-path",
         type=pathlib.Path,
-        required=True,
+        default=None,
         help="Path to save the evaluation results",
     )
     parser.add_argument(
@@ -327,11 +329,17 @@ if __name__ == "__main__":
     metrics = evaluate(args, recons_key)
     print(metrics)
 
-    # Save overall metrics
-    args.output_path.mkdir(parents=True, exist_ok=True)
 
-    df = pd.DataFrame(metrics.get_per_slice_metrics())
-    df.to_csv(args.output_path / f"per_slice_metrics_{args.predictions_path.parts[-2]}.csv", index=False)
+    if args.output_path is not None:
+        # Ensure output directory exists
+        args.output_path.mkdir(parents=True, exist_ok=True)
+        model_name = args.predictions_path.parts[-1]  # assuming the model name is the parent directory of predictions_path
+        if model_name == "reconstructions":
+            model_name = args.predictions_path.parts[-2]  # if it's just "reconstructions", take the parent directory
+        volume_csv_out = args.output_path / f"metrics_per_volume_{model_name}.csv"
+        df = pd.DataFrame(metrics.get_per_volume())  # assuming it's a list of dicts
+        df.to_csv(volume_csv_out, index=False)
+        print(f"Saved per-volume metrics to: {volume_csv_out}")
+
         
-
 

@@ -69,7 +69,7 @@ def t2_reconstruction(kspace_data: np.ndarray, calib_data: np.ndarray, hdr: str)
         kspace_grappa_padded = zero_pad_kspace_hdr(hdr, kspace_grappa)
         im[average] = create_coil_combined_im(kspace_grappa_padded)
 
-    im_3d = np.mean(im, axis = 0) 
+    im_3d = np.mean(im, axis = 0)  # take mean across the averages
     # center crop image to 320 x 320
     img_dict = {}
     img_dict['reconstruction_rss'] = center_crop_im(im_3d, [320, 320]) 
