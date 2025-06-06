@@ -1,12 +1,14 @@
-# Master's Thesis - Mathijs Vanhaverbeke
-Code base of my master's thesis (2023-2024), submitted for the degree of M.Sc. in Biomedical Engineering, option Biomedical Data Analytics.
+# Master's Thesis - Alex Slock
+Code base of my master's thesis (2024-2025), submitted for the degree of M.Sc. in Biomedical Engineering, option Bio-informatics & AI.
 
 
-Title: Influence of hybrid modelling on deep learning-based MRI reconstruction performance.
+Title: Deep Learning-Based MRI Reconstruction
+in Data Heterogeneity: A Hybrid Modelling
+Approach.
 
 
-Example visualisation for the SENSE reconstruction paradigm:
-![plot](./SENSE_reconstruction_comparison.png)
+Example visualisation for the CS reconstruction paradigm at R=4:
+![plot](./recons_all_R4.png)
 
 
 ## Used dataset
@@ -14,11 +16,12 @@ In this thesis, the fastMRI dataset is used. This dataset can be obtained at the
 
 
 ## Contributions
-During the past year, multiple models and methods were explored. Ultimately, the code in this repository is related to four things:
+During the past year, the generalization of the CS UNet hybrid model was analyzed on heterogeneous data. Ultimately, the code in this repository is related to five things:
 - fastMRI data exploration
 - Evaluation metric implementations (metrics are compared and a new metric is introduced)
 - Validation of [DeepMRIRec](https://github.com/stjude/DeepMRIRec/tree/main)
-- Hybrid Neural Network comparisons (main focus of this work)
+- Hybrid Neural Network comparisons 
+- Generalization of the CS UNet hybrid model (main focus of this work)
 
 
 ## Repository structure
@@ -42,6 +45,7 @@ Related to the above mentioned explored topics, this repository contains multipl
 
 The folders BaselineUNet, CS, CSUNet, Grappa, GrappaUNet, Sense, SenseUNet, ZeroFilled, ZeroFilledNoACS, and ZeroFilledNoACSCS contain all the code necessary for the HNN comparisons made in the thesis manuscript. Those folders related to a deep learning model also contain a Checkpoint folder containing the trained model used to generate the presented results. The BaselineUNet and GrappaUNet folders even contain multiple saved checkpoints, related to different training scenarios. For example, there is a BaselineUNet version trained only on R=4, on both R=4+8, on both R=4+8 with L2 regularization, and there is also a BaselineUNet version trained on SENSE masks instead of GRAPPA masks. Additionally, there is code to let BaselineUNet make predictions on R=3 data. Similarly, also GrappaUNet has two checkpoints: one for a regularized training and one for an unregularized training. Other models have one checkpoint, resulting from a regularized training as described in the thesis manuscript. Importantly, each of these aformentioned main folders contains a .txt file. In this file, more info can be found regarding which conda environment to use and regarding which source material was used to write the code. Folders containing the code of Hybrid Neural Networks also contain the code that was used to preprocess the fastMRI data up front, before training, saving time during training.
 
+The CSUnet has 3 checkpoints: one for a regularized training on only brain data, one for unregularized training on only brain data, and different from the other models: one for regularized training on both knee and brain data.
 
 The folders fastMRI, ModelWeightsComparison, Overfitexperiments, and StatisticalTests are all related to data and results analyses. These mostly contain notebooks, with their content and related comments speaking for itself.
 
@@ -100,6 +104,11 @@ Note that this is not necessary for the HNNs' code, as their conda environments 
 
 ## Reference
 When using anything of this work, please refer to:
+```
+Slock A. (2025). Deep Learning-Based MRI Reconstruction in Data Heterogeneity: A Hybrid Modelling Approach. Availabe on: https://github.com/AlexSlock/fastMRI-hybrid-modelling/
+[accessed on ...].
+```
+and
 ```
 Vanhaverbeke M. (2024). Influence of hybrid modelling on deep learning-based MRI reconstruction performance. Available on: https://github.com/MathijsVanhaverbeke/fastMRI-hybrid-modelling/ [accessed on ...].
 ```
