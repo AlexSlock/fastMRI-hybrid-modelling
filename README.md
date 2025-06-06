@@ -108,7 +108,7 @@ When using anything of this work, please refer to:
 Slock A. (2025). Deep Learning-Based MRI Reconstruction in Data Heterogeneity: A Hybrid Modelling Approach. Availabe on: https://github.com/AlexSlock/fastMRI-hybrid-modelling/
 [accessed on ...].
 ```
-and
+and previous work this code is based on:
 ```
 Vanhaverbeke M. (2024). Influence of hybrid modelling on deep learning-based MRI reconstruction performance. Available on: https://github.com/MathijsVanhaverbeke/fastMRI-hybrid-modelling/ [accessed on ...].
 ```
